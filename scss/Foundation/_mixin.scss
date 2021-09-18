@@ -1,0 +1,8 @@
+/* mixin.scss */
+
+/* レスポンシブ設定 */
+@mixin mq($breakpoint: tab) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

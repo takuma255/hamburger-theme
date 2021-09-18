@@ -1,0 +1,42 @@
+/* variable.scss */
+
+/* フォント　書体 */
+$font-sub: 'Roboto', sans-serif;
+$font-third: 'Noto Sans JP';
+
+
+/* フォント　太さ*/
+$font-weight-l: 700;
+
+/* フォント　サイズ */
+
+
+/* カラー */
+$color-0: #000;
+$color-f: #fff;
+
+$font-color-sub: #707070;
+
+
+/* レスポンシブ設定 ブレークポイント */
+$breakpoints: (
+  "sp": "screen and (max-width: 767px)",
+  "tab": "screen and (min-width: 768px)",
+  "pc": "screen and (min-width: 1201px)",
+);
+
+
+/* ハンバーガーボタン */
+$hamburger-btn-width: 23px;
+$hamburger-btn-height: 2px;
+
+
+/* アコーディオンアイコン*/
+$accordion-plusicon-width: 2px;
+$accordion-plusicon-height: 24px;
+$accordion-minusicon-width: 24px;
+$accordion-minusicon-height: 2px;
+
+
+/* ヘッダー固定用高さ */
+$header-height: 50px;

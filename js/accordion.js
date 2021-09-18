@@ -1,0 +1,43 @@
+/* アコーディオン　サブメニュー */
+$(function(){
+  $('.menu1').on('mouseenter',function(){
+    $('.js-accordion1').toggleClass('is-sub-open');
+    $('.accordion1').stop().slideToggle(200);
+  });
+  $('.menu1').on('mouseleave',function(){
+    $('.js-accordion1').toggleClass('is-sub-open');
+    $('.accordion1').stop().slideToggle(0);
+  });
+  $('.menu2').on('mouseenter',function(){
+    $('.js-accordion2').toggleClass('is-sub-open');
+    $('.accordion2').stop().slideToggle(200);
+  });
+  $('.menu2').on('mouseleave',function(){
+    $('.js-accordion2').toggleClass('is-sub-open');
+    $('.accordion2').stop().slideToggle(0);
+  });
+  $('.menu4').on('mouseenter',function(){
+    $('.js-accordion4').toggleClass('is-sub-open');
+    $('.accordion4').stop().slideToggle(200);
+  });
+  $('.menu4').on('mouseleave',function(){
+    $('.js-accordion4').toggleClass('is-sub-open');
+    $('.accordion4').stop().slideToggle(0);
+  });
+  $('.menu5').on('mouseenter',function(){
+    $('.js-accordion5').toggleClass('is-sub-open');
+    $('.accordion5').stop().slideToggle(200);
+  });
+  $('.menu5').on('mouseleave',function(){
+    $('.js-accordion5').toggleClass('is-sub-open');
+    $('.accordion5').stop().slideToggle(0);
+  });
+  $('.menu6').on('mouseenter',function(){
+    $('.js-accordion6').toggleClass('is-sub-open');
+    $('.accordion6').stop().slideToggle(200);
+  });
+  $('.menu6').on('mouseleave',function(){
+    $('.js-accordion6').toggleClass('is-sub-open');
+    $('.accordion6').stop().slideToggle(0);
+  });
+}); 

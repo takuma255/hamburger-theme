@@ -1,0 +1,33 @@
+/* アコーディオンアイコン　プロジェクト */
+.p-accordion-icon {
+  @include mq (pc) {
+    display: none;
+  }
+  &::before,
+  &::after {
+    content: '';
+    background-color: $color-0;
+    position: absolute;
+    display: block;
+    transition: transform 0.1s;
+  }
+  &::before {
+    width: $accordion-plusicon-width;
+    height: $accordion-plusicon-height;
+    top: 50%;
+    right: calc(10px + (#{$accordion-plusicon-width} / 2) + (#{$accordion-minusicon-width} / 2));
+    transform: translate(-50%, -50%);
+  }
+  &::after {
+    width: $accordion-minusicon-width;
+    height: $accordion-minusicon-height;
+    top: 50%;
+    right: calc( #{$accordion-plusicon-width} / 2);
+    transform: translate(-50%, -50%);
+  }
+  &.is-sub-open {
+    &::before {
+      display: none;
+    }
+  }
+}
