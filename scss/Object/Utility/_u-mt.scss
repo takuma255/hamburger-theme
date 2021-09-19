@@ -1,1 +1,12 @@
 /* 隣接セレクタ マージントップ ユーティリティ */
+.c-service__title + .c-service__txt {
+  margin-top: 19px;
+}
+
+.c-service + .c-service {
+  margin-top: 9px;
+}
+
+.p-article__list--takeout + .p-article__list--eatin {
+  margin-top: 20px;
+}

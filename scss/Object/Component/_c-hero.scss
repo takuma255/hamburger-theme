@@ -1,7 +1,6 @@
 /* ヒーロー コンポーネント */
 .c-hero {
   background-size: cover;
-  width: 100%;
   display: flex;
   &__title {
     color: $color-f;
@@ -16,7 +15,7 @@
     background-position: center;
     height: 285px;
     align-items: center;
-    padding: 0 25px;
+    padding-left: 25px;
     @include mq (pc) {
       height: 530px;
     }
@@ -28,7 +27,7 @@
     height: 283px;
     flex-direction: column;
     justify-content: center;
-    padding: 0 37px;
+    padding-left: 37px;
     @include mq (pc) {
       height: 239px;
     }
@@ -39,7 +38,7 @@
     background-position: center;
     height: 226px;
     align-items: center;
-    padding: 0 26px;
+    padding-left: 26px;
     @include mq () {
       height: 500px;
     }

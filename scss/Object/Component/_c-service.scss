@@ -1,6 +1,8 @@
 /* 提供サービス　コンポーネント */
 .c-service {
   background-color: $color-f;
+  height: 163px;
+  padding: 19px 14px 23px 10px;
   &__title {
     > a {
       font-weight: $font-weight-l;
