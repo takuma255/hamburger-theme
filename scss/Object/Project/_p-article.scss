@@ -3,6 +3,7 @@
   padding: 20px 20px 49px;
   &__list {
     background-size: cover;
+    min-width: 335px;
     height: 642px;
     display: flex;
     flex-direction: column;

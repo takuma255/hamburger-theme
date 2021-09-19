@@ -1,6 +1,7 @@
 /* ヒーロー コンポーネント */
 .c-hero {
   background-size: cover;
+  min-width: 375px;
   display: flex;
   &__title {
     color: $color-f;
