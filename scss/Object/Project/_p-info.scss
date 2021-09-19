@@ -1,1 +1,14 @@
 /* インフォメーション プロジェクト */
+.p-info {
+  &__address {
+    &__title {
+      color: $color-f;
+      font-weight: $font-weight-l;
+      font-size: 1.875rem;
+    }
+    &__txt {
+      color: $color-f;
+      font-size: 0.875rem;
+    }
+  }
+}

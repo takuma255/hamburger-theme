@@ -1,1 +1,10 @@
 /* 提供サービス　コンポーネント */
+.c-service {
+  background-color: $color-f;
+  &__title {
+    > a {
+      font-weight: $font-weight-l;
+      font-size: 1.375rem;
+    }
+  }
+}

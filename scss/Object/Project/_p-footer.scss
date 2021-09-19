@@ -1,1 +1,15 @@
 /* フッター プロジェクト */
+.p-footer {
+  &__menu {
+    &__list {
+      > a {
+        color: $color-f;
+        font-size: 1.25rem;
+      }
+    }
+  }
+  &__copyright {
+    color: $color-f;
+    font-size: 0.875rem;
+  }
+}
