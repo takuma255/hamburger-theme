@@ -11,15 +11,15 @@
     padding: 11px 10px 10px 11px;
     &__title {
       > a {
-        color: $color-f;
+        color: $color-white;
         font-family: $font-family-sub;
         font-weight: $font-weight-l;
-        font-size: 2.5625rem;
+        font-size: 4.1rem;
         @include mq () {
-          font-size: 2.75rem;
+          font-size: 4.4rem;
         }
         @include mq (pc) {
-          font-size: 5rem;
+          font-size: 8rem;
         }
       }
     }

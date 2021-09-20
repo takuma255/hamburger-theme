@@ -6,7 +6,7 @@
   &::before,
   &::after {
     content: '';
-    background-color: $color-0;
+    background-color: $color-black;
     position: absolute;
     display: block;
     transition: transform 0.1s;

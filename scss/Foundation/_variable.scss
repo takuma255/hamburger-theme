@@ -1,6 +1,7 @@
 /* variable.scss */
 
 /* フォント　書体 */
+$font-family-main: 'M PLUS 1p', sans-serif;
 $font-family-sub: 'Roboto', sans-serif;
 $font-family-third: 'Noto Sans JP';
 
@@ -10,13 +11,20 @@ $font-weight-l: 700;
 
 
 /* フォント　サイズ */
+$font-size-default: 10px;
 
 
 /* カラー */
-$color-0: #000;
-$color-f: #fff;
+$color-black: #000;
+$color-white: #fff;
 
+$font-color-main: #3C2A10;
 $font-color-sub: #707070;
+
+$background-color-header: #FFF7EF;
+$background-color-main: #FFFDFA;
+$background-color-sidebar: #F2EDE9;
+$background-color-footer: #000;
 
 
 /* レスポンシブ設定 ブレークポイント */
