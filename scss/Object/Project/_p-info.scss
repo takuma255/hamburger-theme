@@ -5,10 +5,16 @@
       color: $color-f;
       font-weight: $font-weight-l;
       font-size: 1.875rem;
+      @include mq (pc) {
+        font-size: 2.25rem;
+      }
     }
     &__txt {
       color: $color-f;
       font-size: 0.875rem;
+      @include mq (pc) {
+        font-size: 1rem;
+      }
     }
   }
 }

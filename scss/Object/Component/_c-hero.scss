@@ -7,6 +7,9 @@
     color: $color-f;
     font-weight: $font-weight-l;
     font-size: 2.25rem;
+    @include mq (pc) {
+      font-size: 2.5rem;
+    }
   }
 
   /* ページ毎の設定 */

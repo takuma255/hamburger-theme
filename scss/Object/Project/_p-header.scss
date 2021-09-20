@@ -6,6 +6,9 @@
       font-family: $font-family-sub;
       font-weight: $font-weight-l;
       font-size: 1.25rem;
+      @include mq () {
+        font-size: 2.125rem;
+      }
     }
   }
   &__title {
@@ -14,6 +17,9 @@
       font-family: $font-family-sub;
       font-weight: $font-weight-l;
       font-size: 2.5rem;
+      @include mq (pc) {
+        font-size: 4rem;
+      }
     }
   }
 }
