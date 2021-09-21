@@ -1,10 +1,10 @@
 /* グローバルメニュー プロジェクト */
 .p-gmenu {
   &__list {
-    > a {
+    &__link {
       color: $font-color-sub;
       font-weight: $font-weight-l;
-      font-size: 2.4rem;
+      @include fz (24);
     }
   }
 }

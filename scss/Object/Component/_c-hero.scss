@@ -6,9 +6,9 @@
   &__title {
     color: $color-white;
     font-weight: $font-weight-l;
-    font-size: 3.6rem;
+    @include fz (36);
     @include mq (pc) {
-      font-size: 4rem;
+      @include fz (40);
     }
   }
 

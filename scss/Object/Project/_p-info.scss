@@ -1,19 +1,20 @@
 /* インフォメーション プロジェクト */
 .p-info {
+  background-color: $color-black;
   &__address {
     &__title {
       color: $color-white;
       font-weight: $font-weight-l;
-      font-size: 3rem;
+      @include fz (30);
       @include mq (pc) {
-        font-size: 3.6rem;
+        @include fz (36);
       }
     }
     &__txt {
       color: $color-white;
-      font-size: 1.4rem;
+      @include fz (14);
       @include mq (pc) {
-        font-size: 1.6rem;
+        @include fz (16);
       }
     }
   }

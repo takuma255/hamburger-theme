@@ -1,5 +1,11 @@
 /* mixin.scss */
 
+/* フォントサイズ設定　簡易化 */
+@mixin fz($size: 16) {
+  font-size: ($size / 10) + rem;
+}
+
+
 /* レスポンシブ設定 */
 @mixin mq($breakpoint: tab) {
   @media #{map-get($breakpoints, $breakpoint)} {

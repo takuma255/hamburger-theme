@@ -1,9 +1,9 @@
 /* ローカルメニュー プロジェクト */
 .p-lmenu {
   &__list {
-    > a {
+    &__link {
       color: $font-color-sub;
-      font-size: 2rem;
+      @include fz (20);
     }
   }
 }

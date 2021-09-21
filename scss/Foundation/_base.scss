@@ -1,9 +1,13 @@
 /* base.scss */
-* {
+html {
+  font-size: 62.5%;
+}
+
+body {
   color: $font-color-main;
   font-family: $font-family-main;
   font-weight: 400;
-  font-size: $font-size-default;
+  min-width: $min-width-sp;
 }
 
 a {
