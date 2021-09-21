@@ -488,13 +488,13 @@ li {
   }
 }
 
-.p-header__title__link {
+.p-header__title {
   color: #707070;
   font-size: 4rem;
 }
 
 @media screen and (min-width: 1201px) {
-  .p-header__title__link {
+  .p-header__title {
     font-size: 6.4rem;
   }
 }
