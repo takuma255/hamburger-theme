@@ -10,12 +10,10 @@
     }
   }
   &__title {
-    &__link {
-      color: $font-color-sub;
-      @include fz (40);
-      @include mq (pc) {
-        @include fz (64);
-      }
+    color: $font-color-sub;
+    @include fz (40);
+    @include mq (pc) {
+      @include fz (64);
     }
   }
 }
