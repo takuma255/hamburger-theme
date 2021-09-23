@@ -1,15 +1,14 @@
 /* ヘッダー プロジェクト */
 .p-header {
   font-family: $font-family-sub;
-  font-weight: $font-weight-l;
-  &__btn {
+  > .c-btn--menu {
     color: $font-color-sub;
     @include fz (20);
     @include mq () {
       @include fz (34);
     }
   }
-  &__title {
+  > .c-headline {
     color: $font-color-sub;
     @include fz (40);
     @include mq (pc) {

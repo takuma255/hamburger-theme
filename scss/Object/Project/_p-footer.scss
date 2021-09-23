@@ -10,21 +10,10 @@
     align-items: center;
     justify-content: center;
     &__list {
-      &__link {
+      > .c-link {
         color: $color-white;
         @include fz (20);
       }
     }
-    &__line {
-      background-color: $color-white;
-      width: 2px;
-      height: 20px;
-      margin-right: 15px;
-      margin-left: 15px;
-    }
-  }
-  &__copyright {
-    color: $color-white;
-    @include fz (14);
   }
 }

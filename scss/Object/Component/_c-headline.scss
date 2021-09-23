@@ -1,0 +1,15 @@
+/* ヘッドライン　コンポーネント */
+.c-headline {
+  font-weight: $font-weight-l;
+  &--underline {
+    @extend .c-headline;
+    &::after {
+      content: "";
+      background-color: $line-color;
+      width: 35px;
+      height: 4px;
+      display: block;
+      margin-top: 19px;
+    }
+  }
+}

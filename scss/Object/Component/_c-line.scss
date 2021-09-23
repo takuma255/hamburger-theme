@@ -1,0 +1,11 @@
+/* 線　コンポーネント */
+.c-line {
+  background-color: $line-color;
+  &--vertical {
+    @extend .c-line;
+    width: 2px;
+    height: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}

@@ -1,16 +1,20 @@
 /* 隣接セレクタ マージントップ ユーティリティ */
-.c-service__title + .c-service__txt {
+.c-definition__headline + .c-definition__description {
   margin-top: 19px;
 }
 
-.c-service + .c-service {
+.c-definition + .c-definition {
   margin-top: 9px;
 }
 
-.p-article__list--takeout + .p-article__list--eatin {
+.p-service__list + .p-service__list {
   margin-top: 20px;
 }
 
-.p-footer__menu + .p-footer__copyright {
+.c-headline--underline + .c-definition__description {
+  margin-top: 20px;
+}
+
+.p-footer__menu + .c-copyright {
   margin-top: 34px;
 }

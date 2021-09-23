@@ -1,0 +1,5 @@
+/* コピーライト　コンポーネント */
+.c-copyright {
+  color: $color-white;
+  @include fz (14);
+}

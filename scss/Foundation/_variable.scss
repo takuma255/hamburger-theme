@@ -26,14 +26,17 @@ $background-color-main: #FFFDFA;
 $background-color-sidebar: #F2EDE9;
 $background-color-footer: #000;
 
+$line-color: #fff;
 
-/* レスポンシブ設定 ブレークポイント */
+
+/* レスポンシブ設定　ブレークポイント */
 $breakpoints: (
   "sp": "screen and (max-width: 767px)",
   "tab": "screen and (min-width: 768px)",
   "pc": "screen and (min-width: 1201px)",
 );
 
+/* レスポンシブ設定　スマホ最小幅 */
 $min-width-sp: 375px;
 
 

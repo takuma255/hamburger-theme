@@ -11,54 +11,58 @@
 </head>
 <body class="front-page">
   <header class="l-header p-header">
-    <button class="p-header__btn">Menu</button>
-    <h1 class="p-header__title">Hamburger</h1>
-    <!-- 検索フォーム -->
+    <button class="c-btn--menu">Menu</button>
+    <h1 class="c-headline">Hamburger</h1>
     <form class="p-search" action="#" method="POST">
       <input class="c-searchbox" type="search" name="search" placeholder="キーワード" >
       <input class="c-btn--search" type="submit" name="submit" value="検索">
-    </form>
-    <!-- /検索フォーム -->
+    </form><!-- /検索フォーム -->
   </header>
   <main class="l-main p-main">
-    <div class="c-hero--front">
-      <h1 class="c-hero__title">DUMMY BURGER</h1>
-    </div><!-- /c-hero--front -->
+    <div class="p-main__hero--front">
+      <h1 class="c-headline">DUMMY BURGER</h1>
+    </div><!-- /ヒーローエリア -->
     <article class="p-main__body">
-      <ul class="p-article">
-        <li class="p-article__list--takeout">
-          <h2 class="p-article__list__title"><a href="#">Take Out</a></h2>
-          <div class="p-article__list__wrapper">
-            <dl class="c-service">
-              <dt class="c-service__title"><a href="#">Take Out</a></dt>
-              <dd class="c-service__txt">当店のテイクアウトで利用できる商品を掲載しています</dd>
-            </dl>
-            <dl class="c-service">
-              <dt class="c-service__title"><a href="#">Take Out</a></dt>
-              <dd class="c-service__txt">当店のテイクアウトで利用できる商品を掲載しています</dd>
-            </dl>
-          </div><!-- /p-article__list__wrapper -->
-        </li><!-- /p-article__list--takeout -->
-        <li class="p-article__list--eatin">
-          <h2 class="p-article__list__title"><a href="#">Eat In</a></h2>
-          <div class="p-article__list__wrapper">
-            <dl class="c-service">
-              <dt class="c-service__title"><a href="#">Eat In</a></dt>
-              <dd class="c-service__txt">当店のイートインで利用できる商品を掲載しています</dd>
-            </dl>
-            <dl class="c-service">
-              <dt class="c-service__title"><a href="#">Eat In</a></dt>
-              <dd class="c-service__txt">当店のイートインで利用できる商品を掲載しています</dd>
-            </dl>
-          </div><!-- /p-article__list__wrapper -->
-        </li><!-- /p-article__list--eatin -->
-      </ul><!-- /p-article -->
-      <section class="p-info">
-        <iframe class="p-info__map" src="" frameborder="0">Googleマップ</iframe>
-        <div class="p-info__address">
-          <h2 class="p-info__address__title">見出しが入ります</h2>
-          <p class="p-info__address__txt">テキストが入ります。テキストが入ります。</p>
-        </div><!-- /p-info__address -->
+      <ul class="p-service">
+        <li class="p-service__list">
+          <section class="p-service__list__inner">
+            <h2 class="c-headline--underline">Take Out</h2>
+            <div class="c-wrapper">
+              <dl class="c-definition">
+                <dt class="c-definition__headline">Take Out</dt>
+                <dd class="c-definition__description">当店のテイクアウトで利用できる商品を掲載しています</dd>
+              </dl><!-- /テイクアウト定義1 -->
+              <dl class="c-definition">
+                <dt class="c-definition__headline">Take Out</dt>
+                <dd class="c-definition__description">当店のテイクアウトで利用できる商品を掲載しています</dd>
+              </dl><!-- /テイクアウト定義2 -->
+            </div><!-- /テイクアウト定義　ラッパー -->
+          </section><!-- /テイクアウトサービス　インナー -->
+          <a href="#" class="c-link--block"><img class="c-img" src="/images" alt="当店のテイクアウトで利用できる商品を掲載しています"></a>
+        </li><!-- /テイクアウトサービス -->
+        <li class="p-service__list">
+          <section class="p-service__list__inner">
+            <h2 class="c-headline--underline">Eat In</h2>
+            <div class="c-wrapper">
+              <dl class="c-definition">
+                <dt class="c-definition__headline">Eat In</dt>
+                <dd class="c-definition__description">当店のイートインで利用できる商品を掲載しています</dd>
+              </dl><!-- /イートイン定義1 -->
+              <dl class="c-definition">
+                <dt class="c-definition__headline">Eat In</dt>
+                <dd class="c-definition__description">当店のイートインで利用できる商品を掲載しています</dd>
+              </dl><!-- /イートイン定義2 -->
+            </div><!-- /イートイン定義　ラッパー -->
+          </section><!-- /イートインサービス　インナー -->
+          <a href="#" class="c-link--block"><img class="c-img" src="/images" alt="当店のイートインで利用できる商品を掲載しています"></a>
+        </li><!-- /イートインサービス -->
+      </ul><!-- /サービス２種の紹介 -->
+      <section class="p-address">
+        <iframe class="c-map" src="" frameborder="0">Googleマップ</iframe>
+        <dl class="c-definition">
+          <dt class="c-headline--underline">見出しが入ります</dt>
+          <dd class="c-definition__description">テキストが入ります。テキストが入ります。</dd>
+        </dl><!-- /住所テキストボックス -->
       </section>
     </article><!-- /p-main__body -->
   </main>
@@ -66,35 +70,35 @@
     <nav class="p-sidebar__nav">
       <ul class="p-gmenu">
         <li class="p-gmenu__list">
-          <a class="p-gmenu__list__link" href="#">ハンバーガー</a>
+          <a class="c-link" href="#">ハンバーガー</a>
           <ul class="p-lmenu">
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">ハンバーガー</a></li>
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">チーズバーガー</a></li>
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">テリヤキバーガー</a></li>
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">アボカドバーガー</a></li>
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">フィッシュバーガー</a></li>
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">ベーコンバーガー</a></li>
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">チキンバーガー</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">ハンバーガー</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">チーズバーガー</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">テリヤキバーガー</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">アボカドバーガー</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">フィッシュバーガー</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">ベーコンバーガー</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">チキンバーガー</a></li>
           </ul>
         </li><!-- /p-gmenu__list ハンバーガー -->
         <li class="p-gmenu__list">
-          <a class="p-gmenu__list__link" href="#">サイド</a>
+          <a class="c-link" href="#">サイド</a>
           <ul class="p-lmenu">
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">ポテト</a></li>
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">サラダ</a></li>
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">ナゲット</a></li>
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">コーン</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">ポテト</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">サラダ</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">ナゲット</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">コーン</a></li>
           </ul>
         </li><!-- /p-gmenu__list サイド -->
         <li class="p-gmenu__list">
-          <a class="p-gmenu__list__link" href="#">ドリンク</a>
+          <a class="c-link" href="#">ドリンク</a>
           <ul class="p-lmenu">
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">コーラ</a></li>
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">ファンタ</a></li>
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">オレンジ</a></li>
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">アップル</a></li>
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">紅茶（Ice/Hot）</a></li>
-            <li class="p-lmenu__list"><a class="p-lmenu__list__link" href="#">コーヒー（Ice/Hot）</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">コーラ</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">ファンタ</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">オレンジ</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">アップル</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">紅茶（Ice/Hot）</a></li>
+            <li class="p-lmenu__list"><a class="c-link" href="#">コーヒー（Ice/Hot）</a></li>
           </ul>
         </li><!-- /p-gmenu__list ドリンク -->
       </ul>
@@ -102,11 +106,11 @@
   </aside><!-- /l-sidebar p-sidebar -->
   <footer class="l-footer p-footer">
     <ul class="p-footer__menu">
-      <li class="p-footer__menu__list"><a class="p-footer__menu__list__link" href="#">ショップ情報</a></li>
-      <span class="p-footer__menu__line"></span>
-      <li class="p-footer__menu__list"><a class="p-footer__menu__list__link" href="#">ヒストリー</a></li>
+      <li class="p-footer__menu__list"><a class="c-link" href="#">ショップ情報</a></li>
+      <span class="c-line--vertical"></span>
+      <li class="p-footer__menu__list"><a class="c-link" href="#">ヒストリー</a></li>
     </ul>
-    <p class="p-footer__copyright">Copyright:RaiseTech</p>
+    <p class="c-copyright">Copyright:RaiseTech</p>
   </footer>
   <script src="/js/jquery.min.js"></script>
 </body>
