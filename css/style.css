@@ -650,13 +650,41 @@ li {
 
 /* 提供サービス　プロジェクト */
 .p-service {
+  display: grid;
+  grid-template: "takeout" 1fr "eatin" 1fr / 1fr;
+  row-gap: 20px;
   padding: 20px 20px 49px;
 }
 
-.p-service__list {
-  background-color: red;
-  height: 642px;
+@media screen and (min-width: 768px) {
+  .p-service {
+    grid-template: "takeout eatin" 1fr / 1fr 1fr;
+    column-gap: 41px;
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-service {
+    column-gap: 80px;
+    padding: 120px 112px 131px 111px;
+  }
+}
+
+.p-service__list, .p-service__list--takeout, .p-service__list--eatin {
   padding: 11px 10px 10px 11px;
+}
+
+.p-service__list--takeout {
+  background-image: url(/images/service__list--takeout.jpg);
+  background-size: cover;
+  grid-area: takeout;
+}
+
+.p-service__list--eatin {
+  background-image: url(/images/service__list--eatin.jpg);
+  background-size: cover;
+  grid-area: eatin;
 }
 
 .p-service__list__inner > .c-headline--underline {
@@ -749,8 +777,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  justify-content: center;
 }
 
 .p-footer__menu {
@@ -771,10 +798,6 @@ li {
 
 .c-definition + .c-definition {
   margin-top: 9px;
-}
-
-.p-service__list + .p-service__list {
-  margin-top: 20px;
 }
 
 .c-headline--underline + .c-definition__description {
