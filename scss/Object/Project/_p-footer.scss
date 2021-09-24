@@ -1,5 +1,7 @@
 /* フッター プロジェクト */
 .p-footer {
+  min-width: $min-width-sp;
+  background-image: url(/images/footer.png);
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -7,7 +7,26 @@ body {
   color: $font-color-main;
   font-family: $font-family-main;
   font-weight: 400;
-  min-width: $min-width-sp;
+  display: grid;
+  grid-template: 
+    "l-header l-sidebar" $height-header
+    "l-main l-sidebar" 1fr
+    "l-footer l-sidebar" 150px /
+    100vw 87vw;
+  @include mq () {
+    grid-template: 
+    "l-header l-sidebar" $height-header
+    "l-main l-sidebar" 1fr
+    "l-footer l-sidebar" 150px /
+    100vw 44vw;
+  }
+  @include mq (pc) {
+    grid-template: 
+    "l-header l-sidebar" $height-header
+    "l-main l-sidebar" 1fr
+    "l-footer l-footer" 150px /
+    4fr 1fr;
+  }
 }
 
 a {

@@ -1,6 +1,4 @@
 /* サイドバー　レイアウト */
 .l-sidebar {
-
-  
-  background-color: $background-color-sidebar;
+  grid-area: l-sidebar;
 }

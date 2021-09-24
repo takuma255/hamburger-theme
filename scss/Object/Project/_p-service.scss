@@ -4,9 +4,6 @@
   &__list {
     background-color: red;
     height: 642px;
-    display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     padding: 11px 10px 10px 11px;
     &__inner {
       > .c-headline--underline {

@@ -327,7 +327,7 @@ progress {
 /* レスポンシブ設定　スマホ最小幅 */
 /* ハンバーガーボタン */
 /* アコーディオンアイコン*/
-/* ヘッダー固定用高さ */
+/* レイアウト高さ */
 /* mixin.scss */
 /* フォントサイズ設定　簡易化 */
 /* レスポンシブ設定 */
@@ -340,7 +340,20 @@ body {
   color: #3C2A10;
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 400;
-  min-width: 375px;
+  display: grid;
+  grid-template: "l-header l-sidebar" 217px "l-main l-sidebar" 1fr "l-footer l-sidebar" 150px/100vw 87vw;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    grid-template: "l-header l-sidebar" 217px "l-main l-sidebar" 1fr "l-footer l-sidebar" 150px/100vw 44vw;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  body {
+    grid-template: "l-header l-sidebar" 217px "l-main l-sidebar" 1fr "l-footer l-footer" 150px/4fr 1fr;
+  }
 }
 
 a {
@@ -353,22 +366,22 @@ li {
 
 /* ヘッダー　レイアウト */
 .l-header {
-  background-color: #FFF7EF;
+  grid-area: l-header;
 }
 
 /* メイン　レイアウト */
 .l-main {
-  background-color: #FFFDFA;
+  grid-area: l-main;
 }
 
 /* サイドバー　レイアウト */
 .l-sidebar {
-  background-color: #F2EDE9;
+  grid-area: l-sidebar;
 }
 
 /* フッター　レイアウト */
 .l-footer {
-  background-image: url(/images/footer.png);
+  grid-area: l-footer;
 }
 
 /* コピーライト　コンポーネント */
@@ -426,6 +439,8 @@ li {
 
 /* ヘッダー プロジェクト */
 .p-header {
+  min-width: 375px;
+  background-color: #FFF7EF;
   font-family: "Roboto", sans-serif;
 }
 
@@ -554,6 +569,11 @@ li {
 }
 
 /* メイン　プロジェクト */
+.p-main {
+  min-width: 375px;
+  background-color: #FFFDFA;
+}
+
 /* ヒーロー　プロジェクト */
 .p-hero, .p-hero--front, .p-hero--archive, .p-hero--single, .p-hero--page {
   background-size: cover;
@@ -636,9 +656,6 @@ li {
 .p-service__list {
   background-color: red;
   height: 642px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 11px 10px 10px 11px;
 }
 
@@ -706,6 +723,12 @@ li {
   }
 }
 
+/* サイドバー　プロジェクト */
+.p-sidebar {
+  min-width: 375px;
+  background-color: #F2EDE9;
+}
+
 /* グローバルメニュー プロジェクト */
 .p-gmenu__list > .c-link {
   color: #707070;
@@ -721,6 +744,8 @@ li {
 
 /* フッター プロジェクト */
 .p-footer {
+  min-width: 375px;
+  background-image: url(/images/footer.png);
   display: flex;
   flex-direction: column;
   align-items: center;

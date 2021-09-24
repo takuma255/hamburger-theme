@@ -1,5 +1,7 @@
 /* ヘッダー プロジェクト */
 .p-header {
+  min-width: $min-width-sp;
+  background-color: $background-color-header;
   font-family: $font-family-sub;
   > .c-btn--menu {
     color: $font-color-sub;
