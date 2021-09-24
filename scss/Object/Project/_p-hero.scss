@@ -1,0 +1,59 @@
+/* ヒーロー　プロジェクト */
+.p-hero {
+  background-size: cover;
+  display: flex;
+  > .c-headline {
+    color: $color-white;
+    @include fz (36);
+    @include mq (pc) {
+      @include fz (40);
+    }
+  }
+
+  /* ページ毎の設定 */
+  &--front {
+    @extend .p-hero;
+    background-image: url(/images/main__title--front.jpg);
+    background-position: center;
+    height: 285px;
+    align-items: center;
+    padding-left: 25px;
+    @include mq (pc) {
+      height: 530px;
+    }
+  }
+  &--archive {
+    @extend .p-hero;
+    background-image: url(/images/main__title--archive.jpg);
+    
+    height: 283px;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 37px;
+    @include mq (pc) {
+      height: 239px;
+    }
+  }
+  &--single {
+    @extend .p-hero;
+    background-image: url(/images/main__title--single.jpg);
+    background-position: center;
+    height: 226px;
+    align-items: center;
+    padding-left: 26px;
+    @include mq () {
+      height: 500px;
+    }
+  }
+  &--page {
+    @extend .p-hero;
+    background-image: url(/images/main__title--page.jpg);
+    background-position: center;
+    height: 224px;
+    justify-content: center;
+    align-items: center;
+    @include mq () {
+      height: 500px;
+    }
+  }
+}

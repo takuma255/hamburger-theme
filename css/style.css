@@ -554,24 +554,25 @@ li {
 }
 
 /* メイン　プロジェクト */
-.p-main__hero, .p-main__hero--front, .p-main__hero--archive, .p-main__hero--single, .p-main__hero--page {
+/* ヒーロー　プロジェクト */
+.p-hero, .p-hero--front, .p-hero--archive, .p-hero--single, .p-hero--page {
   background-size: cover;
   display: flex;
   /* ページ毎の設定 */
 }
 
-.p-main__hero > .c-headline, .p-main__hero--front > .c-headline, .p-main__hero--archive > .c-headline, .p-main__hero--single > .c-headline, .p-main__hero--page > .c-headline, .p-main__hero > .c-headline--underline, .p-main__hero--front > .c-headline--underline, .p-main__hero--archive > .c-headline--underline, .p-main__hero--single > .c-headline--underline, .p-main__hero--page > .c-headline--underline {
+.p-hero > .c-headline, .p-hero--front > .c-headline, .p-hero--archive > .c-headline, .p-hero--single > .c-headline, .p-hero--page > .c-headline, .p-hero > .c-headline--underline, .p-hero--front > .c-headline--underline, .p-hero--archive > .c-headline--underline, .p-hero--single > .c-headline--underline, .p-hero--page > .c-headline--underline {
   color: #fff;
   font-size: 3.6rem;
 }
 
 @media screen and (min-width: 1201px) {
-  .p-main__hero > .c-headline, .p-main__hero--front > .c-headline, .p-main__hero--archive > .c-headline, .p-main__hero--single > .c-headline, .p-main__hero--page > .c-headline, .p-main__hero > .c-headline--underline, .p-main__hero--front > .c-headline--underline, .p-main__hero--archive > .c-headline--underline, .p-main__hero--single > .c-headline--underline, .p-main__hero--page > .c-headline--underline {
+  .p-hero > .c-headline, .p-hero--front > .c-headline, .p-hero--archive > .c-headline, .p-hero--single > .c-headline, .p-hero--page > .c-headline, .p-hero > .c-headline--underline, .p-hero--front > .c-headline--underline, .p-hero--archive > .c-headline--underline, .p-hero--single > .c-headline--underline, .p-hero--page > .c-headline--underline {
     font-size: 4rem;
   }
 }
 
-.p-main__hero--front {
+.p-hero--front {
   background-image: url(/images/main__title--front.jpg);
   background-position: center;
   height: 285px;
@@ -580,12 +581,12 @@ li {
 }
 
 @media screen and (min-width: 1201px) {
-  .p-main__hero--front {
+  .p-hero--front {
     height: 530px;
   }
 }
 
-.p-main__hero--archive {
+.p-hero--archive {
   background-image: url(/images/main__title--archive.jpg);
   height: 283px;
   flex-direction: column;
@@ -594,12 +595,12 @@ li {
 }
 
 @media screen and (min-width: 1201px) {
-  .p-main__hero--archive {
+  .p-hero--archive {
     height: 239px;
   }
 }
 
-.p-main__hero--single {
+.p-hero--single {
   background-image: url(/images/main__title--single.jpg);
   background-position: center;
   height: 226px;
@@ -608,12 +609,12 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  .p-main__hero--single {
+  .p-hero--single {
     height: 500px;
   }
 }
 
-.p-main__hero--page {
+.p-hero--page {
   background-image: url(/images/main__title--page.jpg);
   background-position: center;
   height: 224px;
@@ -622,7 +623,7 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  .p-main__hero--page {
+  .p-hero--page {
     height: 500px;
   }
 }
