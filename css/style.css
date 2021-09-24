@@ -673,6 +673,10 @@ li {
 
 .p-service__list, .p-service__list--takeout, .p-service__list--eatin {
   padding: 11px 10px 10px 11px;
+  height: 642px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .p-service__list--takeout {
@@ -687,40 +691,40 @@ li {
   grid-area: eatin;
 }
 
-.p-service__list__inner > .c-headline--underline {
+.p-service__list > .c-headline--underline, .p-service__list--takeout > .c-headline--underline, .p-service__list--eatin > .c-headline--underline {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 4.1rem;
 }
 
 @media screen and (min-width: 768px) {
-  .p-service__list__inner > .c-headline--underline {
+  .p-service__list > .c-headline--underline, .p-service__list--takeout > .c-headline--underline, .p-service__list--eatin > .c-headline--underline {
     font-size: 4.4rem;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  .p-service__list__inner > .c-headline--underline {
+  .p-service__list > .c-headline--underline, .p-service__list--takeout > .c-headline--underline, .p-service__list--eatin > .c-headline--underline {
     font-size: 4.1rem;
   }
 }
 
-.p-service__list__inner > .c-wrapper > .c-definition {
+.p-service__list > .c-wrapper > .c-definition, .p-service__list--takeout > .c-wrapper > .c-definition, .p-service__list--eatin > .c-wrapper > .c-definition {
   height: 163px;
   padding: 19px 14px 23px 10px;
 }
 
-.p-service__list__inner > .c-wrapper > .c-definition > .c-definition__headline {
+.p-service__list > .c-wrapper > .c-definition > .c-definition__headline, .p-service__list--takeout > .c-wrapper > .c-definition > .c-definition__headline, .p-service__list--eatin > .c-wrapper > .c-definition > .c-definition__headline {
   font-size: 2.2rem;
 }
 
 @media screen and (min-width: 768px) {
-  .p-service__list__inner > .c-wrapper > .c-definition > .c-definition__headline {
+  .p-service__list > .c-wrapper > .c-definition > .c-definition__headline, .p-service__list--takeout > .c-wrapper > .c-definition > .c-definition__headline, .p-service__list--eatin > .c-wrapper > .c-definition > .c-definition__headline {
     font-size: 2.4rem;
   }
 }
 
-.p-service__list__inner > .c-wrapper > .c-definition > .c-definition__description {
+.p-service__list > .c-wrapper > .c-definition > .c-definition__description, .p-service__list--takeout > .c-wrapper > .c-definition > .c-definition__description, .p-service__list--eatin > .c-wrapper > .c-definition > .c-definition__description {
   font-size: 1.6rem;
 }
 

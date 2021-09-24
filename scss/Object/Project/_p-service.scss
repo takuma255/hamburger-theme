@@ -20,6 +20,10 @@
   }
   &__list {
     padding: 11px 10px 10px 11px;
+    height: 642px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &--takeout {
       @extend .p-service__list;
       background-image: url(/images/service__list--takeout.jpg);
@@ -32,33 +36,31 @@
       background-size: cover;
       grid-area: eatin;
     }
-    &__inner {
-      > .c-headline--underline {
-        color: $color-white;
-        font-family: $font-family-sub;
+    > .c-headline--underline {
+      color: $color-white;
+      font-family: $font-family-sub;
+      @include fz (41);
+      @include mq () {
+        @include fz (44);
+      }
+      @include mq (pc) {
         @include fz (41);
-        @include mq () {
-          @include fz (44);
-        }
-        @include mq (pc) {
-          @include fz (41);
-        }
       }
-      > .c-wrapper {
-        > .c-definition {
-          height: 163px;
-          padding: 19px 14px 23px 10px;
-          > .c-definition__headline {
-            @include fz (22);
-            @include mq () {
-              @include fz (24);
-            }
+    }
+    > .c-wrapper {
+      > .c-definition {
+        height: 163px;
+        padding: 19px 14px 23px 10px;
+        > .c-definition__headline {
+          @include fz (22);
+          @include mq () {
+            @include fz (24);
           }
-          > .c-definition__description {
-            @include fz (16);
-          }
-        }   
-      }
+        }
+        > .c-definition__description {
+          @include fz (16);
+        }
+      }   
     }
   }
 }
