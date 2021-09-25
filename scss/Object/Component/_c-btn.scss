@@ -1,0 +1,10 @@
+/* ボタン　コンポーネント */
+.c-btn {
+  border-radius: 10px;
+  border: 1px solid $font-color-sub;
+  &--search {
+    @extend .c-btn;
+    height: 46px;
+    background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
+  } 
+}

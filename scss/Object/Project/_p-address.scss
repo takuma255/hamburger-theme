@@ -1,15 +1,15 @@
 /* 住所　プロジェクト */
 .p-address {
   background-color: $color-black;
-  > .c-definition {
-    > .c-headline--underline {
+  .c-definition {
+    .c-headline--underline {
       color: $color-white;
       @include fz (30);
       @include mq (pc) {
         @include fz (36);
       }
     }
-    > .c-definition__description {
+    .c-definition__description {
       color: $color-white;
       @include fz (14);
       @include mq (pc) {

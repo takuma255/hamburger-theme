@@ -1,7 +1,7 @@
 /* ローカルメニュー プロジェクト */
 .p-lmenu {
   &__list {
-    > .c-link {
+    .c-link {
       color: $font-color-sub;
       @include fz (20);
     }

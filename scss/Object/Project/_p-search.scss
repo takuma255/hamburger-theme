@@ -1,0 +1,17 @@
+/* 検索フォーム　プロジェクト */
+.p-search {
+  display: flex;
+  justify-content: center;
+  .c-searchbox {
+    width: 230px;
+    @include mq () {
+      width: 396px;
+    }
+  }
+  .c-btn--search {
+    width: 78px;
+    @include mq () {
+      width: 136px;
+    }
+  }
+}
