@@ -21,6 +21,7 @@
   &__list {
     padding: 11px 10px 10px 11px;
     height: 642px;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,20 +48,18 @@
         @include fz (41);
       }
     }
-    .c-wrapper {
-      .c-definition {
-        height: 163px;
-        padding: 19px 14px 23px 10px;
-        .c-definition__headline {
-          @include fz (22);
-          @include mq () {
-            @include fz (24);
-          }
+    .c-definition {
+      height: 163px;
+      padding: 19px 14px 23px 10px;
+      .c-definition__headline {
+        @include fz (22);
+        @include mq () {
+          @include fz (24);
         }
-        .c-definition__description {
-          @include fz (16);
-        }
-      }   
+      }
+      .c-definition__description {
+        @include fz (16);
+      }
     }
   }
 }
