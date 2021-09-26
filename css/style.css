@@ -395,21 +395,6 @@ li {
   background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
 }
 
-/* コピーライト　コンポーネント */
-.c-copyright {
-  color: #fff;
-  font-size: 1.4rem;
-}
-
-/* 定義リスト　コンポーネント */
-.c-definition {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.c-definition__headline {
-  font-weight: 700;
-}
-
 /* ヘッドライン　コンポーネント */
 .c-headline, .c-headline--underline {
   font-weight: 700;
@@ -424,16 +409,12 @@ li {
   margin-top: 19px;
 }
 
-/* 線　コンポーネント */
-.c-line, .c-line--vertical {
-  background-color: #fff;
-}
-
-.c-line--vertical {
-  width: 2px;
-  height: 20px;
-  margin-right: 15px;
-  margin-left: 15px;
+/* 検索フォーム入力エリア コンポーネント*/
+.c-searchbox {
+  height: 46px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #707070;
 }
 
 /* link コンポーネント */
@@ -448,12 +429,37 @@ li {
   height: 100%;
 }
 
-/* 検索フォーム入力エリア コンポーネント*/
-.c-searchbox {
-  height: 46px;
-  border-radius: 10px;
-  background: #fff;
-  border: 1px solid #707070;
+/* 定義リスト　コンポーネント */
+.c-definition {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.c-definition__headline {
+  font-weight: 700;
+}
+
+/* 地図　コンポーネント */
+.c-map {
+  width: 100%;
+  height: 100%;
+}
+
+/* 線　コンポーネント */
+.c-line, .c-line--vertical {
+  background-color: #fff;
+}
+
+.c-line--vertical {
+  width: 2px;
+  height: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+/* コピーライト　コンポーネント */
+.c-copyright {
+  color: #fff;
+  font-size: 1.4rem;
 }
 
 /* ヘッダー プロジェクト */
@@ -799,28 +805,28 @@ li {
 }
 
 /* 住所　プロジェクト */
-.p-address {
+.p-info {
   background-color: #000;
 }
 
-.p-address .c-definition .c-headline--underline {
+.p-info .c-definition .c-headline--underline {
   color: #fff;
   font-size: 3rem;
 }
 
 @media screen and (min-width: 1201px) {
-  .p-address .c-definition .c-headline--underline {
+  .p-info .c-definition .c-headline--underline {
     font-size: 3.6rem;
   }
 }
 
-.p-address .c-definition .c-definition__description {
+.p-info .c-definition .c-definition__description {
   color: #fff;
   font-size: 1.4rem;
 }
 
 @media screen and (min-width: 1201px) {
-  .p-address .c-definition .c-definition__description {
+  .p-info .c-definition .c-definition__description {
     font-size: 1.6rem;
   }
 }
