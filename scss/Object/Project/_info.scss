@@ -1,0 +1,21 @@
+/* 住所　プロジェクト */
+.p-info {
+  background: $color-black;
+  position: relative;
+  z-index: 500;
+  padding-top: 184%;
+  @include mq () {
+    padding-top: 50%;
+  }
+  @include mq () {
+    padding-top: 42%;
+  }
+  .c-map {
+    position: absolute;
+    top: 0;
+    z-index: 600;
+    opacity: 0.6;
+  }
+}
+
+

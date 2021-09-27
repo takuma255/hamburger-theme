@@ -1,0 +1,8 @@
+/* ヘッダー　レイアウト */
+.l-header {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  @include mq (pc) {
+    grid-column: 1/4;
+  }
+}

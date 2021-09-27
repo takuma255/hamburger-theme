@@ -7,6 +7,7 @@ $font-family-third: 'Noto Sans JP';
 
 
 /* フォント　太さ*/
+$font-weight-normal: 400;
 $font-weight-l: 700;
 
 
@@ -26,8 +27,6 @@ $background-color-main: #FFFDFA;
 $background-color-sidebar: #F2EDE9;
 $background-color-footer: #000;
 
-$line-color: #fff;
-
 
 /* レスポンシブ設定　ブレークポイント */
 $breakpoints: (
@@ -40,18 +39,18 @@ $breakpoints: (
 $min-width-sp: 375px;
 
 
-/* ハンバーガーボタン */
-$hamburger-btn-width: 23px;
-$hamburger-btn-height: 2px;
-
-
-/* アコーディオンアイコン*/
-$accordion-plusicon-width: 2px;
-$accordion-plusicon-height: 24px;
-$accordion-minusicon-width: 24px;
-$accordion-minusicon-height: 2px;
-
-
-/* レイアウト高さ */
+/* レイアウト　幅　高さ */
 $height-header: 217px;
-$height-footer: 150px;  // ←gridでエラー
+$height-footer: 150px;
+
+$grid-template-columns-sp: 100vw 87vw;
+$grid-template-columns-tab: 100vw 44vw;
+$grid-template-columns-pc: 4fr 1fr;
+
+
+/* 線　コンポーネント */
+$line-color: #fff;
+$width-c-line--vertical: 2px;
+$height-c-line--vertical: 20px;
+$margin-right-c-line--vertical: 15px;
+$margin-left-c-line--vertical: 15px;

@@ -1,0 +1,8 @@
+/* サイドバー　レイアウト */
+.l-sidebar {
+  grid-row: 1/4;
+  grid-column: 2/3;
+  @include mq (pc) {
+    grid-column: 4/5;
+  }
+}

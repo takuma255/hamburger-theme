@@ -17,44 +17,54 @@
       <form class="p-search" action="#" method="POST">
         <input class="c-searchbox" type="search" name="search" placeholder="検索マーク" >
         <input class="c-btn--search" type="submit" name="submit" value="検索">
-      </form><!-- /検索フォーム -->
+      </form><!-- /p-search -->
     </div>
   </header>
   <main class="l-main p-main">
     <div class="p-hero--front">
-      <h1 class="c-headline">DUMMY BURGER</h1>
-    </div><!-- /ヒーローエリア -->
+      <div class="c-wrapper">
+        <h1 class="c-headline">DUMMY BURGER</h1>
+      </div>
+    </div><!-- /p-hero--front -->
     <article class="p-main__body">
       <ul class="p-service">
-        <!-- -----------------------------------画像ジャンプ要検討-------------------------------------------- -->
-        <li class="p-service__list--takeout">
-          <h2 class="c-headline--underline">Take Out</h2>
-          <div class="c-wrapper">
-            <dl class="c-definition">
-              <dt class="c-definition__headline">Take Out</dt>
-              <dd class="c-definition__description">当店のテイクアウトで利用できる商品を掲載しています</dd>
-            </dl><!-- /テイクアウト定義1 -->
-            <dl class="c-definition">
-              <dt class="c-definition__headline">Take Out</dt>
-              <dd class="c-definition__description">当店のテイクアウトで利用できる商品を掲載しています</dd>
-            </dl><!-- /テイクアウト定義2 -->
-          </div><!-- /テイクアウト定義　ラッパー -->
-        </li><!-- /テイクアウトサービス -->
-        <li class="p-service__list--eatin">
-          <h2 class="c-headline--underline">Eat In</h2>
-          <div class="c-wrapper">
-            <dl class="c-definition">
-              <dt class="c-definition__headline">Eat In</dt>
-              <dd class="c-definition__description">当店のイートインで利用できる商品を掲載しています</dd>
-            </dl><!-- /イートイン定義1 -->
-            <dl class="c-definition">
-              <dt class="c-definition__headline">Eat In</dt>
-              <dd class="c-definition__description">当店のイートインで利用できる商品を掲載しています</dd>
-            </dl><!-- /イートイン定義2 -->
-          </div><!-- /イートイン定義　ラッパー -->
-        </li><!-- /イートインサービス -->
-        <!-- -----------------------------------画像ジャンプ要検討-------------------------------------------- -->
-      </ul><!-- /サービス２種の紹介 -->
+        <li class="p-service__list">
+          <a href="#" class="c-link--block">
+            <img class="c-img" src="/images/service__list--takeout.jpg" alt="当店のテイクアウトで利用できる商品を掲載しています">
+          </a>
+          <section class="p-service__list__inner">
+            <h2 class="c-headline--underline">Take Out</h2>
+            <div class="c-wrapper">
+              <dl class="c-definition">
+                <dt class="c-definition__headline">Take Out</dt>
+                <dd class="c-definition__description">当店のテイクアウトで利用できる商品を掲載しています</dd>
+              </dl>
+              <dl class="c-definition">
+                <dt class="c-definition__headline">Take Out</dt>
+                <dd class="c-definition__description">当店のテイクアウトで利用できる商品を掲載しています</dd>
+              </dl>
+            </div><!-- /c-wrapper Take Out dl -->
+          </section><!-- /p-service__list__inner -->
+        </li><!-- /p-service__list Take Out -->
+        <li class="p-service__list">
+          <a href="#" class="c-link--block">
+            <img class="c-img" src="/images/service__list--eatin.jpg" alt="当店のイートインで利用できる商品を掲載しています">
+          </a>
+          <section class="p-service__list__inner">
+            <h2 class="c-headline--underline">Eat In</h2>
+            <div class="c-wrapper">
+              <dl class="c-definition">
+                <dt class="c-definition__headline">Eat In</dt>
+                <dd class="c-definition__description">当店のイートインで利用できる商品を掲載しています</dd>
+              </dl>
+              <dl class="c-definition">
+                <dt class="c-definition__headline">Eat In</dt>
+                <dd class="c-definition__description">当店のイートインで利用できる商品を掲載しています</dd>
+              </dl>
+            </div><!-- /c-wrapper Eat In dl -->
+          </section><!-- /p-service__list__inner -->
+        </li><!-- /p-service__list Eat In -->
+      </ul><!-- /p-service -->
       <section class="p-info">
         <iframe class="c-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11556.751098128057!2d124.13901123226616!3d24.45953184125628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345fdd8ded702639%3A0xb79f9d4feeccc73c!2z5bed5bmz5YWs5ZyS5bGV5pyb5Y-w!5e0!3m2!1sja!2sjp!4v1632667153574!5m2!1sja!2sjp" width="1553" height="649" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <dl class="c-definition">
@@ -66,8 +76,8 @@
             営業時間：　10:00〜19:00</br>
             定休日　：　水曜日
           </dd>
-        </dl><!-- /住所テキストボックス -->
-      </section>
+        </dl>
+      </section><!-- /p-info -->
     </article><!-- /p-main__body -->
   </main>
   <aside class="l-sidebar p-sidebar">
@@ -84,7 +94,7 @@
             <li class="p-lmenu__list"><a class="c-link" href="#">ベーコンバーガー</a></li>
             <li class="p-lmenu__list"><a class="c-link" href="#">チキンバーガー</a></li>
           </ul>
-        </li><!-- /p-gmenu__list ハンバーガー -->
+        </li><!-- /p-gmenu__list hamburger -->
         <li class="p-gmenu__list">
           <a class="c-link" href="#">サイド</a>
           <ul class="p-lmenu">
@@ -93,7 +103,7 @@
             <li class="p-lmenu__list"><a class="c-link" href="#">ナゲット</a></li>
             <li class="p-lmenu__list"><a class="c-link" href="#">コーン</a></li>
           </ul>
-        </li><!-- /p-gmenu__list サイド -->
+        </li><!-- /p-gmenu__list side menu -->
         <li class="p-gmenu__list">
           <a class="c-link" href="#">ドリンク</a>
           <ul class="p-lmenu">
@@ -104,7 +114,7 @@
             <li class="p-lmenu__list"><a class="c-link" href="#">紅茶（Ice/Hot）</a></li>
             <li class="p-lmenu__list"><a class="c-link" href="#">コーヒー（Ice/Hot）</a></li>
           </ul>
-        </li><!-- /p-gmenu__list ドリンク -->
+        </li><!-- /p-gmenu__list drink -->
       </ul>
     </nav>
   </aside><!-- /l-sidebar p-sidebar -->
