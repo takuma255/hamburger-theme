@@ -6,3 +6,20 @@
 .p-lmenu__list + .p-lmenu__list {
   margin-top: 23px;
 }
+
+.c-definition + .c-definition {
+  margin-top: 9px;
+  @include mq () {
+    margin-top: 10px;
+  }
+  @include mq (pc) {
+    margin-top: 20px;
+  }
+}
+
+.c-definition__headline + .c-definition__description {
+  margin-top: 20px;
+  @include mq (pc) {
+    margin-top: 26px;
+  }
+}

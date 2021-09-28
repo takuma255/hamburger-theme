@@ -12,8 +12,8 @@
     padding: 40px;
   }
   @include mq (pc){
-    column-gap: 80px;
-    padding: 120px 112px 131px 111px;
+    column-gap: 6%;
+    padding: 8% 7% 9% 7%; /* h1447 w1553 */
   }
   &__list {
     position: relative;
@@ -42,29 +42,50 @@
         padding: 12px 11px 11px 12px;
       }
       @include mq (pc) {
-        padding: 20px;
+        padding: 3%;
       }
       .c-headline--underline {
         color: $color-white;
         font-family: $font-family-sub;
         @include fz (41);
+        &::after {
+          width: 35px;
+          height: 4px;
+          margin-top: 19.3px;
+        }
         @include mq () {
           @include fz (44);
+          &::after {
+            width: 40px;
+            height: 4px;
+            margin-top: 19.5px;
+          }
         }
         @include mq (pc) {
-          @include fz (41);
+          @include fz (80);
+          &::after {
+            width: 70px;
+            height: 4px;
+            margin-top: 34.5px;
+          }
         }
       }
       .c-definition {
         background: $color-white;
         opacity: 0.8;
-        .c-definition__headline {
+        padding: 19px 14px 23px 10px;
+        height: 163px;
+        @include mq () {
+          padding: 20px 15px 22px 11px;
+          height: 172px;
+        }
+        &__headline {
           @include fz (22);
           @include mq () {
-            @include fz (24);
+            @include fz (24); 
           }
         }
-        .c-definition__description {
+        &__description {
           @include fz (16);
         }
       }
