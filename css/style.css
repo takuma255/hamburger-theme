@@ -572,13 +572,14 @@ li {
 }
 
 .p-hero--front {
-  background-image: url(/images/main__title--front.png);
+  background-image: url(/images/main__title--front-sp.png);
   background-position: center;
   padding-top: 76%;
 }
 
 @media screen and (min-width: 768px) {
   .p-hero--front {
+    background-image: url(/images/main__title--front-tab.png);
     padding-top: 34%;
   }
 }
