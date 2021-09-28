@@ -1,7 +1,7 @@
 /* ローカルメニュー プロジェクト */
 .p-lmenu {
+  padding: 36px 0 38px 20px;
   &__list {
-    padding-left: 66px;
     .c-link {
       color: $font-color-sub;
       @include fz (20);
