@@ -540,48 +540,40 @@ li {
 
 /* ヒーロー　プロジェクト */
 .p-hero, .p-hero--front {
-  background-size: cover;
-  position: relative;
-  z-index: 500;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
   /* ページ毎の設定 */
 }
 
-.p-hero .c-wrapper, .p-hero--front .c-wrapper {
-  position: absolute;
-  top: 0;
-  z-index: 600;
-  width: 100%;
-  height: 100%;
-}
-
-.p-hero .c-wrapper .c-headline, .p-hero--front .c-wrapper .c-headline, .p-hero .c-wrapper .c-headline--underline, .p-hero--front .c-wrapper .c-headline--underline {
+.p-hero .c-headline, .p-hero--front .c-headline, .p-hero .c-headline--underline, .p-hero--front .c-headline--underline {
   color: #fff;
   font-size: 3.6rem;
-  padding-left: 25px;
 }
 
 @media screen and (min-width: 1201px) {
-  .p-hero .c-wrapper .c-headline, .p-hero--front .c-wrapper .c-headline, .p-hero .c-wrapper .c-headline--underline, .p-hero--front .c-wrapper .c-headline--underline {
+  .p-hero .c-headline, .p-hero--front .c-headline, .p-hero .c-headline--underline, .p-hero--front .c-headline--underline {
     font-size: 4rem;
   }
 }
 
 .p-hero--front {
   background-image: url(/images/main__title--front-sp.png);
+  background-size: cover;
   background-position: center;
-  padding-top: 76%;
+  height: 285px;
 }
 
 @media screen and (min-width: 768px) {
   .p-hero--front {
     background-image: url(/images/main__title--front-tab.png);
-    padding-top: 34%;
   }
 }
 
-.p-hero--front .c-wrapper {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 1201px) {
+  .p-hero--front {
+    height: 28vw;
+  }
 }
 
 /* 提供サービス　プロジェクト */
@@ -691,13 +683,20 @@ li {
   background: #fff;
   opacity: 0.8;
   padding: 19px 14px 23px 10px;
-  height: 163px;
+  height: 43vw;
+  min-height: 163px;
 }
 
 @media screen and (min-width: 768px) {
   .p-service__list__inner .c-definition {
     padding: 20px 15px 22px 11px;
-    height: 172px;
+    height: 21vw;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-service__list__inner .c-definition {
+    height: 9vw;
   }
 }
 

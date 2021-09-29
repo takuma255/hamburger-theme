@@ -74,10 +74,14 @@
         background: $color-white;
         opacity: 0.8;
         padding: 19px 14px 23px 10px;
-        height: 163px;
+        height: 43vw;
+        min-height: 163px;
         @include mq () {
           padding: 20px 15px 22px 11px;
-          height: 172px;
+          height: 21vw;
+        }
+        @include mq (pc) {
+          height: 9vw;
         }
         &__headline {
           @include fz (22);
