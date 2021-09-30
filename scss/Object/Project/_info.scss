@@ -7,7 +7,7 @@
   @include mq () {
     padding-top: 50%;
   }
-  @include mq () {
+  @include mq (pc) {
     padding-top: 42%;
   }
   .c-map {

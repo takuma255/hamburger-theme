@@ -423,6 +423,7 @@ li {
   background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
 }
 
+/* アイコン　コンポーネント */
 /* ヘッドライン　コンポーネント */
 .c-headline, .c-headline--underline {
   font-weight: 700;
@@ -728,7 +729,7 @@ li {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1201px) {
   .p-info {
     padding-top: 42%;
   }
