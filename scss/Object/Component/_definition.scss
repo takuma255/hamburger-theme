@@ -3,4 +3,7 @@
   &__headline {
     font-weight: $font-weight-l;
   }
+  &__description {
+    word-wrap: break-word;
+  }
 }

@@ -5,9 +5,16 @@
   font-family: $font-family-sub;
   .c-btn--menu {
     color: $font-color-sub;
+    display: block;
+    margin: 0 0 0 auto;
+    position: relative;
+    top: 14px;
+    right: 16px;
     @include fz (20);
     @include mq () {
       @include fz (34);
+      top: 18px;
+      right: 26px;
     }
   }
   .c-wrapper {
@@ -17,6 +24,7 @@
     @include mq (pc) {
       flex-direction: row;
       justify-content: space-between;
+      margin-left: 3%;
     }
   }
   .c-headline {

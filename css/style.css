@@ -460,6 +460,10 @@ li {
   font-weight: 700;
 }
 
+.c-definition__description {
+  word-wrap: break-word;
+}
+
 /* 画像　コンポーネント */
 .c-img {
   height: 100%;
@@ -498,12 +502,19 @@ li {
 
 .p-header .c-btn--menu {
   color: #707070;
+  display: block;
+  margin: 0 0 0 auto;
+  position: relative;
+  top: 14px;
+  right: 16px;
   font-size: 2rem;
 }
 
 @media screen and (min-width: 768px) {
   .p-header .c-btn--menu {
     font-size: 3.4rem;
+    top: 18px;
+    right: 26px;
   }
 }
 
@@ -517,6 +528,7 @@ li {
   .p-header .c-wrapper {
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 3%;
   }
 }
 
@@ -532,6 +544,26 @@ li {
 }
 
 /* 検索フォーム　プロジェクト */
+.p-search .c-searchbox {
+  width: 230px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-search .c-searchbox {
+    width: 396px;
+  }
+}
+
+.p-search .c-btn--search {
+  width: 78px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-search .c-btn--search {
+    width: 136px;
+  }
+}
+
 /* ハンバーガーボタン　プロジェクト */
 /* メイン　プロジェクト */
 .p-main {
@@ -742,56 +774,6 @@ li {
   opacity: 0.6;
 }
 
-.p-info .c-definition {
-  position: absolute;
-  z-index: 700;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 40px;
-  padding-left: 42px;
-}
-
-@media screen and (min-width: 1201px) {
-  .p-info .c-definition {
-    padding-top: 9%;
-    padding-left: 8%;
-  }
-}
-
-.p-info .c-definition__description {
-  color: #fff;
-  font-size: 1.4rem;
-}
-
-@media screen and (min-width: 1201px) {
-  .p-info .c-definition__description {
-    font-size: 1.6rem;
-  }
-}
-
-.p-info .c-headline--underline {
-  color: #fff;
-  font-size: 3rem;
-}
-
-.p-info .c-headline--underline::after {
-  width: 75px;
-  height: 2px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 1201px) {
-  .p-info .c-headline--underline {
-    font-size: 3.6rem;
-  }
-  .p-info .c-headline--underline::after {
-    width: 75px;
-    height: 2px;
-  }
-}
-
 .p-info__layer {
   background-color: #000;
   opacity: 0.29;
@@ -812,6 +794,55 @@ li {
 @media screen and (min-width: 1201px) {
   .p-info__layer {
     width: 61%;
+  }
+}
+
+.p-info__layer .c-definition {
+  position: absolute;
+  z-index: 700;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 40px 51px 42px;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-info__layer .c-definition {
+    padding-top: 9%;
+    padding-left: 8%;
+  }
+}
+
+.p-info__layer .c-definition__description {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-info__layer .c-definition__description {
+    font-size: 1.6rem;
+  }
+}
+
+.p-info__layer .c-headline--underline {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.p-info__layer .c-headline--underline::after {
+  width: 75px;
+  height: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-info__layer .c-headline--underline {
+    font-size: 3.6rem;
+  }
+  .p-info__layer .c-headline--underline::after {
+    width: 75px;
+    height: 2px;
   }
 }
 
@@ -899,6 +930,10 @@ li {
   }
 }
 
+.c-headline + .p-search, .c-headline--underline + .p-search {
+  margin-top: 38px;
+}
+
 /* 隣接セレクタ マージンレフト ユーティリティ */
 .p-footer__menu__list + .c-line, .p-footer__menu__list + .c-line--vertical {
   margin-left: 15px;
@@ -906,5 +941,9 @@ li {
 
 .c-line + .p-footer__menu__list, .c-line--vertical + .p-footer__menu__list {
   margin-left: 15px;
+}
+
+.c-searchbox + .c-btn--search {
+  margin-left: 12px;
 }
 /*# sourceMappingURL=style.css.map */

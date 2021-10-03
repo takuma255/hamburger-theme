@@ -1,1 +1,15 @@
 /* 検索フォーム　プロジェクト */
+.p-search {
+  .c-searchbox {
+    width: 230px;
+    @include mq () {
+      width: 396px;
+    }
+  }
+  .c-btn--search {
+    width: 78px;
+    @include mq () {
+      width: 136px;
+    }
+  }
+}
