@@ -1,1 +1,17 @@
 /* メニューボタン　プロジェクト */
+.c-overlay.is-open {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  position: fixed;
+  z-index: 2000;
+  @include mq (pc) {
+    display: none;
+  }
+}
+
+.p-sidebar.is-open {
+  position: absolute;
+  z-index: 2100;
+}
