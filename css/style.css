@@ -412,10 +412,6 @@ li {
   }
 }
 
-.c-menubtn {
-  color: #707070;
-}
-
 /* クローズボタン */
 .c-close {
   width: 32px;
@@ -547,7 +543,8 @@ li {
   }
 }
 
-.p-header .c-menubtn {
+.p-header > .c-headline, .p-header > .c-headline--underline {
+  color: #707070;
   display: block;
   margin: 0 0 0 auto;
   position: relative;
@@ -557,7 +554,7 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  .p-header .c-menubtn {
+  .p-header > .c-headline, .p-header > .c-headline--underline {
     font-size: 3.4rem;
     top: 18px;
     right: 26px;
@@ -565,7 +562,7 @@ li {
 }
 
 @media screen and (min-width: 1201px) {
-  .p-header .c-menubtn {
+  .p-header > .c-headline, .p-header > .c-headline--underline {
     display: none;
   }
 }
@@ -584,13 +581,13 @@ li {
   }
 }
 
-.p-header .c-headline, .p-header .c-headline--underline {
+.p-header .c-wrapper > .c-headline, .p-header .c-wrapper > .c-headline--underline {
   color: #707070;
   font-size: 4rem;
 }
 
 @media screen and (min-width: 1201px) {
-  .p-header .c-headline, .p-header .c-headline--underline {
+  .p-header .c-wrapper > .c-headline, .p-header .c-wrapper > .c-headline--underline {
     font-size: 6.4rem;
   }
 }

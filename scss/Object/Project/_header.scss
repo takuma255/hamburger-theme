@@ -10,7 +10,8 @@
     justify-content: center;
     padding-right: 1vw;
   }
-  .c-menubtn {
+  > .c-headline {
+    color: $font-color-sub;
     display: block;
     margin: 0 0 0 auto;
     position: relative;
@@ -35,12 +36,12 @@
       justify-content: space-between;
       margin-left: 3%;
     }
-  }
-  .c-headline {
-    color: $font-color-sub;
-    @include fz (40);
-    @include mq (pc) {
-      @include fz (64);
+    > .c-headline {
+      color: $font-color-sub;
+      @include fz (40);
+      @include mq (pc) {
+        @include fz (64);
+      }
     }
   }
 }
