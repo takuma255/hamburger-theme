@@ -412,6 +412,10 @@ li {
   }
 }
 
+.c-menubtn {
+  color: #707070;
+}
+
 /* ボタン　コンポーネント */
 .c-btn, .c-btn--search {
   border-radius: 10px;
@@ -520,8 +524,7 @@ li {
   }
 }
 
-.p-header .c-btn--menu {
-  color: #707070;
+.p-header .c-menubtn {
   display: block;
   margin: 0 0 0 auto;
   position: relative;
@@ -531,7 +534,7 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  .p-header .c-btn--menu {
+  .p-header .c-menubtn {
     font-size: 3.4rem;
     top: 18px;
     right: 26px;
@@ -539,7 +542,7 @@ li {
 }
 
 @media screen and (min-width: 1201px) {
-  .p-header .c-btn--menu {
+  .p-header .c-menubtn {
     display: none;
   }
 }
@@ -607,18 +610,6 @@ li {
 }
 
 /* メニューボタン　プロジェクト */
-body.is-open {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.p-sidebar.is-open {
-  display: flex;
-}
-
-/*　サイドバーの表示非表示は反映OK
-　　・bodyの色が黒くならない
-　　・sidebarはアブソリュート必要
-　　・結果どこかにrelativeも必要 */
 /* メイン　プロジェクト */
 .p-main {
   min-width: 375px;
@@ -905,7 +896,6 @@ body.is-open {
   min-width: 375px;
   background-color: #F2EDE9;
   padding-top: 212px;
-  display: none;
 }
 
 /* グローバルメニュー プロジェクト */
