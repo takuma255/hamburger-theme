@@ -1,0 +1,20 @@
+/* クローズボタン */
+.c-close {
+  width: 32px;
+  height: 32px;
+  &::before,
+  &::after {
+    content: "";
+    width: 32px;
+    height: 4px;
+    background-color: $font-color-sub;
+    display: block;
+    position: absolute;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

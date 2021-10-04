@@ -416,6 +416,29 @@ li {
   color: #707070;
 }
 
+/* クローズボタン */
+.c-close {
+  width: 32px;
+  height: 32px;
+}
+
+.c-close::before, .c-close::after {
+  content: "";
+  width: 32px;
+  height: 4px;
+  background-color: #707070;
+  display: block;
+  position: absolute;
+}
+
+.c-close::before {
+  transform: rotate(45deg);
+}
+
+.c-close::after {
+  transform: rotate(-45deg);
+}
+
 /* ボタン　コンポーネント */
 .c-btn, .c-btn--search {
   border-radius: 10px;
@@ -895,7 +918,20 @@ li {
 .p-sidebar {
   min-width: 375px;
   background-color: #F2EDE9;
+  position: relative;
   padding-top: 212px;
+}
+
+.p-sidebar .c-close {
+  position: absolute;
+  top: 25px;
+  right: 17px;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-sidebar .c-close {
+    display: none;
+  }
 }
 
 /* グローバルメニュー プロジェクト */

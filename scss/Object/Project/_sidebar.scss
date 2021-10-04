@@ -2,5 +2,14 @@
 .p-sidebar {
   min-width: $min-width-sp;
   background-color: $background-color-sidebar;
+  position: relative;
   padding-top: 212px;
+  .c-close {
+    position: absolute;
+    top: 25px;
+    right: 17px;
+    @include mq (pc) {
+      display: none;
+    }
+  }
 }
