@@ -4,12 +4,25 @@
   background-color: $background-color-sidebar;
   position: relative;
   padding-top: 212px;
+  padding-left: 46px;
+  @include mq (pc) {
+    padding-top: 82px;
+  }
   .c-close {
     position: absolute;
     top: 25px;
     right: 17px;
     @include mq (pc) {
       display: none;
+    }
+  }
+  .c-headline {
+    color: $font-color-sub;
+    font-family: $font-family-sub;
+    @include fz (34);
+    display: none;
+    @include mq (pc) {
+      display: block;
     }
   }
 }

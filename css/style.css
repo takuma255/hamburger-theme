@@ -920,6 +920,13 @@ li {
   background-color: #F2EDE9;
   position: relative;
   padding-top: 212px;
+  padding-left: 46px;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-sidebar {
+    padding-top: 82px;
+  }
 }
 
 .p-sidebar .c-close {
@@ -934,11 +941,20 @@ li {
   }
 }
 
-/* グローバルメニュー プロジェクト */
-.p-gmenu__list {
-  padding-left: 46px;
+.p-sidebar .c-headline, .p-sidebar .c-headline--underline {
+  color: #707070;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.4rem;
+  display: none;
 }
 
+@media screen and (min-width: 1201px) {
+  .p-sidebar .c-headline, .p-sidebar .c-headline--underline {
+    display: block;
+  }
+}
+
+/* グローバルメニュー プロジェクト */
 .p-gmenu__list > .c-link {
   color: #707070;
   font-weight: 700;
@@ -1019,6 +1035,10 @@ li {
   .c-headline + .p-search, .c-headline--underline + .p-search {
     margin-top: 0;
   }
+}
+
+.c-headline + .p-sidebar__nav, .c-headline--underline + .p-sidebar__nav {
+  margin-top: 85px;
 }
 
 /* 隣接セレクタ マージンレフト ユーティリティ */
