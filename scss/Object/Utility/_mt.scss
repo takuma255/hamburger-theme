@@ -32,5 +32,7 @@
 }
 
 .c-headline + .p-sidebar__nav {
-  margin-top: 85px;
+  @include mq (pc) {
+    margin-top: 85px;
+  }
 }
