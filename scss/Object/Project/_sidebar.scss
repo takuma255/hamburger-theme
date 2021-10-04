@@ -1,12 +1,20 @@
 /* サイドバー　プロジェクト */
 .p-sidebar {
-  min-width: $min-width-sp;
+  width: 87vw;
+  min-width: 328px;
   background-color: $background-color-sidebar;
   position: relative;
   padding-top: 212px;
   padding-left: 46px;
+  display: none;
+  @include mq () {
+    width: 44vw;
+    min-width: none;
+  }
   @include mq (pc) {
     padding-top: 82px;
+    width: 100%;
+    display: block;
   }
   .c-close {
     position: absolute;

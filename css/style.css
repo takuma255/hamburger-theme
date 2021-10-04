@@ -341,18 +341,18 @@ body {
   font-weight: 400;
   display: grid;
   grid-template-rows: 217px auto 150px;
-  grid-template-columns: 100vw 87vw;
+  grid-template-columns: minmax(375px, 100vw);
 }
 
 @media screen and (min-width: 768px) {
   body {
-    grid-template-columns: 100vw 44vw;
+    grid-template-columns: 100vw;
   }
 }
 
 @media screen and (min-width: 1201px) {
   body {
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 80vw 20vw;
   }
 }
 
@@ -370,33 +370,17 @@ li {
   grid-column: 1/2;
 }
 
-@media screen and (min-width: 1201px) {
-  .l-header {
-    grid-column: 1/4;
-  }
-}
-
 /* メイン　レイアウト */
 .l-main {
   grid-row: 2/3;
   grid-column: 1/2;
 }
 
-@media screen and (min-width: 1201px) {
-  .l-main {
-    grid-column: 1/4;
-  }
-}
-
 /* サイドバー　レイアウト */
-.l-sidebar {
-  grid-row: 1/4;
-  grid-column: 2/3;
-}
-
 @media screen and (min-width: 1201px) {
   .l-sidebar {
-    grid-column: 4/5;
+    grid-row: 1/4;
+    grid-column: 2/3;
   }
 }
 
@@ -404,12 +388,6 @@ li {
 .l-footer {
   grid-row: 3/4;
   grid-column: 1/2;
-}
-
-@media screen and (min-width: 1201px) {
-  .l-footer {
-    grid-column: 1/4;
-  }
 }
 
 /* クローズボタン */
@@ -528,7 +506,6 @@ li {
 
 /* ヘッダー プロジェクト */
 .p-header {
-  min-width: 375px;
   background-color: #FFF7EF;
   font-family: "Roboto", sans-serif;
 }
@@ -648,11 +625,11 @@ li {
 .p-sidebar.is-open {
   position: absolute;
   z-index: 2100;
+  display: flex;
 }
 
 /* メイン　プロジェクト */
 .p-main {
-  min-width: 375px;
   background-color: #FFFDFA;
 }
 
@@ -933,16 +910,27 @@ li {
 
 /* サイドバー　プロジェクト */
 .p-sidebar {
-  min-width: 375px;
+  width: 87vw;
+  min-width: 328px;
   background-color: #F2EDE9;
   position: relative;
   padding-top: 212px;
   padding-left: 46px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .p-sidebar {
+    width: 44vw;
+    min-width: none;
+  }
 }
 
 @media screen and (min-width: 1201px) {
   .p-sidebar {
     padding-top: 82px;
+    width: 100%;
+    display: block;
   }
 }
 
@@ -990,7 +978,6 @@ li {
 
 /* フッター プロジェクト */
 .p-footer {
-  min-width: 375px;
   background-image: url(/images/footer.png);
   display: flex;
   flex-direction: column;

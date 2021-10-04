@@ -45,9 +45,9 @@ $max-width-pc: 1920px;
 $height-header: 217px;
 $height-footer: 150px;
 
-$grid-template-columns-sp: 100vw 87vw;
-$grid-template-columns-tab: 100vw 44vw;
-$grid-template-columns-pc: 4fr 1fr;
+$grid-template-columns-sp: minmax(375px,100vw);
+$grid-template-columns-tab: 100vw;
+$grid-template-columns-pc: 80vw 20vw;
 
 
 /* 線　コンポーネント */
