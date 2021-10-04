@@ -5,6 +5,8 @@ $font-family-main: 'M PLUS 1p', sans-serif;
 $font-family-sub: 'Roboto', sans-serif;
 $font-family-third: 'Noto Sans JP';
 
+$font-family-fontawesome: 'Font Awesome 5 Free';
+
 
 /* フォント　太さ*/
 $font-weight-normal: 400;
@@ -35,9 +37,9 @@ $breakpoints: (
   "pc": "screen and (min-width: 1201px)",
 );
 
-/* レスポンシブ設定　スマホ最小幅 */
+/* レスポンシブ設定　スマホ最小幅　PC最大幅 */
 $min-width-sp: 375px;
-
+$max-width-pc: 1920px;
 
 /* レイアウト　幅　高さ */
 $height-header: 217px;

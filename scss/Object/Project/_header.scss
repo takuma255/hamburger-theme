@@ -3,6 +3,13 @@
   min-width: $min-width-sp;
   background-color: $background-color-header;
   font-family: $font-family-sub;
+  @include mq (pc) {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    padding-right: 1vw;
+  }
   .c-btn--menu {
     color: $font-color-sub;
     display: block;
@@ -15,6 +22,9 @@
       @include fz (34);
       top: 18px;
       right: 26px;
+    }
+    @include mq (pc) {
+      display: none;
     }
   }
   .c-wrapper {

@@ -26,4 +26,7 @@
 
 .c-headline + .p-search {
   margin-top: 38px;
+  @include mq (pc) {
+    margin-top: 0;
+  }
 }

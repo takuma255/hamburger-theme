@@ -324,7 +324,7 @@ progress {
 /* フォント　サイズ */
 /* カラー */
 /* レスポンシブ設定　ブレークポイント */
-/* レスポンシブ設定　スマホ最小幅 */
+/* レスポンシブ設定　スマホ最小幅　PC最大幅 */
 /* レイアウト　幅　高さ */
 /* 線　コンポーネント */
 /* mixin.scss */
@@ -416,6 +416,7 @@ li {
 .c-btn, .c-btn--search {
   border-radius: 10px;
   border: 1px solid #707070;
+  display: block;
 }
 
 .c-btn--search {
@@ -436,11 +437,20 @@ li {
 }
 
 /* 検索フォーム入力エリア コンポーネント*/
-.c-searchbox {
+.c-searchbox, .c-searchbox--icon {
   height: 46px;
   border-radius: 10px;
   background: #fff;
   border: 1px solid #707070;
+  display: block;
+}
+
+.c-searchbox--icon {
+  content: \f002;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 25px;
+  padding-left: 15px;
 }
 
 /* link コンポーネント */
@@ -500,6 +510,16 @@ li {
   font-family: "Roboto", sans-serif;
 }
 
+@media screen and (min-width: 1201px) {
+  .p-header {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    padding-right: 1vw;
+  }
+}
+
 .p-header .c-btn--menu {
   color: #707070;
   display: block;
@@ -515,6 +535,12 @@ li {
     font-size: 3.4rem;
     top: 18px;
     right: 26px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-header .c-btn--menu {
+    display: none;
   }
 }
 
@@ -544,13 +570,23 @@ li {
 }
 
 /* 検索フォーム　プロジェクト */
-.p-search .c-searchbox {
+.p-search {
+  display: flex;
+}
+
+.p-search .c-searchbox, .p-search .c-searchbox--icon {
   width: 230px;
 }
 
 @media screen and (min-width: 768px) {
-  .p-search .c-searchbox {
+  .p-search .c-searchbox, .p-search .c-searchbox--icon {
     width: 396px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-search .c-searchbox, .p-search .c-searchbox--icon {
+    width: 20vw;
   }
 }
 
@@ -564,7 +600,25 @@ li {
   }
 }
 
-/* ハンバーガーボタン　プロジェクト */
+@media screen and (min-width: 1201px) {
+  .p-search .c-btn--search {
+    width: 7vw;
+  }
+}
+
+/* メニューボタン　プロジェクト */
+body.is-open {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.p-sidebar.is-open {
+  display: flex;
+}
+
+/*　サイドバーの表示非表示は反映OK
+　　・bodyの色が黒くならない
+　　・sidebarはアブソリュート必要
+　　・結果どこかにrelativeも必要 */
 /* メイン　プロジェクト */
 .p-main {
   min-width: 375px;
@@ -851,6 +905,7 @@ li {
   min-width: 375px;
   background-color: #F2EDE9;
   padding-top: 212px;
+  display: none;
 }
 
 /* グローバルメニュー プロジェクト */
@@ -934,6 +989,12 @@ li {
   margin-top: 38px;
 }
 
+@media screen and (min-width: 1201px) {
+  .c-headline + .p-search, .c-headline--underline + .p-search {
+    margin-top: 0;
+  }
+}
+
 /* 隣接セレクタ マージンレフト ユーティリティ */
 .p-footer__menu__list + .c-line, .p-footer__menu__list + .c-line--vertical {
   margin-left: 15px;
@@ -943,7 +1004,7 @@ li {
   margin-left: 15px;
 }
 
-.c-searchbox + .c-btn--search {
+.c-searchbox + .c-btn--search, .c-searchbox--icon + .c-btn--search {
   margin-left: 12px;
 }
 /*# sourceMappingURL=style.css.map */

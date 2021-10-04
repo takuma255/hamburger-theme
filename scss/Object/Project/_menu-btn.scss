@@ -1,0 +1,13 @@
+/* メニューボタン　プロジェクト */
+body.is-open {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.p-sidebar.is-open {
+  display: flex;
+}
+
+/*　サイドバーの表示非表示は反映OK
+　　・bodyの色が黒くならない
+　　・sidebarはアブソリュート必要
+　　・結果どこかにrelativeも必要 */

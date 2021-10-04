@@ -4,4 +4,13 @@
   border-radius: 10px;
   background: $color-white;
   border: 1px solid $font-color-sub;
+  display: block;
+  &--icon {
+    @extend .c-searchbox;
+    content: \f002;
+    font-family: $font-family-fontawesome;
+    font-weight: $font-weight-l;
+    font-size: 25px;
+    padding-left: 15px;
+  }
 }
