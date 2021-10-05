@@ -629,6 +629,8 @@ body.is-open {
 .p-sidebar.is-open {
   position: absolute;
   z-index: 2100;
+  height: 100vh;
+  overflow-y: scroll;
   display: flex;
   left: 13vw;
 }
@@ -924,7 +926,6 @@ body.is-open {
   width: 87vw;
   min-width: 328px;
   background-color: #F2EDE9;
-  position: relative;
   padding-top: 212px;
   padding-left: 46px;
   display: none;
@@ -940,7 +941,8 @@ body.is-open {
   .p-sidebar {
     padding-top: 82px;
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 

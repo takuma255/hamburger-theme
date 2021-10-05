@@ -3,7 +3,6 @@
   width: $width-sidear-sp;
   min-width: 328px;
   background-color: $background-color-sidebar;
-  position: relative;
   padding-top: 212px;
   padding-left: 46px;
   display: none;
@@ -13,7 +12,8 @@
   @include mq (pc) {
     padding-top: 82px;
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   .c-close {
     position: absolute;

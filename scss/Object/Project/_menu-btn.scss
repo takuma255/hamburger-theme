@@ -17,6 +17,8 @@ body.is-open {
 .p-sidebar.is-open {
   position: absolute;
   z-index: 2100;
+  height: 100vh;
+  overflow-y: scroll;
   display: flex;
   left: 100vw - $width-sidear-sp;
   @include mq () {
