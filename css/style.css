@@ -627,11 +627,10 @@ body.is-open {
 }
 
 .p-sidebar.is-open {
-  position: absolute;
+  transition: .3s;
   z-index: 2100;
   height: 100vh;
-  overflow-y: scroll;
-  display: flex;
+  overflow-y: auto;
   left: 13vw;
 }
 
@@ -924,11 +923,11 @@ body.is-open {
 /* サイドバー　プロジェクト */
 .p-sidebar {
   width: 87vw;
-  min-width: 328px;
   background-color: #F2EDE9;
   padding-top: 212px;
   padding-left: 46px;
-  display: none;
+  position: fixed;
+  left: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -941,8 +940,8 @@ body.is-open {
   .p-sidebar {
     padding-top: 82px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    position: static;
+    left: inherit;
   }
 }
 

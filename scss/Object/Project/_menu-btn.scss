@@ -15,11 +15,10 @@ body.is-open {
 }
 
 .p-sidebar.is-open {
-  position: absolute;
+  transition: .3s;
   z-index: 2100;
   height: 100vh;
-  overflow-y: scroll;
-  display: flex;
+  overflow-y: auto;
   left: 100vw - $width-sidear-sp;
   @include mq () {
     left: 100vw - $width-sidear-tab;

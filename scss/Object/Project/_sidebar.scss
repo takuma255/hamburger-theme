@@ -1,19 +1,19 @@
 /* サイドバー　プロジェクト */
 .p-sidebar {
   width: $width-sidear-sp;
-  min-width: 328px;
   background-color: $background-color-sidebar;
   padding-top: 212px;
   padding-left: 46px;
-  display: none;
+  position: fixed;
+  left: 100%;
   @include mq () {
     width: $width-sidear-tab;
   }
   @include mq (pc) {
     padding-top: 82px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    position: static;
+    left: inherit;
   }
   .c-close {
     position: absolute;
