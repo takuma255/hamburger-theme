@@ -342,6 +342,7 @@ body {
   display: grid;
   grid-template-rows: 217px auto 150px;
   grid-template-columns: minmax(375px, 100vw);
+  overflow-x: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -607,12 +608,15 @@ li {
 }
 
 /* メニューボタン　プロジェクト */
+body.is-open {
+  position: fixed;
+}
+
 .c-overlay.is-open {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  position: fixed;
   z-index: 2000;
 }
 
@@ -626,6 +630,13 @@ li {
   position: absolute;
   z-index: 2100;
   display: flex;
+  left: 13vw;
+}
+
+@media screen and (min-width: 768px) {
+  .p-sidebar.is-open {
+    left: 56vw;
+  }
 }
 
 /* メイン　プロジェクト */
@@ -922,7 +933,6 @@ li {
 @media screen and (min-width: 768px) {
   .p-sidebar {
     width: 44vw;
-    min-width: none;
   }
 }
 

@@ -1,6 +1,6 @@
 /* サイドバー　プロジェクト */
 .p-sidebar {
-  width: 87vw;
+  width: $width-sidear-sp;
   min-width: 328px;
   background-color: $background-color-sidebar;
   position: relative;
@@ -8,8 +8,7 @@
   padding-left: 46px;
   display: none;
   @include mq () {
-    width: 44vw;
-    min-width: none;
+    width: $width-sidear-tab;
   }
   @include mq (pc) {
     padding-top: 82px;
