@@ -5,6 +5,9 @@
     .c-link {
       color: $font-color-sub;
       @include fz (20);
+      &:hover {
+        color: silver;
+      }
     }
   }
 }

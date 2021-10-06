@@ -12,6 +12,10 @@
   }
   .c-btn--search {
     width: 78px;
+    &:active {
+      color: $color-white;
+      background: $font-color-sub;
+    }
     @include mq () {
       width: 136px;
     }

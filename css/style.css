@@ -559,13 +559,17 @@ li {
   }
 }
 
-.p-header .c-wrapper > .c-headline, .p-header .c-wrapper > .c-headline--underline {
+.p-header .c-wrapper > .c-headline .c-link, .p-header .c-wrapper > .c-headline--underline .c-link {
   color: #707070;
   font-size: 4rem;
 }
 
+.p-header .c-wrapper > .c-headline .c-link:hover, .p-header .c-wrapper > .c-headline--underline .c-link:hover {
+  color: silver;
+}
+
 @media screen and (min-width: 1201px) {
-  .p-header .c-wrapper > .c-headline, .p-header .c-wrapper > .c-headline--underline {
+  .p-header .c-wrapper > .c-headline .c-link, .p-header .c-wrapper > .c-headline--underline .c-link {
     font-size: 6.4rem;
   }
 }
@@ -593,6 +597,11 @@ li {
 
 .p-search .c-btn--search {
   width: 78px;
+}
+
+.p-search .c-btn--search:active {
+  color: #fff;
+  background: #707070;
 }
 
 @media screen and (min-width: 768px) {
@@ -977,6 +986,10 @@ body.is-open {
   font-size: 2.4rem;
 }
 
+.p-gmenu__list > .c-link:hover {
+  color: silver;
+}
+
 /* ローカルメニュー プロジェクト */
 .p-lmenu {
   padding: 36px 0 38px 20px;
@@ -985,6 +998,10 @@ body.is-open {
 .p-lmenu__list .c-link {
   color: #707070;
   font-size: 2rem;
+}
+
+.p-lmenu__list .c-link:hover {
+  color: silver;
 }
 
 /* フッター プロジェクト */
@@ -1005,6 +1022,10 @@ body.is-open {
 .p-footer__menu__list .c-link {
   color: #fff;
   font-size: 2rem;
+}
+
+.p-footer__menu__list .c-link:hover {
+  color: silver;
 }
 
 /* 隣接セレクタ マージントップ ユーティリティ */

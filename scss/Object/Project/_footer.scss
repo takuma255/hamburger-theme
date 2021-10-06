@@ -13,6 +13,9 @@
       .c-link {
         color: $color-white;
         @include fz (20);
+        &:hover {
+          color: silver;
+        }
       }
     }
   }

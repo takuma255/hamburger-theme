@@ -36,10 +36,15 @@
       margin-left: 3%;
     }
     > .c-headline {
-      color: $font-color-sub;
-      @include fz (40);
-      @include mq (pc) {
-        @include fz (64);
+      .c-link {
+        color: $font-color-sub;
+        @include fz (40);
+        &:hover {
+          color: silver;
+        }
+        @include mq (pc) {
+          @include fz (64);
+        }
       }
     }
   }
