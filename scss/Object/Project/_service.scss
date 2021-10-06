@@ -26,6 +26,9 @@
       position: absolute;
       top: 0;
       z-index: 600;
+      &:hover {
+        opacity: 0.6;
+      }
     }
     &__inner {
       position: absolute;

@@ -531,6 +531,10 @@ li {
   font-size: 2rem;
 }
 
+.p-header > .c-headline:hover, .p-header > .c-headline--underline:hover {
+  color: silver;
+}
+
 @media screen and (min-width: 768px) {
   .p-header > .c-headline, .p-header > .c-headline--underline {
     font-size: 3.4rem;
@@ -636,7 +640,7 @@ body.is-open {
 }
 
 .p-sidebar.is-open {
-  transition: .3s;
+  transition: .5s;
   z-index: 2100;
   height: 100vh;
   overflow-y: auto;
@@ -734,6 +738,10 @@ body.is-open {
   position: absolute;
   top: 0;
   z-index: 600;
+}
+
+.p-service__list .c-img:hover {
+  opacity: 0.6;
 }
 
 .p-service__list__inner {
