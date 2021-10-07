@@ -1,4 +1,4 @@
-/* メニューボタン　プロジェクト */
+/* メニューボタンでのサイドバースライド　プロジェクト */
 body.is-open {
   position: fixed;
 }
@@ -19,8 +19,8 @@ body.is-open {
   z-index: 2100;
   height: 100vh;
   overflow-y: auto;
-  left: 100vw - $width-sidear-sp;
+  left: $width-current-viewport - $width-sidear-sp;
   @include mq () {
-    left: 100vw - $width-sidear-tab;
+    left: $width-current-viewport - $width-sidear-tab;
   }
 }

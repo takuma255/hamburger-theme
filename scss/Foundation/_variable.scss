@@ -61,8 +61,8 @@ $height-footer: 150px;
 $width-sidear-sp: 87vw;
 $width-sidear-tab: 44vw;
 
-$grid-template-columns-sp: minmax(375px,100vw);
-$grid-template-columns-tab: 100vw;
+$grid-template-columns-sp: minmax($min-width-sp, $width-current-viewport);
+$grid-template-columns-tab: $width-current-viewport;
 $grid-template-columns-pc: 80vw 20vw;
 
 
