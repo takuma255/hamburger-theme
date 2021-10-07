@@ -601,6 +601,7 @@ li {
 
 .p-search .c-btn--search {
   width: 78px;
+  font-size: 16px;
 }
 
 .p-search .c-btn--search:active {

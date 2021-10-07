@@ -18,7 +18,7 @@
     right: 16px;
     @include fz (20);
     &:hover {
-      color: silver;
+      color: $font-color-hover;
     }
     @include mq () {
       @include fz (34);
@@ -43,7 +43,7 @@
         color: $font-color-sub;
         @include fz (40);
         &:hover {
-          color: silver;
+          color: $font-color-hover;
         }
         @include mq (pc) {
           @include fz (64);

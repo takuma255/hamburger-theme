@@ -6,7 +6,7 @@
       font-weight: $font-weight-l;
       @include fz (24);
       &:hover {
-        color: silver;
+        color: $font-color-hover;
       }
     }
   }
