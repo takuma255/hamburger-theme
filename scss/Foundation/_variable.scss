@@ -43,6 +43,17 @@ $breakpoints: (
 $min-width-sp: 375px;
 $max-width-pc: 1920px;
 
+
+/* レスポンシブ設定　フォント　リキッドレイアウト用 */
+$width-ideal-sp: 375;
+$width-ideal-tab: 834;
+$width-ideal-pc: 1920;
+
+$width-current-viewport: 100vw;
+
+$width-clamped-viewport: clamp($min-width-sp, 100vw, $max-width-pc);
+
+
 /* レイアウト　幅　高さ */
 $height-header: 217px;
 $height-footer: 150px;
