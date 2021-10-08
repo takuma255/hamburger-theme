@@ -7,7 +7,7 @@
     color: $color-white;
     @include fz (36);
     @include mq (pc) {
-      @include fz (40);
+      font-size: calc(40 * #{$width-clamped-viewport} / #{$width-ideal-pc});
     }
   }
 

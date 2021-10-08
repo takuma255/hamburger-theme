@@ -46,7 +46,7 @@
         color: $color-white;
         @include fz (14);
         @include mq (pc) {
-          @include fz (16);
+          font-size: calc(16 * #{$width-clamped-viewport} / #{$width-ideal-pc});
         }
       }
     }
@@ -60,10 +60,11 @@
         margin-bottom: 20px;
       }
       @include mq (pc) {
-        @include fz (36);
+        font-size: calc(36 * #{$width-clamped-viewport} / #{$width-ideal-pc});
         &::after {
-          width: 75px;
-          height: 2px;
+          width: calc(75 * #{$width-clamped-viewport} / #{$width-ideal-pc});
+          margin-top: calc(55.5 * #{$width-clamped-viewport} / #{$width-ideal-pc});
+          margin-bottom: calc(63.5 * #{$width-clamped-viewport} / #{$width-ideal-pc});;
         }
       }
     }
