@@ -1,10 +1,12 @@
 /* フッター プロジェクト */
 .p-footer {
   background-image: url(/images/footer.png);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 40px 0 30px;
   &__menu {
     display: flex;
     align-items: center;
