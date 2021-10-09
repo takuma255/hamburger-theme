@@ -1004,9 +1004,17 @@ body.is-open {
   }
 }
 
-/*  .p-lmenu__list + .p-lmenu__list {
+.p-lmenu__list + .p-lmenu__list {
   margin-top: 23px;
 }
+
+@media screen and (min-width: 1201px) {
+  .c-headline + .p-sidebar__nav, .c-headline--underline + .p-sidebar__nav {
+    margin-top: 85px;
+  }
+}
+
+/*  
 
 .c-definition + .c-definition {
   margin-top: 9px;

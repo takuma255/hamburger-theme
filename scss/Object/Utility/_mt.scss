@@ -10,13 +10,19 @@
   }
 }
 
-
-
-
-
-/*  .p-lmenu__list + .p-lmenu__list {
+.p-lmenu__list + .p-lmenu__list {
   margin-top: 23px;
 }
+
+.c-headline + .p-sidebar__nav {
+  @include mq (pc) {
+    margin-top: 85px;
+  }
+}
+
+
+
+/*  
 
 .c-definition + .c-definition {
   margin-top: 9px;
