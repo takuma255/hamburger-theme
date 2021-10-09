@@ -30,6 +30,9 @@
     display: none;
     @include mq (pc) {
       display: block;
+      @include mq (pc) {
+        font-size: calc(34 * #{$liquid-pc});
+      }
     }
   }
 }

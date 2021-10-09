@@ -16,7 +16,7 @@
 
 .c-headline + .p-sidebar__nav {
   @include mq (pc) {
-    margin-top: 85px;
+    margin-top: calc(85 * #{$liquid-pc});
   }
 }
 

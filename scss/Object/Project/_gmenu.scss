@@ -8,6 +8,9 @@
       &:hover {
         color: $font-color-hover;
       }
+      @include mq (pc) {
+        font-size: calc(24 * #{$liquid-pc});
+      }
     }
   }
 }

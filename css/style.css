@@ -938,6 +938,12 @@ body.is-open {
   }
 }
 
+@media screen and (min-width: 1201px) and (min-width: 1201px) {
+  .p-sidebar .c-headline, .p-sidebar .c-headline--underline {
+    font-size: calc(34 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
 /* グローバルメニュー プロジェクト */
 .p-gmenu__list > .c-link {
   color: #707070;
@@ -947,6 +953,12 @@ body.is-open {
 
 .p-gmenu__list > .c-link:hover {
   color: silver;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-gmenu__list > .c-link {
+    font-size: calc(24 * clamp(375px, 100vw, 1920px) / 1920);
+  }
 }
 
 /* ローカルメニュー プロジェクト */
@@ -961,6 +973,12 @@ body.is-open {
 
 .p-lmenu__list .c-link:hover {
   color: silver;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-lmenu__list .c-link {
+    font-size: calc(20 * clamp(375px, 100vw, 1920px) / 1920);
+  }
 }
 
 /* フッター プロジェクト */
@@ -1010,7 +1028,7 @@ body.is-open {
 
 @media screen and (min-width: 1201px) {
   .c-headline + .p-sidebar__nav, .c-headline--underline + .p-sidebar__nav {
-    margin-top: 85px;
+    margin-top: calc(85 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
 
