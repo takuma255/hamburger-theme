@@ -1,13 +1,13 @@
 /* サイドバー　プロジェクト */
 .p-sidebar {
-  width: $width-sidear-sp;
+  width: $width-sidebar-sp;
   background-color: $background-color-sidebar;
   padding-top: 212px;
   padding-left: 46px;
   position: fixed;
   left: 100%;
   @include mq () {
-    width: $width-sidear-tab;
+    width: $width-sidebar-tab;
   }
   @include mq (pc) {
     padding-top: 82px;

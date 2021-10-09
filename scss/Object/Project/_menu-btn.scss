@@ -19,8 +19,8 @@ body.is-open {
   z-index: 2100;
   height: 100vh;
   overflow-y: auto;
-  left: $width-current-viewport - $width-sidear-sp;
+  left: $width-current-viewport - $width-sidebar-sp;
   @include mq () {
-    left: $width-current-viewport - $width-sidear-tab;
+    left: $width-current-viewport - $width-sidebar-tab;
   }
 }

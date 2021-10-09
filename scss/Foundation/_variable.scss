@@ -58,8 +58,8 @@ $width-clamped-viewport: clamp($min-width-sp, 100vw, $max-width-pc);
 $height-header: 217px;
 $height-footer: 150px;
 
-$width-sidear-sp: 87vw;
-$width-sidear-tab: 44vw;
+$width-sidebar-sp: 87vw;
+$width-sidebar-tab: 44vw;
 
 $grid-template-columns-sp: minmax($min-width-sp, $width-current-viewport);
 $grid-template-columns-tab: $width-current-viewport;
