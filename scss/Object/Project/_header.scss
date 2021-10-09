@@ -3,11 +3,10 @@
   background-color: $background-color-header;
   font-family: $font-family-sub;
   @include mq (pc) {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    justify-content: center;
-    padding-right: 1vw;
+    padding-top: calc(67 * #{$liquid-pc});
+    padding-right: calc(31 * #{$liquid-pc});
+    padding-bottom: calc(66 * #{$liquid-pc});
+    padding-left: calc(65 * #{$liquid-pc});
   }
   > .c-headline {
     color: $font-color-sub;
@@ -33,12 +32,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 0 40px;
     @include mq (pc) {
       flex-direction: row;
       justify-content: space-between;
-      margin-left: 3%;
     }
-    > .c-headline {
+    .c-headline {
       .c-link {
         color: $font-color-sub;
         @include fz (40);
@@ -46,7 +45,7 @@
           color: $font-color-hover;
         }
         @include mq (pc) {
-          @include fz (64);
+          font-size: calc(64 * #{$liquid-pc});
         }
       }
     }

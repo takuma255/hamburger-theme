@@ -7,7 +7,7 @@
       width: 396px;
     }
     @include mq (pc) {
-      width: calc(396 * #{$width-clamped-viewport} / #{$width-ideal-pc});
+      width: calc(396 * #{$liquid-pc});
     }
   }
   .c-btn--search {
@@ -21,7 +21,7 @@
       width: 136px;
     }
     @include mq (pc) {
-      width: calc(136 * #{$width-clamped-viewport} / #{$width-ideal-pc});
+      width: calc(136 * #{$liquid-pc});
     }
   }
 }

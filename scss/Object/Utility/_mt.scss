@@ -3,7 +3,18 @@
   margin-top: 34px;
 }
 
-.p-lmenu__list + .p-lmenu__list {
+.c-headline + .p-search {
+  margin-top: 38px;
+  @include mq (pc) {
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+/*  .p-lmenu__list + .p-lmenu__list {
   margin-top: 23px;
 }
 
@@ -24,15 +35,8 @@
   }
 }
 
-.c-headline + .p-search {
-  margin-top: 38px;
-  @include mq (pc) {
-    margin-top: 0;
-  }
-}
-
 .c-headline + .p-sidebar__nav {
   @include mq (pc) {
     margin-top: 85px;
   }
-}
+} */

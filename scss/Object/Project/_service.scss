@@ -1,5 +1,5 @@
 /* 提供サービス　プロジェクト */
-.p-service {
+/*  .p-service {
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto;
@@ -13,7 +13,7 @@
   }
   @include mq (pc){
     column-gap: 6%;
-    padding: 8% 7% 9% 7%; /* h1447 w1553 */
+    padding: 8% 7% 9% 7%;
   }
   &__list {
     position: relative;
@@ -96,4 +96,4 @@
       }
     }
   }
-}
+} */

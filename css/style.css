@@ -506,11 +506,10 @@ li {
 
 @media screen and (min-width: 1201px) {
   .p-header {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    justify-content: center;
-    padding-right: 1vw;
+    padding-top: calc(67 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-right: calc(31 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-bottom: calc(66 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-left: calc(65 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
 
@@ -546,28 +545,28 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px 0 40px;
 }
 
 @media screen and (min-width: 1201px) {
   .p-header .c-wrapper {
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 3%;
   }
 }
 
-.p-header .c-wrapper > .c-headline .c-link, .p-header .c-wrapper > .c-headline--underline .c-link {
+.p-header .c-wrapper .c-headline .c-link, .p-header .c-wrapper .c-headline--underline .c-link {
   color: #707070;
   font-size: 4rem;
 }
 
-.p-header .c-wrapper > .c-headline .c-link:hover, .p-header .c-wrapper > .c-headline--underline .c-link:hover {
+.p-header .c-wrapper .c-headline .c-link:hover, .p-header .c-wrapper .c-headline--underline .c-link:hover {
   color: silver;
 }
 
 @media screen and (min-width: 1201px) {
-  .p-header .c-wrapper > .c-headline .c-link, .p-header .c-wrapper > .c-headline--underline .c-link {
-    font-size: 6.4rem;
+  .p-header .c-wrapper .c-headline .c-link, .p-header .c-wrapper .c-headline--underline .c-link {
+    font-size: calc(64 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
 
@@ -691,145 +690,104 @@ body.is-open {
 }
 
 /* 提供サービス　プロジェクト */
-.p-service {
+/*  .p-service {
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto;
   row-gap: 20px;
   padding: 20px 20px 49px;
-}
-
-@media screen and (min-width: 768px) {
-  .p-service {
+  @include mq (){
     grid-template-rows: auto;
     grid-template-columns: auto auto;
     column-gap: 41px;
     padding: 40px;
   }
-}
-
-@media screen and (min-width: 1201px) {
-  .p-service {
+  @include mq (pc){
     column-gap: 6%;
     padding: 8% 7% 9% 7%;
-    /* h1447 w1553 */
   }
-}
-
-.p-service__list {
-  position: relative;
-  z-index: 500;
-  padding-top: 192%;
-}
-
-@media screen and (min-width: 768px) {
-  .p-service__list {
-    padding-top: 191%;
+  &__list {
+    position: relative;
+    z-index: 500;
+    padding-top: 192%;
+    @include mq () {
+      padding-top: 191%;
+    }
+    .c-img {
+      position: absolute;
+      top: 0;
+      z-index: 600;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    &__inner {
+      position: absolute;
+      top: 0;
+      z-index: 700;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      padding: 11px 10px 10px 11px;
+      @include mq () {
+        padding: 12px 11px 11px 12px;
+      }
+      @include mq (pc) {
+        padding: 3%;
+      }
+      .c-headline--underline {
+        color: $color-white;
+        font-family: $font-family-sub;
+        font-size: calc(41 * clamp(375px, 100vw, 1920px) / 375);
+        &::after {
+          width:  calc(35 * clamp(375px, 100vw, 1920px) / 375);
+          height: 4px;
+          margin-top: calc(19.3 * clamp(375px, 100vw, 1920px) / 375);
+        }
+        @include mq () {
+          font-size: calc(44 * clamp(375px, 100vw, 1920px) / 834);
+          &::after {
+            width:  calc(40 * clamp(375px, 100vw, 1920px) / 834);
+            margin-top: calc(19.5 * clamp(375px, 100vw, 1920px) / 834);
+          }
+        }
+        @include mq (pc) {
+          font-size: calc(80 * clamp(375px, 100vw, 1920px) / 1920);
+          &::after {
+            width: calc(70 * clamp(375px, 100vw, 1920px) / 1920);
+            margin-top: calc(30.5 * clamp(375px, 100vw, 1920px) / 1920);
+          }
+        }
+      }
+      .c-definition {
+        background: $color-white;
+        opacity: 0.8;
+        padding: 19px 14px 23px 10px;
+        height: 43vw;
+        min-height: 163px;
+        @include mq () {
+          padding: 20px 15px 22px 11px;
+          height: 21vw;
+        }
+        @include mq (pc) {
+          height: 9vw;
+        }
+        &__headline {
+          @include fz (22);
+          @include mq () {
+            @include fz (24); 
+          }
+        }
+        &__description {
+          @include fz (16);
+        }
+      }
+    }
   }
-}
-
-.p-service__list .c-img {
-  position: absolute;
-  top: 0;
-  z-index: 600;
-}
-
-.p-service__list .c-img:hover {
-  opacity: 0.6;
-}
-
-.p-service__list__inner {
-  position: absolute;
-  top: 0;
-  z-index: 700;
-  pointer-events: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  padding: 11px 10px 10px 11px;
-}
-
-@media screen and (min-width: 768px) {
-  .p-service__list__inner {
-    padding: 12px 11px 11px 12px;
-  }
-}
-
-@media screen and (min-width: 1201px) {
-  .p-service__list__inner {
-    padding: 3%;
-  }
-}
-
-.p-service__list__inner .c-headline--underline {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: calc(41 * clamp(375px, 100vw, 1920px) / 375);
-}
-
-.p-service__list__inner .c-headline--underline::after {
-  width: calc(35 * clamp(375px, 100vw, 1920px) / 375);
-  height: 4px;
-  margin-top: calc(19.3 * clamp(375px, 100vw, 1920px) / 375);
-}
-
-@media screen and (min-width: 768px) {
-  .p-service__list__inner .c-headline--underline {
-    font-size: calc(44 * clamp(375px, 100vw, 1920px) / 834);
-  }
-  .p-service__list__inner .c-headline--underline::after {
-    width: calc(40 * clamp(375px, 100vw, 1920px) / 834);
-    margin-top: calc(19.5 * clamp(375px, 100vw, 1920px) / 834);
-  }
-}
-
-@media screen and (min-width: 1201px) {
-  .p-service__list__inner .c-headline--underline {
-    font-size: calc(80 * clamp(375px, 100vw, 1920px) / 1920);
-  }
-  .p-service__list__inner .c-headline--underline::after {
-    width: calc(70 * clamp(375px, 100vw, 1920px) / 1920);
-    margin-top: calc(30.5 * clamp(375px, 100vw, 1920px) / 1920);
-  }
-}
-
-.p-service__list__inner .c-definition {
-  background: #fff;
-  opacity: 0.8;
-  padding: 19px 14px 23px 10px;
-  height: 43vw;
-  min-height: 163px;
-}
-
-@media screen and (min-width: 768px) {
-  .p-service__list__inner .c-definition {
-    padding: 20px 15px 22px 11px;
-    height: 21vw;
-  }
-}
-
-@media screen and (min-width: 1201px) {
-  .p-service__list__inner .c-definition {
-    height: 9vw;
-  }
-}
-
-.p-service__list__inner .c-definition__headline {
-  font-size: 2.2rem;
-}
-
-@media screen and (min-width: 768px) {
-  .p-service__list__inner .c-definition__headline {
-    font-size: 2.4rem;
-  }
-}
-
-.p-service__list__inner .c-definition__description {
-  font-size: 1.6rem;
-}
-
+} */
 /* 住所　プロジェクト */
 .p-info {
   background: #000;
@@ -1036,36 +994,6 @@ body.is-open {
   margin-top: 34px;
 }
 
-.p-lmenu__list + .p-lmenu__list {
-  margin-top: 23px;
-}
-
-.c-definition + .c-definition {
-  margin-top: 9px;
-}
-
-@media screen and (min-width: 768px) {
-  .c-definition + .c-definition {
-    margin-top: 10px;
-  }
-}
-
-@media screen and (min-width: 1201px) {
-  .c-definition + .c-definition {
-    margin-top: 20px;
-  }
-}
-
-.c-definition__headline + .c-definition__description {
-  margin-top: 20px;
-}
-
-@media screen and (min-width: 1201px) {
-  .c-definition__headline + .c-definition__description {
-    margin-top: 26px;
-  }
-}
-
 .c-headline + .p-search, .c-headline--underline + .p-search {
   margin-top: 38px;
 }
@@ -1076,12 +1004,32 @@ body.is-open {
   }
 }
 
-@media screen and (min-width: 1201px) {
-  .c-headline + .p-sidebar__nav, .c-headline--underline + .p-sidebar__nav {
-    margin-top: 85px;
+/*  .p-lmenu__list + .p-lmenu__list {
+  margin-top: 23px;
+}
+
+.c-definition + .c-definition {
+  margin-top: 9px;
+  @include mq () {
+    margin-top: 10px;
+  }
+  @include mq (pc) {
+    margin-top: 20px;
   }
 }
 
+.c-definition__headline + .c-definition__description {
+  margin-top: 20px;
+  @include mq (pc) {
+    margin-top: 26px;
+  }
+}
+
+.c-headline + .p-sidebar__nav {
+  @include mq (pc) {
+    margin-top: 85px;
+  }
+} */
 /* 隣接セレクタ マージンレフト ユーティリティ */
 .p-footer__menu__list + .c-line, .p-footer__menu__list + .c-line--vertical {
   margin-left: 15px;
