@@ -326,7 +326,7 @@ progress {
 /* レスポンシブ設定　ブレークポイント */
 /* レスポンシブ設定　スマホ最小幅　PC最大幅 */
 /* レスポンシブ設定　リキッドレイアウト用 */
-/* レイアウト　幅　高さ */
+/* レイアウト　幅*/
 /* 線　コンポーネント */
 /* mixin.scss */
 /* フォントサイズ設定　簡易化 */
@@ -341,7 +341,7 @@ body {
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 400;
   display: grid;
-  grid-template-rows: 217px auto 150px;
+  grid-template-rows: auto auto auto;
   grid-template-columns: minmax(375px, 100vw);
   overflow-x: hidden;
 }
@@ -427,7 +427,6 @@ li {
   background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
 }
 
-/* アイコン　コンポーネント */
 /* ヘッドライン　コンポーネント */
 .c-headline, .c-headline--underline {
   font-weight: 700;
@@ -475,13 +474,6 @@ li {
 
 .c-definition__description {
   word-wrap: break-word;
-}
-
-/* 画像　コンポーネント */
-.c-img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
 }
 
 /* 地図　コンポーネント */
