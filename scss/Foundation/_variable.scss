@@ -44,14 +44,18 @@ $min-width-sp: 375px;
 $max-width-pc: 1920px;
 
 
-/* レスポンシブ設定　フォント　リキッドレイアウト用 */
+/* レスポンシブ設定　リキッドレイアウト用 */
 $width-ideal-sp: 375;
 $width-ideal-tab: 834;
 $width-ideal-pc: 1920;
 
 $width-current-viewport: 100vw;
 
-$width-clamped-viewport: clamp($min-width-sp, 100vw, $max-width-pc);
+$width-clamped-viewport: clamp($min-width-sp, $width-current-viewport, $max-width-pc);
+
+$liquid-sp: #{$width-clamped-viewport} / #{$width-ideal-sp};
+$liquid-tab: #{$width-clamped-viewport} / #{$width-ideal-tab};
+$liquid-pc: #{$width-clamped-viewport} / #{$width-ideal-pc};
 
 
 /* レイアウト　幅　高さ */
