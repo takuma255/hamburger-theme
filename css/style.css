@@ -678,12 +678,14 @@ body.is-open {
   background-image: url(/images/main__title--front.jpg);
   background-size: cover;
   background-position: center;
-  height: 285px;
+  padding-top: 119px;
+  padding-bottom: 115px;
 }
 
 @media screen and (min-width: 1201px) {
   .p-hero--front {
-    height: 28vw;
+    padding-top: calc(231 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-bottom: calc(243 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
 

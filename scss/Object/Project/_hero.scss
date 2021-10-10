@@ -7,7 +7,7 @@
     color: $color-white;
     @include fz (36);
     @include mq (pc) {
-      font-size: calc(40 * #{$width-clamped-viewport} / #{$width-ideal-pc});
+      font-size: calc(40 * #{$liquid-pc});
     }
   }
 
@@ -17,9 +17,11 @@
     background-image: url(/images/main__title--front.jpg);
     background-size: cover;
     background-position: center;
-    height: 285px;
+    padding-top: 119px;
+    padding-bottom: 115px;
     @include mq (pc) {
-      height: 28vw;
+      padding-top: calc(231 * #{$liquid-pc});
+      padding-bottom: calc(243 * #{$liquid-pc});
     }
   }
 }
