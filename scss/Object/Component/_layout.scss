@@ -1,0 +1,13 @@
+/* レイアウト　コンポーネント */
+.c-layout {
+  display: grid;
+  &--2column {
+    @extend .c-layout;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    @include mq (){
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

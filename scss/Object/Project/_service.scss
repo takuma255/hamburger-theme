@@ -1,20 +1,74 @@
 /* 提供サービス　プロジェクト */
+.p-service {
+  row-gap: calc(20 * #{$liquid-sp});
+  padding-top: calc(20 * #{$liquid-sp});
+  padding-left: calc(20 * #{$liquid-sp});
+  padding-bottom: calc(49 * #{$liquid-sp});
+  padding-right: calc(20 * #{$liquid-sp});
+  @include mq () {
+    column-gap: calc(41 * #{$liquid-tab});
+    padding: calc(40 * #{$liquid-tab});
+  }
+  @include mq (pc) {
+    column-gap: calc(80 * #{$liquid-pc});
+    padding-top: calc(120 * #{$liquid-pc});
+    padding-left: calc(112 * #{$liquid-pc});
+    padding-bottom: calc(131 * #{$liquid-pc});
+    padding-right: calc(111 * #{$liquid-pc});
+  }
+  &__list {
+    background-size: cover;
+    &--left {
+      @extend .p-service__list;
+      background-image: url(/images/service__list--left.jpg);
+    }
+    &--right {
+      @extend .p-service__list;
+      background-image: url(/images/service__list--right.jpg);
+    }
+
+
+
+
+
+    .c-headline--underline {
+      color: $color-white;
+      font-family: $font-family-sub;
+      
+    }
+
+
+
+
+
+
+
+    .c-definition {
+      background: $color-white;
+      opacity: 0.8;
+      padding: 19px 14px 23px 10px;
+      @include mq () {
+        padding: 20px 15px 22px 11px;
+      }
+      @include mq (pc) {
+        padding: 17px 25px 22px 19px;
+      }
+      &__headline {
+        @include fz (22);
+        @include mq () {
+          @include fz (24); 
+        }
+      }
+      &__description {
+        @include fz (16);
+      }
+    }
+  }
+}
+
+
 /*  .p-service {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto;
-  row-gap: 20px;
-  padding: 20px 20px 49px;
-  @include mq (){
-    grid-template-rows: auto;
-    grid-template-columns: auto auto;
-    column-gap: 41px;
-    padding: 40px;
-  }
-  @include mq (pc){
-    column-gap: 6%;
-    padding: 8% 7% 9% 7%;
-  }
+
   &__list {
     position: relative;
     z-index: 500;
@@ -47,6 +101,10 @@
       @include mq (pc) {
         padding: 3%;
       }
+
+
+
+
       .c-headline--underline {
         color: $color-white;
         font-family: $font-family-sub;
@@ -71,29 +129,7 @@
           }
         }
       }
-      .c-definition {
-        background: $color-white;
-        opacity: 0.8;
-        padding: 19px 14px 23px 10px;
-        height: 43vw;
-        min-height: 163px;
-        @include mq () {
-          padding: 20px 15px 22px 11px;
-          height: 21vw;
-        }
-        @include mq (pc) {
-          height: 9vw;
-        }
-        &__headline {
-          @include fz (22);
-          @include mq () {
-            @include fz (24); 
-          }
-        }
-        &__description {
-          @include fz (16);
-        }
-      }
+      
     }
   }
 } */
