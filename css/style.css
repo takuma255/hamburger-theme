@@ -829,17 +829,35 @@ body.is-open {
 }
 
 .p-service__list .c-definition__headline, .p-service__list--left .c-definition__headline, .p-service__list--right .c-definition__headline {
-  font-size: 2.2rem;
+  font-size: calc(22 * clamp(375px, 100vw, 1920px) / 375);
 }
 
 @media screen and (min-width: 768px) {
   .p-service__list .c-definition__headline, .p-service__list--left .c-definition__headline, .p-service__list--right .c-definition__headline {
-    font-size: 2.4rem;
+    font-size: calc(24 * clamp(375px, 100vw, 1920px) / 834);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-service__list .c-definition__headline, .p-service__list--left .c-definition__headline, .p-service__list--right .c-definition__headline {
+    font-size: calc(24 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
 
 .p-service__list .c-definition__description, .p-service__list--left .c-definition__description, .p-service__list--right .c-definition__description {
-  font-size: 1.6rem;
+  font-size: calc(16 * clamp(375px, 100vw, 1920px) / 375);
+}
+
+@media screen and (min-width: 768px) {
+  .p-service__list .c-definition__description, .p-service__list--left .c-definition__description, .p-service__list--right .c-definition__description {
+    font-size: calc(16 * clamp(375px, 100vw, 1920px) / 834);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-service__list .c-definition__description, .p-service__list--left .c-definition__description, .p-service__list--right .c-definition__description {
+    font-size: calc(16 * clamp(375px, 100vw, 1920px) / 1920);
+  }
 }
 
 /*  .p-service {
@@ -1125,6 +1143,22 @@ body.is-open {
 @media screen and (min-width: 1201px) {
   .c-definition + .c-definition {
     margin-top: 20px;
+  }
+}
+
+.c-headline--underline + .c-wrapper {
+  margin-top: 211.7px;
+}
+
+@media screen and (min-width: 768px) {
+  .c-headline--underline + .c-wrapper {
+    margin-top: 224.4px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .c-headline--underline + .c-wrapper {
+    margin-top: calc(644.5 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
 

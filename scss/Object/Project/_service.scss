@@ -92,13 +92,22 @@
         padding: 17px 25px 22px 19px;
       }
       &__headline {
-        @include fz (22);
+        font-size: calc(22 * #{$liquid-sp});
         @include mq () {
-          @include fz (24); 
+          font-size: calc(24 * #{$liquid-tab});
+        }
+        @include mq (pc) {
+          font-size: calc(24 * #{$liquid-pc});
         }
       }
       &__description {
-        @include fz (16);
+        font-size: calc(16 * #{$liquid-sp});
+        @include mq () {
+          font-size: calc(16 * #{$liquid-tab});
+        }
+        @include mq (pc) {
+          font-size: calc(16 * #{$liquid-pc});
+        }
       }
     }
   }
