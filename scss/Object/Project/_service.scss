@@ -24,6 +24,9 @@
     padding-left: calc(10 * #{$liquid-sp});
     padding-bottom: calc(10 * #{$liquid-sp});
     padding-right: calc(10 * #{$liquid-sp});
+    &:hover {
+      opacity: 0.6;
+    }
     @include mq () {
       padding-top: calc(12 * #{$liquid-tab});
       padding-left: calc(11 * #{$liquid-tab});
@@ -52,6 +55,10 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+    }
+    .c-link--block {
+      position: absolute;
+      z-index: 700;
     }
 
 

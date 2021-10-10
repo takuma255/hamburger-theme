@@ -479,6 +479,7 @@ li {
 /* link コンポーネント */
 .c-link--block {
   display: block;
+  width: 100%;
   height: 100%;
 }
 
@@ -742,6 +743,10 @@ body.is-open {
   padding-right: calc(10 * clamp(375px, 100vw, 1920px) / 375);
 }
 
+.p-service__list:hover, .p-service__list--left:hover, .p-service__list--right:hover {
+  opacity: 0.6;
+}
+
 @media screen and (min-width: 768px) {
   .p-service__list, .p-service__list--left, .p-service__list--right {
     padding-top: calc(12 * clamp(375px, 100vw, 1920px) / 834);
@@ -776,6 +781,11 @@ body.is-open {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.p-service__list .c-link--block, .p-service__list--left .c-link--block, .p-service__list--right .c-link--block {
+  position: absolute;
+  z-index: 700;
 }
 
 .p-service__list .c-headline--underline, .p-service__list--left .c-headline--underline, .p-service__list--right .c-headline--underline {
