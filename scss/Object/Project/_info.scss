@@ -2,70 +2,49 @@
 .p-info {
   background: $color-black;
   position: relative;
-  z-index: 500;
-  padding-top: 184%;
-  @include mq () {
-    padding-top: 50%;
-  }
-  @include mq (pc) {
-    padding-top: 42%;
-  }
   .c-map {
     position: absolute;
     top: 0;
-    z-index: 600;
+    left: 0;
     opacity: 0.6;
   }
-  &__layer {
+  .c-definition {
     background-color: $color-black;
     opacity: 0.29;
-    width: 100%;
-    padding-top: 110%;
-    position: absolute;
-    top: 0;
-    z-index: 800;
+    padding: 40px 40px 51px 42px;
     @include mq () {
-      padding-top: 0;
-      height: 100%;
+      padding: 40px 29px 39px 42px;
     }
     @include mq (pc) {
       width: 61%;
+      padding-top: calc(83 * #{$liquid-pc});
+      padding-left: calc(134 * #{$liquid-pc});
+      padding-bottom: calc(40 * #{$liquid-pc});
+      padding-right: calc(119 * #{$liquid-pc});
     }
-    .c-definition {
-      position: absolute;
-      z-index: 700;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      padding: 40px 40px 51px 42px;
-      @include mq (pc) {
-        padding-top: 9%;
-        padding-left: 8%;
-      }
-      &__description {
-        color: $color-white;
-        @include fz (14);
-        @include mq (pc) {
-          font-size: calc(16 * #{$width-clamped-viewport} / #{$width-ideal-pc});
-        }
-      }
-    }
-    .c-headline--underline {
+    &__description {
       color: $color-white;
-      @include fz (30);
-      &::after {
-        width: 75px;
-        height: 2px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
+      @include fz (14);
       @include mq (pc) {
-        font-size: calc(36 * #{$width-clamped-viewport} / #{$width-ideal-pc});
-        &::after {
-          width: calc(75 * #{$width-clamped-viewport} / #{$width-ideal-pc});
-          margin-top: calc(55.5 * #{$width-clamped-viewport} / #{$width-ideal-pc});
-          margin-bottom: calc(63.5 * #{$width-clamped-viewport} / #{$width-ideal-pc});;
-        }
+        font-size: calc(16 * #{$liquid-pc});
+      }
+    }
+  }
+  .c-headline--underline {
+    color: $color-white;
+    @include fz (30);
+    &::after {
+      width: 75px;
+      height: 2px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    @include mq (pc) {
+      font-size: calc(36 * #{$liquid-pc});
+      &::after {
+        width: calc(75 * #{$liquid-pc});
+        margin-top: calc(55.5 * #{$liquid-pc});
+        margin-bottom: calc(63.5 * #{$liquid-pc});
       }
     }
   }

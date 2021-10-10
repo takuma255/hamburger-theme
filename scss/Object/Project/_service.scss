@@ -19,7 +19,6 @@
   &__list {
     background-size: cover;
     position: relative;
-    z-index: 500;
     padding-top: calc(11 * #{$liquid-sp});
     padding-left: calc(10 * #{$liquid-sp});
     padding-bottom: calc(10 * #{$liquid-sp});
@@ -49,7 +48,6 @@
     }
     &__innner {
       position: absolute;
-      z-index: 600;
       top: 0;
       left: 0;
       display: flex;
@@ -58,7 +56,6 @@
     }
     .c-link--block {
       position: absolute;
-      z-index: 700;
       top: 0;
       left: 0;
       width: 100%;

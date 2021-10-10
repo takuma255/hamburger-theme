@@ -732,7 +732,6 @@ body.is-open {
 .p-service__list, .p-service__list--left, .p-service__list--right {
   background-size: cover;
   position: relative;
-  z-index: 500;
   padding-top: calc(11 * clamp(375px, 100vw, 1920px) / 375);
   padding-left: calc(10 * clamp(375px, 100vw, 1920px) / 375);
   padding-bottom: calc(10 * clamp(375px, 100vw, 1920px) / 375);
@@ -771,7 +770,6 @@ body.is-open {
 
 .p-service__list__innner {
   position: absolute;
-  z-index: 600;
   top: 0;
   left: 0;
   display: flex;
@@ -781,7 +779,6 @@ body.is-open {
 
 .p-service__list .c-link--block, .p-service__list--left .c-link--block, .p-service__list--right .c-link--block {
   position: absolute;
-  z-index: 700;
   top: 0;
   left: 0;
   width: 100%;
@@ -874,85 +871,54 @@ body.is-open {
 .p-info {
   background: #000;
   position: relative;
-  z-index: 500;
-  padding-top: 184%;
-}
-
-@media screen and (min-width: 768px) {
-  .p-info {
-    padding-top: 50%;
-  }
-}
-
-@media screen and (min-width: 1201px) {
-  .p-info {
-    padding-top: 42%;
-  }
 }
 
 .p-info .c-map {
   position: absolute;
   top: 0;
-  z-index: 600;
+  left: 0;
   opacity: 0.6;
 }
 
-.p-info__layer {
+.p-info .c-definition {
   background-color: #000;
   opacity: 0.29;
-  width: 100%;
-  padding-top: 110%;
-  position: absolute;
-  top: 0;
-  z-index: 800;
-}
-
-@media screen and (min-width: 768px) {
-  .p-info__layer {
-    padding-top: 0;
-    height: 100%;
-  }
-}
-
-@media screen and (min-width: 1201px) {
-  .p-info__layer {
-    width: 61%;
-  }
-}
-
-.p-info__layer .c-definition {
-  position: absolute;
-  z-index: 700;
-  top: 0;
-  width: 100%;
-  height: 100%;
   padding: 40px 40px 51px 42px;
 }
 
-@media screen and (min-width: 1201px) {
-  .p-info__layer .c-definition {
-    padding-top: 9%;
-    padding-left: 8%;
+@media screen and (min-width: 768px) {
+  .p-info .c-definition {
+    padding: 40px 29px 39px 42px;
   }
 }
 
-.p-info__layer .c-definition__description {
+@media screen and (min-width: 1201px) {
+  .p-info .c-definition {
+    width: 61%;
+    padding-top: calc(83 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-left: calc(134 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-bottom: calc(40 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-right: calc(119 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.p-info .c-definition__description {
   color: #fff;
   font-size: 1.4rem;
 }
 
 @media screen and (min-width: 1201px) {
-  .p-info__layer .c-definition__description {
+  .p-info .c-definition__description {
     font-size: calc(16 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
 
-.p-info__layer .c-headline--underline {
+.p-info .c-headline--underline {
   color: #fff;
   font-size: 3rem;
 }
 
-.p-info__layer .c-headline--underline::after {
+.p-info .c-headline--underline::after {
   width: 75px;
   height: 2px;
   margin-top: 20px;
@@ -960,10 +926,10 @@ body.is-open {
 }
 
 @media screen and (min-width: 1201px) {
-  .p-info__layer .c-headline--underline {
+  .p-info .c-headline--underline {
     font-size: calc(36 * clamp(375px, 100vw, 1920px) / 1920);
   }
-  .p-info__layer .c-headline--underline::after {
+  .p-info .c-headline--underline::after {
     width: calc(75 * clamp(375px, 100vw, 1920px) / 1920);
     margin-top: calc(55.5 * clamp(375px, 100vw, 1920px) / 1920);
     margin-bottom: calc(63.5 * clamp(375px, 100vw, 1920px) / 1920);
