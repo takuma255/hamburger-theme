@@ -18,6 +18,24 @@
   }
   &__list {
     background-size: cover;
+    position: relative;
+    z-index: 500;
+    padding-top: calc(11 * #{$liquid-sp});
+    padding-left: calc(10 * #{$liquid-sp});
+    padding-bottom: calc(10 * #{$liquid-sp});
+    padding-right: calc(10 * #{$liquid-sp});
+    @include mq () {
+      padding-top: calc(12 * #{$liquid-tab});
+      padding-left: calc(11 * #{$liquid-tab});
+      padding-bottom: calc(11 * #{$liquid-tab});
+      padding-right: calc(11 * #{$liquid-tab});
+    }
+    @include mq (pc) {
+      padding-top: calc(20 * #{$liquid-pc});
+      padding-left: calc(20 * #{$liquid-pc});
+      padding-bottom: calc(20 * #{$liquid-pc});
+      padding-right: calc(19 * #{$liquid-pc});
+    }
     &--left {
       @extend .p-service__list;
       background-image: url(/images/service__list--left.jpg);
@@ -26,7 +44,15 @@
       @extend .p-service__list;
       background-image: url(/images/service__list--right.jpg);
     }
-
+    &__innner {
+      position: absolute;
+      z-index: 600;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
 
 
@@ -34,15 +60,27 @@
     .c-headline--underline {
       color: $color-white;
       font-family: $font-family-sub;
-      
+      font-size: calc(41 * #{$width-clamped-viewport} / #{$width-ideal-sp});
+      &::after {
+        width:  calc(35 * #{$width-clamped-viewport} / #{$width-ideal-sp});
+        height: 4px;
+        margin-top: calc(19.3 * #{$width-clamped-viewport} / #{$width-ideal-sp});
+      }
+      @include mq () {
+        font-size: calc(44 * #{$width-clamped-viewport} / #{$width-ideal-tab});
+        &::after {
+          width:  calc(40 * #{$width-clamped-viewport} / #{$width-ideal-tab});
+          margin-top: calc(19.5 * #{$width-clamped-viewport} / #{$width-ideal-tab});
+        }
+      }
+      @include mq (pc) {
+        font-size: calc(80 * #{$width-clamped-viewport} / #{$width-ideal-pc});
+        &::after {
+          width: calc(70 * #{$width-clamped-viewport} / #{$width-ideal-pc});
+          margin-top: calc(30.5 * #{$width-clamped-viewport} / #{$width-ideal-pc});
+        }
+      }
     }
-
-
-
-
-
-
-
     .c-definition {
       background: $color-white;
       opacity: 0.8;
@@ -68,30 +106,15 @@
 
 
 /*  .p-service {
-
-  &__list {
-    position: relative;
-    z-index: 500;
-    padding-top: 192%;
-    @include mq () {
-      padding-top: 191%;
-    }
     .c-img {
       position: absolute;
-      top: 0;
-      z-index: 600;
       &:hover {
         opacity: 0.6;
       }
     }
+
     &__inner {
-      position: absolute;
-      top: 0;
-      z-index: 700;
       pointer-events: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
       width: 100%;
       height: 100%;
       padding: 11px 10px 10px 11px;
@@ -101,35 +124,6 @@
       @include mq (pc) {
         padding: 3%;
       }
-
-
-
-
-      .c-headline--underline {
-        color: $color-white;
-        font-family: $font-family-sub;
-        font-size: calc(41 * #{$width-clamped-viewport} / #{$width-ideal-sp});
-        &::after {
-          width:  calc(35 * #{$width-clamped-viewport} / #{$width-ideal-sp});
-          height: 4px;
-          margin-top: calc(19.3 * #{$width-clamped-viewport} / #{$width-ideal-sp});
-        }
-        @include mq () {
-          font-size: calc(44 * #{$width-clamped-viewport} / #{$width-ideal-tab});
-          &::after {
-            width:  calc(40 * #{$width-clamped-viewport} / #{$width-ideal-tab});
-            margin-top: calc(19.5 * #{$width-clamped-viewport} / #{$width-ideal-tab});
-          }
-        }
-        @include mq (pc) {
-          font-size: calc(80 * #{$width-clamped-viewport} / #{$width-ideal-pc});
-          &::after {
-            width: calc(70 * #{$width-clamped-viewport} / #{$width-ideal-pc});
-            margin-top: calc(30.5 * #{$width-clamped-viewport} / #{$width-ideal-pc});
-          }
-        }
-      }
-      
     }
   }
 } */

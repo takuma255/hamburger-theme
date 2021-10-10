@@ -734,6 +734,30 @@ body.is-open {
 
 .p-service__list, .p-service__list--left, .p-service__list--right {
   background-size: cover;
+  position: relative;
+  z-index: 500;
+  padding-top: calc(11 * clamp(375px, 100vw, 1920px) / 375);
+  padding-left: calc(10 * clamp(375px, 100vw, 1920px) / 375);
+  padding-bottom: calc(10 * clamp(375px, 100vw, 1920px) / 375);
+  padding-right: calc(10 * clamp(375px, 100vw, 1920px) / 375);
+}
+
+@media screen and (min-width: 768px) {
+  .p-service__list, .p-service__list--left, .p-service__list--right {
+    padding-top: calc(12 * clamp(375px, 100vw, 1920px) / 834);
+    padding-left: calc(11 * clamp(375px, 100vw, 1920px) / 834);
+    padding-bottom: calc(11 * clamp(375px, 100vw, 1920px) / 834);
+    padding-right: calc(11 * clamp(375px, 100vw, 1920px) / 834);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-service__list, .p-service__list--left, .p-service__list--right {
+    padding-top: calc(20 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-left: calc(20 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-bottom: calc(20 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-right: calc(19 * clamp(375px, 100vw, 1920px) / 1920);
+  }
 }
 
 .p-service__list--left {
@@ -744,9 +768,46 @@ body.is-open {
   background-image: url(/images/service__list--right.jpg);
 }
 
+.p-service__list__innner {
+  position: absolute;
+  z-index: 600;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .p-service__list .c-headline--underline, .p-service__list--left .c-headline--underline, .p-service__list--right .c-headline--underline {
   color: #fff;
   font-family: "Roboto", sans-serif;
+  font-size: calc(41 * clamp(375px, 100vw, 1920px) / 375);
+}
+
+.p-service__list .c-headline--underline::after, .p-service__list--left .c-headline--underline::after, .p-service__list--right .c-headline--underline::after {
+  width: calc(35 * clamp(375px, 100vw, 1920px) / 375);
+  height: 4px;
+  margin-top: calc(19.3 * clamp(375px, 100vw, 1920px) / 375);
+}
+
+@media screen and (min-width: 768px) {
+  .p-service__list .c-headline--underline, .p-service__list--left .c-headline--underline, .p-service__list--right .c-headline--underline {
+    font-size: calc(44 * clamp(375px, 100vw, 1920px) / 834);
+  }
+  .p-service__list .c-headline--underline::after, .p-service__list--left .c-headline--underline::after, .p-service__list--right .c-headline--underline::after {
+    width: calc(40 * clamp(375px, 100vw, 1920px) / 834);
+    margin-top: calc(19.5 * clamp(375px, 100vw, 1920px) / 834);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-service__list .c-headline--underline, .p-service__list--left .c-headline--underline, .p-service__list--right .c-headline--underline {
+    font-size: calc(80 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+  .p-service__list .c-headline--underline::after, .p-service__list--left .c-headline--underline::after, .p-service__list--right .c-headline--underline::after {
+    width: calc(70 * clamp(375px, 100vw, 1920px) / 1920);
+    margin-top: calc(30.5 * clamp(375px, 100vw, 1920px) / 1920);
+  }
 }
 
 .p-service__list .c-definition, .p-service__list--left .c-definition, .p-service__list--right .c-definition {
@@ -782,30 +843,15 @@ body.is-open {
 }
 
 /*  .p-service {
-
-  &__list {
-    position: relative;
-    z-index: 500;
-    padding-top: 192%;
-    @include mq () {
-      padding-top: 191%;
-    }
     .c-img {
       position: absolute;
-      top: 0;
-      z-index: 600;
       &:hover {
         opacity: 0.6;
       }
     }
+
     &__inner {
-      position: absolute;
-      top: 0;
-      z-index: 700;
       pointer-events: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
       width: 100%;
       height: 100%;
       padding: 11px 10px 10px 11px;
@@ -815,35 +861,6 @@ body.is-open {
       @include mq (pc) {
         padding: 3%;
       }
-
-
-
-
-      .c-headline--underline {
-        color: $color-white;
-        font-family: $font-family-sub;
-        font-size: calc(41 * clamp(375px, 100vw, 1920px) / 375);
-        &::after {
-          width:  calc(35 * clamp(375px, 100vw, 1920px) / 375);
-          height: 4px;
-          margin-top: calc(19.3 * clamp(375px, 100vw, 1920px) / 375);
-        }
-        @include mq () {
-          font-size: calc(44 * clamp(375px, 100vw, 1920px) / 834);
-          &::after {
-            width:  calc(40 * clamp(375px, 100vw, 1920px) / 834);
-            margin-top: calc(19.5 * clamp(375px, 100vw, 1920px) / 834);
-          }
-        }
-        @include mq (pc) {
-          font-size: calc(80 * clamp(375px, 100vw, 1920px) / 1920);
-          &::after {
-            width: calc(70 * clamp(375px, 100vw, 1920px) / 1920);
-            margin-top: calc(30.5 * clamp(375px, 100vw, 1920px) / 1920);
-          }
-        }
-      }
-      
     }
   }
 } */
