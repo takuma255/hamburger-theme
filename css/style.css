@@ -479,14 +479,10 @@ li {
 /* link コンポーネント */
 .c-link--block {
   display: block;
-  width: 100%;
-  height: 100%;
 }
 
 .c-link--inlineblock {
   display: inline-block;
-  width: 100%;
-  height: 100%;
 }
 
 /* 定義リスト　コンポーネント */
@@ -786,6 +782,10 @@ body.is-open {
 .p-service__list .c-link--block, .p-service__list--left .c-link--block, .p-service__list--right .c-link--block {
   position: absolute;
   z-index: 700;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .p-service__list .c-headline--underline, .p-service__list--left .c-headline--underline, .p-service__list--right .c-headline--underline {

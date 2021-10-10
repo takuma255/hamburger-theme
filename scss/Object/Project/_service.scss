@@ -59,6 +59,10 @@
     .c-link--block {
       position: absolute;
       z-index: 700;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
     .c-headline--underline {
       color: $color-white;
