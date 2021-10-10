@@ -60,10 +60,6 @@
       position: absolute;
       z-index: 700;
     }
-
-
-
-
     .c-headline--underline {
       color: $color-white;
       font-family: $font-family-sub;
@@ -119,27 +115,3 @@
     }
   }
 }
-
-
-/*  .p-service {
-    .c-img {
-      position: absolute;
-      &:hover {
-        opacity: 0.6;
-      }
-    }
-
-    &__inner {
-      pointer-events: none;
-      width: 100%;
-      height: 100%;
-      padding: 11px 10px 10px 11px;
-      @include mq () {
-        padding: 12px 11px 11px 12px;
-      }
-      @include mq (pc) {
-        padding: 3%;
-      }
-    }
-  }
-} */
