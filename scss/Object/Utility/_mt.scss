@@ -37,7 +37,7 @@
 .c-headline--underline + .c-wrapper {
   margin-top: 211.7px;
   @include mq () {
-    margin-top: 224.4px;
+    margin-top: calc(224.4 * #{$liquid-tab});
   }
   @include mq (pc) {
     margin-top: calc(644.5 * #{$liquid-pc});
