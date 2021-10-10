@@ -14,13 +14,10 @@
   /* ページ毎の設定 */
   &--front {
     @extend .p-hero;
-    background-image: url(/images/main__title--front-sp.png);
+    background-image: url(/images/main__title--front.jpg);
     background-size: cover;
     background-position: center;
     height: 285px;
-    @include mq () {
-      background-image: url(/images/main__title--front-tab.png);
-    }
     @include mq (pc) {
       height: 28vw;
     }

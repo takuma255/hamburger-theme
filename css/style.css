@@ -340,22 +340,7 @@ body {
   color: #3C2A10;
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 400;
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: minmax(375px, 100vw);
   overflow-x: hidden;
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    grid-template-columns: 100vw;
-  }
-}
-
-@media screen and (min-width: 1201px) {
-  body {
-    grid-template-columns: 80vw 20vw;
-  }
 }
 
 a {
@@ -364,6 +349,25 @@ a {
 
 li {
   list-style: none;
+}
+
+/* グリッド　レイアウト */
+.l-grid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: minmax(375px, 100vw);
+}
+
+@media screen and (min-width: 768px) {
+  .l-grid {
+    grid-template-columns: 100vw;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .l-grid {
+    grid-template-columns: 80vw 20vw;
+  }
 }
 
 /* ヘッダー　レイアウト */
@@ -671,16 +675,10 @@ body.is-open {
 }
 
 .p-hero--front {
-  background-image: url(/images/main__title--front-sp.png);
+  background-image: url(/images/main__title--front.jpg);
   background-size: cover;
   background-position: center;
   height: 285px;
-}
-
-@media screen and (min-width: 768px) {
-  .p-hero--front {
-    background-image: url(/images/main__title--front-tab.png);
-  }
 }
 
 @media screen and (min-width: 1201px) {
