@@ -670,26 +670,26 @@ body.is-open {
 }
 
 /* ヒーロー　プロジェクト */
-.p-hero, .p-hero--front {
+.p-hero, .p-hero--home {
   display: flex;
   align-items: center;
   padding-left: 25px;
   /* ページ毎の設定 */
 }
 
-.p-hero .c-headline, .p-hero--front .c-headline, .p-hero .c-headline--underline, .p-hero--front .c-headline--underline {
+.p-hero .c-headline, .p-hero--home .c-headline, .p-hero .c-headline--underline, .p-hero--home .c-headline--underline {
   color: #fff;
   font-size: 3.6rem;
 }
 
 @media screen and (min-width: 1201px) {
-  .p-hero .c-headline, .p-hero--front .c-headline, .p-hero .c-headline--underline, .p-hero--front .c-headline--underline {
+  .p-hero .c-headline, .p-hero--home .c-headline, .p-hero .c-headline--underline, .p-hero--home .c-headline--underline {
     font-size: calc(40 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
 
-.p-hero--front {
-  background-image: url(/images/hero--front.jpg);
+.p-hero--home {
+  background-image: url(/images/hero--home.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 119px;
@@ -697,7 +697,7 @@ body.is-open {
 }
 
 @media screen and (min-width: 1201px) {
-  .p-hero--front {
+  .p-hero--home {
     padding-top: calc(231 * clamp(375px, 100vw, 1920px) / 1920);
     padding-bottom: calc(243 * clamp(375px, 100vw, 1920px) / 1920);
   }

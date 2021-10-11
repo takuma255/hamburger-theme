@@ -12,9 +12,9 @@
   }
 
   /* ページ毎の設定 */
-  &--front {
+  &--home {
     @extend .p-hero;
-    background-image: url(/images/hero--front.jpg);
+    background-image: url(/images/hero--home.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 119px;
