@@ -48,6 +48,7 @@
     }
     &__innner {
       position: absolute;
+      z-index: 500;
       top: 0;
       left: 0;
       display: flex;
@@ -56,6 +57,7 @@
     }
     .c-link--block {
       position: absolute;
+      z-index: 600;
       top: 0;
       left: 0;
       width: 100%;
