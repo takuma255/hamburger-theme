@@ -38,6 +38,10 @@
 @import "Object/Component/line";
 @import "Object/Component/copyright";
 
+@import "Object/Component/pagination";
+
+
+
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
@@ -50,6 +54,9 @@
 @import "Object/Project/hero";
 @import "Object/Project/service";
 @import "Object/Project/info";
+
+@import "Object/Project/archive";
+@import "Object/Project/card";
 
 @import "Object/Project/sidebar";
 @import "Object/Project/gmenu";

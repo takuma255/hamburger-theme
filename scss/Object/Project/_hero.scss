@@ -24,4 +24,17 @@
       padding-bottom: calc(243 * #{$liquid-pc});
     }
   }
+  /* ページ毎の設定 */
+  &--archive {
+    @extend .p-hero;
+    background-image: url(/images/hero--archive.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 119px;
+    padding-bottom: 115px;
+    @include mq (pc) {
+      padding-top: calc(231 * #{$liquid-pc});
+      padding-bottom: calc(243 * #{$liquid-pc});
+    }
+  }
 }

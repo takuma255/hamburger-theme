@@ -516,6 +516,11 @@ li {
   font-size: 1.4rem;
 }
 
+/* ページネーション　コンポーネント */
+.c-pagination {
+  display: flex;
+}
+
 /* ヘッダー プロジェクト */
 .p-header {
   background-color: #FFF7EF;
@@ -670,20 +675,21 @@ body.is-open {
 }
 
 /* ヒーロー　プロジェクト */
-.p-hero, .p-hero--home {
+.p-hero, .p-hero--home, .p-hero--archive {
   display: flex;
   align-items: center;
   padding-left: 25px;
   /* ページ毎の設定 */
+  /* ページ毎の設定 */
 }
 
-.p-hero .c-headline, .p-hero--home .c-headline, .p-hero .c-headline--underline, .p-hero--home .c-headline--underline {
+.p-hero .c-headline, .p-hero--home .c-headline, .p-hero--archive .c-headline, .p-hero .c-headline--underline, .p-hero--home .c-headline--underline, .p-hero--archive .c-headline--underline {
   color: #fff;
   font-size: 3.6rem;
 }
 
 @media screen and (min-width: 1201px) {
-  .p-hero .c-headline, .p-hero--home .c-headline, .p-hero .c-headline--underline, .p-hero--home .c-headline--underline {
+  .p-hero .c-headline, .p-hero--home .c-headline, .p-hero--archive .c-headline, .p-hero .c-headline--underline, .p-hero--home .c-headline--underline, .p-hero--archive .c-headline--underline {
     font-size: calc(40 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
@@ -698,6 +704,21 @@ body.is-open {
 
 @media screen and (min-width: 1201px) {
   .p-hero--home {
+    padding-top: calc(231 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-bottom: calc(243 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.p-hero--archive {
+  background-image: url(/images/hero--archive.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 119px;
+  padding-bottom: 115px;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-hero--archive {
     padding-top: calc(231 * clamp(375px, 100vw, 1920px) / 1920);
     padding-bottom: calc(243 * clamp(375px, 100vw, 1920px) / 1920);
   }
@@ -941,6 +962,8 @@ body.is-open {
   }
 }
 
+/* アーカイブ　プロジェクト */
+/* カード　プロジェクト */
 /* サイドバー　プロジェクト */
 .p-sidebar {
   width: 87vw;
