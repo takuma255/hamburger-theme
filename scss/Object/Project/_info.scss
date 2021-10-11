@@ -4,13 +4,15 @@
   position: relative;
   .c-map {
     position: absolute;
+    z-index: 500;
     top: 0;
     left: 0;
     opacity: 0.6;
   }
   .c-definition {
-    background-color: $color-black;
-    opacity: 0.29;
+    position: relative;
+    z-index: 600;
+    background-color: rgba( 0, 0, 0, 0.29);
     padding: 40px 40px 51px 42px;
     @include mq () {
       padding: 40px 29px 39px 42px;
