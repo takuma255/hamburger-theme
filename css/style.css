@@ -770,6 +770,7 @@ body.is-open {
 
 .p-service__list__innner {
   position: absolute;
+  z-index: 500;
   top: 0;
   left: 0;
   display: flex;
@@ -779,6 +780,7 @@ body.is-open {
 
 .p-service__list .c-link--block, .p-service__list--left .c-link--block, .p-service__list--right .c-link--block {
   position: absolute;
+  z-index: 600;
   top: 0;
   left: 0;
   width: 100%;
@@ -886,6 +888,7 @@ body.is-open {
   z-index: 600;
   background-color: rgba(0, 0, 0, 0.29);
   padding: 40px 40px 51px 42px;
+  pointer-events: none;
 }
 
 @media screen and (min-width: 768px) {
