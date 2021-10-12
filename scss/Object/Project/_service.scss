@@ -2,9 +2,9 @@
 .p-service {
   row-gap: calc(20 * #{$liquid-sp});
   padding-top: calc(20 * #{$liquid-sp});
-  padding-left: calc(20 * #{$liquid-sp});
-  padding-bottom: calc(49 * #{$liquid-sp});
   padding-right: calc(20 * #{$liquid-sp});
+  padding-bottom: calc(49 * #{$liquid-sp});
+  padding-left: calc(20 * #{$liquid-sp});
   @include mq () {
     column-gap: calc(41 * #{$liquid-tab});
     padding: calc(40 * #{$liquid-tab});
@@ -12,31 +12,31 @@
   @include mq (pc) {
     column-gap: calc(80 * #{$liquid-pc});
     padding-top: calc(120 * #{$liquid-pc});
-    padding-left: calc(112 * #{$liquid-pc});
-    padding-bottom: calc(131 * #{$liquid-pc});
     padding-right: calc(111 * #{$liquid-pc});
+    padding-bottom: calc(131 * #{$liquid-pc});
+    padding-left: calc(112 * #{$liquid-pc});
   }
   &__list {
     background-size: cover;
     position: relative;
     padding-top: calc(11 * #{$liquid-sp});
-    padding-left: calc(10 * #{$liquid-sp});
-    padding-bottom: calc(10 * #{$liquid-sp});
     padding-right: calc(10 * #{$liquid-sp});
+    padding-bottom: calc(10 * #{$liquid-sp});
+    padding-left: calc(10 * #{$liquid-sp});
     &:hover {
       opacity: 0.6;
     }
     @include mq () {
       padding-top: calc(12 * #{$liquid-tab});
-      padding-left: calc(11 * #{$liquid-tab});
-      padding-bottom: calc(11 * #{$liquid-tab});
       padding-right: calc(11 * #{$liquid-tab});
+      padding-bottom: calc(11 * #{$liquid-tab});
+      padding-left: calc(11 * #{$liquid-tab});
     }
     @include mq (pc) {
       padding-top: calc(20 * #{$liquid-pc});
-      padding-left: calc(20 * #{$liquid-pc});
-      padding-bottom: calc(20 * #{$liquid-pc});
       padding-right: calc(19 * #{$liquid-pc});
+      padding-bottom: calc(20 * #{$liquid-pc});
+      padding-left: calc(20 * #{$liquid-pc});
     }
     &--left {
       @extend .p-service__list;

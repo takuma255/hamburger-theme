@@ -21,9 +21,9 @@
     @include mq (pc) {
       width: 61%;
       padding-top: calc(83 * #{$liquid-pc});
-      padding-left: calc(134 * #{$liquid-pc});
+      padding-right: calc(134 * #{$liquid-pc});
       padding-bottom: calc(40 * #{$liquid-pc});
-      padding-right: calc(119 * #{$liquid-pc});
+      padding-left: calc(119 * #{$liquid-pc});
     }
     &__description {
       color: $color-white;
