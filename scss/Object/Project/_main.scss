@@ -1,4 +1,25 @@
 /* メイン　プロジェクト */
 .p-main {
-  background-color: $background-color-main;
+  &__body {
+    background-color: $background-color-main;
+    &--archive {
+      @extend .p-main__body;
+      padding-top: calc(30 * #{$liquid-sp});
+      padding-right: calc(18 * #{$liquid-sp});
+      padding-bottom: calc(30 * #{$liquid-sp});
+      padding-left: calc(22 * #{$liquid-sp});
+      @include mq () {
+        padding-top: calc(36 * #{$liquid-sp});
+        padding-right: calc(35 * #{$liquid-sp});
+        padding-bottom: calc(30 * #{$liquid-sp});
+        padding-left: calc(42 * #{$liquid-sp});
+      }
+      @include mq (pc) {
+        padding-top: calc(60 * #{$liquid-pc});
+        padding-right: calc(100 * #{$liquid-pc});
+        padding-bottom: calc(64 * #{$liquid-pc});
+        padding-left: calc(100 * #{$liquid-pc});
+      }
+    }
+  }
 }

@@ -1,1 +1,18 @@
 /* カード　プロジェクト */
+.p-card {
+  background-color: $background-color-card;
+  .c-img {
+    object-fit: cover;
+    width: 100%;
+  }
+  &__body {
+    color: $color-white;
+  }
+
+  
+  &__detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
