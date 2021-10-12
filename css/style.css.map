@@ -7,7 +7,7 @@
         "../scss/Foundation/_variable.scss",
         "../scss/Foundation/_mixin.scss",
         "../scss/Foundation/_base.scss",
-        "../scss/Layout/_grid.scss",
+        "../scss/Layout/_body.scss",
         "../scss/Layout/_header.scss",
         "../scss/Layout/_main.scss",
         "../scss/Layout/_sidebar.scss",
