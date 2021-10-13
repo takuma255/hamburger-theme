@@ -1,18 +1,71 @@
 /* カード　プロジェクト */
 .p-card {
   background-color: $background-color-card;
-  .c-img {
-    object-fit: cover;
-    width: 100%;
-  }
+  color: $color-white;
   &__body {
-    color: $color-white;
+    padding: 31.5px 73.1px 17px 40px;
+    @include mq () {
+      padding: 30px 59px 34.7px 45px;
+    }
+    @include mq (pc) {
+      padding-top: calc(53 * #{$liquid-pc});
+      padding-right: calc(104 * #{$liquid-pc});
+      padding-left: calc(63 * #{$liquid-pc});
+      padding-bottom: calc(60 * #{$liquid-pc});
+    }
+    &__headline {
+      font-weight: $font-weight-l;
+      @include fz (20);
+      @include mq (pc) {
+        font-size: calc(36 * #{$liquid-pc});
+      }
+    }
+    &__subheadline {
+      font-weight: $font-weight-l;
+      @include fz (16);
+      @include mq (pc) {
+        font-size: calc(24 * #{$liquid-pc});
+      }
+    }
+    &__description {
+      word-wrap: break-word;
+      @include fz (16);
+      @include mq (pc) {
+        font-size: calc(16 * #{$liquid-pc});
+      }
+    }
   }
 
   
-  &__detail {
+  &__btnarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 43.7px;
+    @include mq () {
+      padding-bottom: 40px;
+    }
+    @include mq (pc) {
+      padding-bottom: calc(60 * #{$liquid-pc});
+    }
+    .c-btn--detail {
+      color: $font-color-sub;
+      border: 1px solid $font-color-sub;
+      @include fz (16);
+      width: 163.16px;
+      padding-top: 10px;
+      padding-bottom: 10.5px;
+      &:hover {
+        color: $color-white;
+        background: $font-color-sub;
+        border: 1px solid $color-white;
+      }
+      @include mq (pc) {
+        font-size: calc(16 * #{$liquid-pc});
+        width: calc(292 * #{$liquid-pc});
+        padding-top: calc(27 * #{$liquid-pc});
+        padding-bottom: calc(27 * #{$liquid-pc});
+      }
+    }
   }
 }

@@ -1,6 +1,7 @@
 /* ボタン　コンポーネント */
 .c-btn {
   display: block;
+  font-weight: $font-weight-l;
   &--search {
     @extend .c-btn;
     border-radius: 10px;
@@ -10,9 +11,7 @@
   }
   &--detail {
     @extend .c-btn;
-    border-radius: 10px;
-    border: 1px solid $font-color-sub;
-    height: 46px;
+    border-radius: 50px;
     background: $color-white;
   }
 }

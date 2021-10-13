@@ -413,7 +413,7 @@ li {
   grid-column: 1/2;
 }
 
-.l-card__detail {
+.l-card__btnarea {
   grid-row: 3/4;
   grid-column: 1/2;
 }
@@ -431,7 +431,7 @@ li {
     grid-row: 1/2;
     grid-column: 2/3;
   }
-  .l-card__detail {
+  .l-card__btnarea {
     grid-row: 2/3;
     grid-column: 2/3;
   }
@@ -480,6 +480,7 @@ li {
 /* ボタン　コンポーネント */
 .c-btn, .c-btn--search, .c-btn--detail {
   display: block;
+  font-weight: 700;
 }
 
 .c-btn--search {
@@ -490,9 +491,7 @@ li {
 }
 
 .c-btn--detail {
-  border-radius: 10px;
-  border: 1px solid #707070;
-  height: 46px;
+  border-radius: 50px;
   background: #fff;
 }
 
@@ -562,6 +561,13 @@ li {
 .c-copyright {
   color: #fff;
   font-size: 1.4rem;
+}
+
+/* カードコンポーネント */
+.c-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /* ページネーション　コンポーネント */
@@ -665,6 +671,7 @@ li {
 .p-search .c-btn--search {
   width: 78px;
   font-size: 16px;
+  color: #707070;
 }
 
 .p-search .c-btn--search:active {
@@ -1038,21 +1045,102 @@ body.is-open {
 /* カード　プロジェクト */
 .p-card {
   background-color: #3C2B1C;
-}
-
-.p-card .c-img {
-  object-fit: cover;
-  width: 100%;
-}
-
-.p-card__body {
   color: #fff;
 }
 
-.p-card__detail {
+.p-card__body {
+  padding: 31.5px 73.1px 17px 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-card__body {
+    padding: 30px 59px 34.7px 45px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-card__body {
+    padding-top: calc(53 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-right: calc(104 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-left: calc(63 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-bottom: calc(60 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.p-card__body__headline {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-card__body__headline {
+    font-size: calc(36 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.p-card__body__subheadline {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-card__body__subheadline {
+    font-size: calc(24 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.p-card__body__description {
+  word-wrap: break-word;
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-card__body__description {
+    font-size: calc(16 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.p-card__btnarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 43.7px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-card__btnarea {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-card__btnarea {
+    padding-bottom: calc(60 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.p-card__btnarea .c-btn--detail {
+  color: #707070;
+  border: 1px solid #707070;
+  font-size: 1.6rem;
+  width: 163.16px;
+  padding-top: 10px;
+  padding-bottom: 10.5px;
+}
+
+.p-card__btnarea .c-btn--detail:hover {
+  color: #fff;
+  background: #707070;
+  border: 1px solid #fff;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-card__btnarea .c-btn--detail {
+    font-size: calc(16 * clamp(375px, 100vw, 1920px) / 1920);
+    width: calc(292 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-top: calc(27 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-bottom: calc(27 * clamp(375px, 100vw, 1920px) / 1920);
+  }
 }
 
 /* サイドバー　プロジェクト */
@@ -1235,12 +1323,26 @@ body.is-open {
   }
 }
 
-/*
-.c-headline + .p-sidebar__nav {
-  @include mq (pc) {
-    margin-top: 85px;
+.p-card__body__headline + .p-card__body__subheadline {
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-card__body__headline + .p-card__body__subheadline {
+    margin-top: calc(47 * clamp(375px, 100vw, 1920px) / 1920);
   }
-} */
+}
+
+.p-card__body__subheadline + .p-card__body__description {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-card__body__subheadline + .p-card__body__description {
+    margin-top: calc(17 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
 /* 隣接セレクタ マージンレフト ユーティリティ */
 .p-footer__menu__list + .c-line, .p-footer__menu__list + .c-line--vertical {
   margin-left: 15px;

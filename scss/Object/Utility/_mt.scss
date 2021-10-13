@@ -44,10 +44,16 @@
   }
 }
 
-
-/*
-.c-headline + .p-sidebar__nav {
+.p-card__body__headline + .p-card__body__subheadline {
+  margin-top: 24px;
   @include mq (pc) {
-    margin-top: 85px;
+    margin-top: calc(47 * #{$liquid-pc});
   }
-} */
+}
+
+.p-card__body__subheadline + .p-card__body__description {
+  margin-top: 10px;
+  @include mq (pc) {
+    margin-top: calc(17 * #{$liquid-pc});
+  }
+}
