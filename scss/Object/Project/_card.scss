@@ -2,6 +2,9 @@
 .p-card {
   background-color: $background-color-card;
   color: $color-white;
+  .c-img {
+    object-position: left top;
+  }
   &__body {
     padding: 31.5px 73.1px 17px 40px;
     @include mq () {
@@ -30,9 +33,6 @@
     &__description {
       word-wrap: break-word;
       @include fz (16);
-      @include mq (pc) {
-        font-size: calc(16 * #{$liquid-pc});
-      }
     }
   }
 

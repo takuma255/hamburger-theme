@@ -57,3 +57,13 @@
     margin-top: calc(17 * #{$liquid-pc});
   }
 }
+
+.p-archive__list + .p-archive__list {
+  margin-top: 20.9px;
+  @include mq () {
+    margin-top: 20.5px;
+  }
+  @include mq (pc) {
+    margin-top: calc(30 * #{$liquid-pc});
+  }
+}

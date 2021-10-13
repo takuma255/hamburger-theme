@@ -421,7 +421,7 @@ li {
 @media screen and (min-width: 768px) {
   .l-card {
     grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
   .l-card__img {
     grid-row: 1/3;
@@ -1048,6 +1048,10 @@ body.is-open {
   color: #fff;
 }
 
+.p-card .c-img {
+  object-position: left top;
+}
+
 .p-card__body {
   padding: 31.5px 73.1px 17px 40px;
 }
@@ -1092,12 +1096,6 @@ body.is-open {
 .p-card__body__description {
   word-wrap: break-word;
   font-size: 1.6rem;
-}
-
-@media screen and (min-width: 1201px) {
-  .p-card__body__description {
-    font-size: calc(16 * clamp(375px, 100vw, 1920px) / 1920);
-  }
 }
 
 .p-card__btnarea {
@@ -1340,6 +1338,22 @@ body.is-open {
 @media screen and (min-width: 1201px) {
   .p-card__body__subheadline + .p-card__body__description {
     margin-top: calc(17 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.p-archive__list + .p-archive__list {
+  margin-top: 20.9px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-archive__list + .p-archive__list {
+    margin-top: 20.5px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-archive__list + .p-archive__list {
+    margin-top: calc(30 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
 
