@@ -10,3 +10,19 @@
 .c-searchbox + .c-btn--search {
   margin-left: 12px;
 }
+
+.c-pagination__current + .c-pagination__prev {
+  margin-left: 19.3px;
+}
+
+.c-pagination__prev + .c-pagination__number {
+  margin-left: 17.2px;
+}
+
+.c-pagination__number + .c-pagination__number {
+  margin-left: 15px;
+}
+
+.c-pagination__number + .c-pagination__next {
+  margin-left: 19.3px;
+}
