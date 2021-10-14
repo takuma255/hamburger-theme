@@ -76,4 +76,24 @@
   @include mq (pc) {
     margin-top: calc(150 * #{$liquid-pc});
   }
-} 
+}
+
+.p-main__body__headline + .p-main__body__description {
+  margin-top: 30px;
+  @include mq () {
+    margin-top: 25px;
+  }
+  @include mq (pc) {
+    margin-top: calc(25 * #{$liquid-pc});
+  }
+}
+
+.p-main__body__description + .p-archive {
+  margin-top: 19px;
+  @include mq () {
+    margin-top: 37px;
+  }
+  @include mq (pc) {
+    margin-top: calc(70 * #{$liquid-pc});
+  }
+}

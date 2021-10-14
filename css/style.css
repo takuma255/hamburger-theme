@@ -816,19 +816,33 @@ body.is-open {
   background-color: #FFFDFA;
 }
 
+.p-main__body__headline {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-main__body__headline {
+    font-size: 3.6rem;
+  }
+}
+
+.p-main__body__description {
+  font-size: 1.6rem;
+}
+
 .p-main__body--archive {
-  padding-top: calc(30 * clamp(375px, 100vw, 1920px) / 375);
-  padding-right: calc(18 * clamp(375px, 100vw, 1920px) / 375);
-  padding-bottom: calc(30 * clamp(375px, 100vw, 1920px) / 375);
-  padding-left: calc(22 * clamp(375px, 100vw, 1920px) / 375);
+  padding-top: 30px;
+  padding-right: 18px;
+  padding-bottom: 30px;
+  padding-left: 22px;
 }
 
 @media screen and (min-width: 768px) {
   .p-main__body--archive {
-    padding-top: calc(36 * clamp(375px, 100vw, 1920px) / 375);
-    padding-right: calc(35 * clamp(375px, 100vw, 1920px) / 375);
-    padding-bottom: calc(30 * clamp(375px, 100vw, 1920px) / 375);
-    padding-left: calc(42 * clamp(375px, 100vw, 1920px) / 375);
+    padding-top: 36px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+    padding-left: 42px;
   }
 }
 
@@ -1221,7 +1235,6 @@ body.is-open {
 
 @media screen and (min-width: 1201px) {
   .p-card__btnarea .c-btn--detail {
-    font-size: calc(16 * clamp(375px, 100vw, 1920px) / 1920);
     width: calc(292 * clamp(375px, 100vw, 1920px) / 1920);
     padding-top: calc(27 * clamp(375px, 100vw, 1920px) / 1920);
     padding-bottom: calc(27 * clamp(375px, 100vw, 1920px) / 1920);
@@ -1457,6 +1470,38 @@ body.is-open {
 @media screen and (min-width: 1201px) {
   .p-archive + .c-pagination {
     margin-top: calc(150 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.p-main__body__headline + .p-main__body__description {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-main__body__headline + .p-main__body__description {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-main__body__headline + .p-main__body__description {
+    margin-top: calc(25 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.p-main__body__description + .p-archive {
+  margin-top: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-main__body__description + .p-archive {
+    margin-top: 37px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-main__body__description + .p-archive {
+    margin-top: calc(70 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
 

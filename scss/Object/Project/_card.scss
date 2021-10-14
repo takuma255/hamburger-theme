@@ -61,7 +61,6 @@
         border: 1px solid $color-white;
       }
       @include mq (pc) {
-        font-size: calc(16 * #{$liquid-pc});
         width: calc(292 * #{$liquid-pc});
         padding-top: calc(27 * #{$liquid-pc});
         padding-bottom: calc(27 * #{$liquid-pc});

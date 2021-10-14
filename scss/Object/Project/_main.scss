@@ -2,17 +2,26 @@
 .p-main {
   &__body {
     background-color: $background-color-main;
+    &__headline {
+      @include fz (28);
+      @include mq () {
+        @include fz (36);
+      }
+    }
+    &__description {
+      @include fz (16);
+    }
     &--archive {
       @extend .p-main__body;
-      padding-top: calc(30 * #{$liquid-sp});
-      padding-right: calc(18 * #{$liquid-sp});
-      padding-bottom: calc(30 * #{$liquid-sp});
-      padding-left: calc(22 * #{$liquid-sp});
+      padding-top: 30px;
+      padding-right: 18px;
+      padding-bottom: 30px;
+      padding-left: 22px;
       @include mq () {
-        padding-top: calc(36 * #{$liquid-sp});
-        padding-right: calc(35 * #{$liquid-sp});
-        padding-bottom: calc(30 * #{$liquid-sp});
-        padding-left: calc(42 * #{$liquid-sp});
+        padding-top: 36px;
+        padding-right: 35px;
+        padding-bottom: 30px;
+        padding-left: 42px;
       }
       @include mq (pc) {
         padding-top: calc(60 * #{$liquid-pc});
