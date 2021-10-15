@@ -1,8 +1,6 @@
 /* ページネーション　コンポーネント */
 .c-pagination {
-  font-family: $font-family-sub;
   color: $font-color-sub;
-  font-weight: $font-weight-l;
   @include fz (16);
   display: flex;
   justify-content: space-between;
@@ -13,6 +11,8 @@
   &__current {
     display: none;
     @include mq () {
+      font-family: $font-family-sub;
+      font-weight: $font-weight-l;
       display: block;
     }
   }
@@ -50,6 +50,8 @@
     display: none;
     .c-link {
       color: $font-color-sub;
+      font-family: $font-family-sub;
+      font-weight: $font-weight-l;
       display: flex;
       width: 100%;
       height: 100%;

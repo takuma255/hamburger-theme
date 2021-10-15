@@ -572,9 +572,7 @@ li {
 
 /* ページネーション　コンポーネント */
 .c-pagination {
-  font-family: "Roboto", sans-serif;
   color: #707070;
-  font-weight: 700;
   font-size: 1.6rem;
   display: flex;
   justify-content: space-between;
@@ -593,6 +591,8 @@ li {
 
 @media screen and (min-width: 768px) {
   .c-pagination__current {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
     display: block;
   }
 }
@@ -641,6 +641,8 @@ li {
 
 .c-pagination__number .c-link {
   color: #707070;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   display: flex;
   width: 100%;
   height: 100%;
