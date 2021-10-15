@@ -898,7 +898,8 @@ body.is-open {
 }
 
 .p-hero--archive {
-  background-image: url(/images/hero--archive.jpg);
+  background-image: url(/images/hero--archive.png);
+  background-color: #000;
   background-size: cover;
   background-position: 30% 0;
   padding-top: 102px;

@@ -29,7 +29,8 @@
   /* ページ毎の設定 */
   &--archive {
     @extend .p-hero;
-    background-image: url(/images/hero--archive.jpg);
+    background-image: url(/images/hero--archive.png);
+    background-color: $color-black;
     background-size: cover;
     background-position: 30% 0 ;
     padding-top: 102px;
