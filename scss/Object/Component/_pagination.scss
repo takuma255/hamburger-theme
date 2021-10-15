@@ -19,14 +19,12 @@
   &__prev {
     .c-link {
       color: $font-color-sub;
-      @include fz (32);
       &:hover {
         color: $font-color-hover;
       }
     }
     &::after {
       content: "前へ";
-      @include fz (16);
       margin-left: 8.2px;
       @include mq () {
         display: none;
@@ -36,14 +34,12 @@
   &__next {
     .c-link {
       color: $font-color-sub;
-      @include fz (32);
       &:hover {
         color: $font-color-hover;
       }
     }
     &::before {
       content: "次へ";
-      @include fz (16);
       margin-right: 7.3px;
       @include mq () {
         display: none;
