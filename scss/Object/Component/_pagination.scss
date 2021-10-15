@@ -16,33 +16,31 @@
       display: block;
     }
   }
-  &__prev {
+  &__mark {
     .c-link {
       color: $font-color-sub;
       &:hover {
         color: $font-color-hover;
       }
     }
-    &::after {
-      content: "前へ";
-      margin-left: 8.2px;
-      @include mq () {
-        display: none;
+    &--prev {
+      @extend .c-pagination__mark;
+      &::after {
+        content: "前へ";
+        margin-left: 8.2px;
+        @include mq () {
+          display: none;
+        }
       }
     }
-  }
-  &__next {
-    .c-link {
-      color: $font-color-sub;
-      &:hover {
-        color: $font-color-hover;
-      }
-    }
-    &::before {
-      content: "次へ";
-      margin-right: 7.3px;
-      @include mq () {
-        display: none;
+    &--next {
+      @extend .c-pagination__mark;
+      &::before {
+        content: "次へ";
+        margin-right: 7.3px;
+        @include mq () {
+          display: none;
+        }
       }
     }
   }

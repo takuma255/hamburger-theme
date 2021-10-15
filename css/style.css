@@ -597,40 +597,32 @@ li {
   }
 }
 
-.c-pagination__prev .c-link {
+.c-pagination__mark .c-link, .c-pagination__mark--prev .c-link, .c-pagination__mark--next .c-link {
   color: #707070;
 }
 
-.c-pagination__prev .c-link:hover {
+.c-pagination__mark .c-link:hover, .c-pagination__mark--prev .c-link:hover, .c-pagination__mark--next .c-link:hover {
   color: silver;
 }
 
-.c-pagination__prev::after {
+.c-pagination__mark--prev::after {
   content: "前へ";
   margin-left: 8.2px;
 }
 
 @media screen and (min-width: 768px) {
-  .c-pagination__prev::after {
+  .c-pagination__mark--prev::after {
     display: none;
   }
 }
 
-.c-pagination__next .c-link {
-  color: #707070;
-}
-
-.c-pagination__next .c-link:hover {
-  color: silver;
-}
-
-.c-pagination__next::before {
+.c-pagination__mark--next::before {
   content: "次へ";
   margin-right: 7.3px;
 }
 
 @media screen and (min-width: 768px) {
-  .c-pagination__next::before {
+  .c-pagination__mark--next::before {
     display: none;
   }
 }
@@ -1546,11 +1538,11 @@ body.is-open {
   margin-left: 12px;
 }
 
-.c-pagination__current + .c-pagination__prev {
+.c-pagination__current + .c-pagination__mark--prev {
   margin-left: 19.3px;
 }
 
-.c-pagination__prev + .c-pagination__number {
+.c-pagination__mark--prev + .c-pagination__number {
   margin-left: 17.2px;
 }
 
@@ -1558,7 +1550,7 @@ body.is-open {
   margin-left: 15px;
 }
 
-.c-pagination__number + .c-pagination__next {
+.c-pagination__number + .c-pagination__mark--next {
   margin-left: 19.3px;
 }
 

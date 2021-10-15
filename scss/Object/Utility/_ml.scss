@@ -11,11 +11,11 @@
   margin-left: 12px;
 }
 
-.c-pagination__current + .c-pagination__prev {
+.c-pagination__current + .c-pagination__mark--prev {
   margin-left: 19.3px;
 }
 
-.c-pagination__prev + .c-pagination__number {
+.c-pagination__mark--prev + .c-pagination__number {
   margin-left: 17.2px;
 }
 
@@ -23,7 +23,7 @@
   margin-left: 15px;
 }
 
-.c-pagination__number + .c-pagination__next {
+.c-pagination__number + .c-pagination__mark--next {
   margin-left: 19.3px;
 }
 
