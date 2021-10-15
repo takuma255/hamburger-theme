@@ -1,14 +1,16 @@
 /* ヒーロー　プロジェクト */
 .p-hero {
-  display: flex;
-  align-items: center;
+  font-weight: $font-weight-l;
+  color: $color-white;
   padding-left: 25px;
-  .c-headline {
-    color: $color-white;
+  &__headline {
     @include fz (36);
     @include mq (pc) {
       font-size: calc(40 * #{$liquid-pc});
     }
+  }
+  &__lead {
+    @include fz (16);
   }
 
   /* ページ毎の設定 */
@@ -27,13 +29,17 @@
   /* ページ毎の設定 */
   &--archive {
     @extend .p-hero;
-    background-image: url(/images/hero--archive.jpg);
+    background-color: $color-black;
     background-position: center;
-    padding-top: 119px;
-    padding-bottom: 115px;
+    padding-top: 102px;
+    padding-bottom: 104px;
+    
     @include mq (pc) {
       padding-top: calc(231 * #{$liquid-pc});
       padding-bottom: calc(243 * #{$liquid-pc});
+    }
+    .p-hero__headline {
+      font-family: $font-family-sub;
     }
   }
 }

@@ -859,22 +859,25 @@ body.is-open {
 
 /* ヒーロー　プロジェクト */
 .p-hero, .p-hero--home, .p-hero--archive {
-  display: flex;
-  align-items: center;
+  font-weight: 700;
+  color: #fff;
   padding-left: 25px;
   /* ページ毎の設定 */
   /* ページ毎の設定 */
 }
 
-.p-hero .c-headline, .p-hero--home .c-headline, .p-hero--archive .c-headline, .p-hero .c-headline--underline, .p-hero--home .c-headline--underline, .p-hero--archive .c-headline--underline {
-  color: #fff;
+.p-hero__headline {
   font-size: 3.6rem;
 }
 
 @media screen and (min-width: 1201px) {
-  .p-hero .c-headline, .p-hero--home .c-headline, .p-hero--archive .c-headline, .p-hero .c-headline--underline, .p-hero--home .c-headline--underline, .p-hero--archive .c-headline--underline {
+  .p-hero__headline {
     font-size: calc(40 * clamp(375px, 100vw, 1920px) / 1920);
   }
+}
+
+.p-hero__lead {
+  font-size: 1.6rem;
 }
 
 .p-hero--home {
@@ -893,10 +896,10 @@ body.is-open {
 }
 
 .p-hero--archive {
-  background-image: url(/images/hero--archive.jpg);
+  background-color: #000;
   background-position: center;
-  padding-top: 119px;
-  padding-bottom: 115px;
+  padding-top: 102px;
+  padding-bottom: 104px;
 }
 
 @media screen and (min-width: 1201px) {
@@ -904,6 +907,10 @@ body.is-open {
     padding-top: calc(231 * clamp(375px, 100vw, 1920px) / 1920);
     padding-bottom: calc(243 * clamp(375px, 100vw, 1920px) / 1920);
   }
+}
+
+.p-hero--archive .p-hero__headline {
+  font-family: "Roboto", sans-serif;
 }
 
 /* 提供サービス　プロジェクト */
