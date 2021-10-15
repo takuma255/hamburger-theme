@@ -599,6 +599,7 @@ li {
 
 .c-pagination__prev .c-link {
   color: #707070;
+  font-size: 3.2rem;
 }
 
 .c-pagination__prev .c-link:hover {
@@ -607,6 +608,7 @@ li {
 
 .c-pagination__prev::after {
   content: "前へ";
+  font-size: 1.6rem;
   margin-left: 8.2px;
 }
 
@@ -618,6 +620,7 @@ li {
 
 .c-pagination__next .c-link {
   color: #707070;
+  font-size: 3.2rem;
 }
 
 .c-pagination__next .c-link:hover {
@@ -626,6 +629,7 @@ li {
 
 .c-pagination__next::before {
   content: "次へ";
+  font-size: 1.6rem;
   margin-right: 7.3px;
 }
 
