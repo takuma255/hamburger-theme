@@ -866,18 +866,10 @@ body.is-open {
   /* ページ毎の設定 */
 }
 
-.p-hero__headline {
-  font-size: 3.6rem;
-}
-
-@media screen and (min-width: 1201px) {
-  .p-hero__headline {
-    font-size: calc(40 * clamp(375px, 100vw, 1920px) / 1920);
+@media screen and (min-width: 768px) {
+  .p-hero, .p-hero--home, .p-hero--archive {
+    padding-left: 86px;
   }
-}
-
-.p-hero__lead {
-  font-size: 1.6rem;
 }
 
 .p-hero--home {
@@ -895,22 +887,52 @@ body.is-open {
   }
 }
 
+.p-hero--home .p-hero__headline {
+  font-size: 3.6rem;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-hero--home .p-hero__headline {
+    font-size: calc(40 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
 .p-hero--archive {
-  background-color: #000;
-  background-position: center;
+  background-image: url(/images/hero--archive.jpg);
+  background-size: cover;
+  background-position: 30% 0;
   padding-top: 102px;
   padding-bottom: 104px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-hero--archive {
+    display: flex;
+    align-items: center;
+    background-position: center;
+  }
+}
+
 @media screen and (min-width: 1201px) {
   .p-hero--archive {
-    padding-top: calc(231 * clamp(375px, 100vw, 1920px) / 1920);
-    padding-bottom: calc(243 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-top: calc(80 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-bottom: calc(80 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
 
 .p-hero--archive .p-hero__headline {
   font-family: "Roboto", sans-serif;
+  font-size: 3.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-hero--archive .p-hero__headline {
+    font-size: 6rem;
+  }
+}
+
+.p-hero--archive .p-hero__lead {
+  font-size: 1.6rem;
 }
 
 /* 提供サービス　プロジェクト */
@@ -1156,10 +1178,6 @@ body.is-open {
 .p-card {
   background-color: #3C2B1C;
   color: #fff;
-}
-
-.p-card .c-img {
-  object-position: left top;
 }
 
 .p-card__body {
@@ -1541,5 +1559,11 @@ body.is-open {
 
 .c-pagination__number + .c-pagination__next {
   margin-left: 19.3px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-hero__headline + .p-hero__lead {
+    margin-left: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

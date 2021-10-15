@@ -3,14 +3,8 @@
   font-weight: $font-weight-l;
   color: $color-white;
   padding-left: 25px;
-  &__headline {
-    @include fz (36);
-    @include mq (pc) {
-      font-size: calc(40 * #{$liquid-pc});
-    }
-  }
-  &__lead {
-    @include fz (16);
+  @include mq () {
+    padding-left: 86px;
   }
 
   /* ページ毎の設定 */
@@ -25,21 +19,39 @@
       padding-top: calc(231 * #{$liquid-pc});
       padding-bottom: calc(243 * #{$liquid-pc});
     }
+    .p-hero__headline {
+      @include fz (36);
+      @include mq (pc) {
+        font-size: calc(40 * #{$liquid-pc});
+      }
+    }
   }
   /* ページ毎の設定 */
   &--archive {
     @extend .p-hero;
-    background-color: $color-black;
-    background-position: center;
+    background-image: url(/images/hero--archive.jpg);
+    background-size: cover;
+    background-position: 30% 0 ;
     padding-top: 102px;
     padding-bottom: 104px;
-    
+    @include mq () {
+      display: flex;
+      align-items: center;
+      background-position: center;
+    }
     @include mq (pc) {
-      padding-top: calc(231 * #{$liquid-pc});
-      padding-bottom: calc(243 * #{$liquid-pc});
+      padding-top: calc(80 * #{$liquid-pc});
+      padding-bottom: calc(80 * #{$liquid-pc});
     }
     .p-hero__headline {
       font-family: $font-family-sub;
+      @include fz (36);
+      @include mq () {
+        @include fz (60);
+      }
+    }
+    .p-hero__lead {
+      @include fz (16);
     }
   }
 }

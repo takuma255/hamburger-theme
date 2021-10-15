@@ -26,3 +26,9 @@
 .c-pagination__number + .c-pagination__next {
   margin-left: 19.3px;
 }
+
+.p-hero__headline + .p-hero__lead {
+  @include mq () {
+    margin-left: 20px;
+  }
+}
