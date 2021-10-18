@@ -850,7 +850,7 @@ body.is-open {
 }
 
 /* ヒーロー　プロジェクト */
-.p-hero, .p-hero--home, .p-hero--archive {
+.p-hero, .p-hero--home, .p-hero--archive, .p-hero--single, .p-hero--page {
   font-weight: 700;
   color: #fff;
   padding-left: 25px;
@@ -859,7 +859,7 @@ body.is-open {
 }
 
 @media screen and (min-width: 768px) {
-  .p-hero, .p-hero--home, .p-hero--archive {
+  .p-hero, .p-hero--home, .p-hero--archive, .p-hero--single, .p-hero--page {
     padding-left: 86px;
   }
 }
@@ -926,6 +926,36 @@ body.is-open {
 
 .p-hero--archive .p-hero__lead {
   font-size: 1.6rem;
+}
+
+.p-hero--single, .p-hero--page {
+  background-image: url(/images/hero--single.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 91px;
+  padding-bottom: 91px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-hero--single, .p-hero--page {
+    padding-top: 209px;
+    padding-bottom: 208px;
+  }
+}
+
+.p-hero--single .p-hero__headline, .p-hero--page .p-hero__headline {
+  font-size: 3.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-hero--single .p-hero__headline, .p-hero--page .p-hero__headline {
+    font-size: 6rem;
+  }
+}
+
+.p-hero--page {
+  background-image: url(/images/hero--page.jpg);
+  padding-left: 45px;
 }
 
 /* 提供サービス　プロジェクト */

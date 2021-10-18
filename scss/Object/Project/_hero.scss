@@ -55,4 +55,31 @@
       @include fz (16);
     }
   }
+
+
+  &--single {
+    @extend .p-hero;
+    background-image: url(/images/hero--single.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 91px;
+    padding-bottom: 91px;
+    @include mq () {
+      padding-top: 209px;
+      padding-bottom: 208px;
+    }
+    .p-hero__headline {
+      @include fz (36);
+      @include mq () {
+        @include fz (60);
+      }
+    }
+  }
+
+  
+  &--page {
+    @extend .p-hero--single;
+    background-image: url(/images/hero--page.jpg);
+    padding-left: 45px;
+  }
 }
