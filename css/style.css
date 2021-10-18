@@ -806,7 +806,7 @@ body.is-open {
 }
 
 /* メイン　プロジェクト */
-.p-main__body, .p-main__body--archive {
+.p-main__body, .p-main__body--archive, .p-main__body--single {
   background-color: #FFFDFA;
 }
 
@@ -825,18 +825,12 @@ body.is-open {
 }
 
 .p-main__body--archive {
-  padding-top: 30px;
-  padding-right: 18px;
-  padding-bottom: 30px;
-  padding-left: 22px;
+  padding-top: 30px 18px 30px 22px;
 }
 
 @media screen and (min-width: 768px) {
   .p-main__body--archive {
-    padding-top: 36px;
-    padding-right: 35px;
-    padding-bottom: 30px;
-    padding-left: 42px;
+    padding-top: 36px 35px 30px 42px;
   }
 }
 
@@ -845,6 +839,25 @@ body.is-open {
     padding-top: calc(60 * clamp(375px, 100vw, 1920px) / 1920);
     padding-right: calc(100 * clamp(375px, 100vw, 1920px) / 1920);
     padding-bottom: calc(64 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-left: calc(100 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.p-main__body--single {
+  padding: 30px 20px 184px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-main__body--single {
+    padding: 60px 60px 228px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-main__body--single {
+    padding-top: calc(60 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-right: calc(100 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-bottom: calc(353 * clamp(375px, 100vw, 1920px) / 1920);
     padding-left: calc(100 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }

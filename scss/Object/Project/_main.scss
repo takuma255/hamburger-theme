@@ -11,22 +11,33 @@
     &__description {
       @include fz (16);
     }
+    
+    
     &--archive {
       @extend .p-main__body;
-      padding-top: 30px;
-      padding-right: 18px;
-      padding-bottom: 30px;
-      padding-left: 22px;
+      padding-top: 30px 18px 30px 22px;
       @include mq () {
-        padding-top: 36px;
-        padding-right: 35px;
-        padding-bottom: 30px;
-        padding-left: 42px;
+        padding-top: 36px 35px 30px 42px;
       }
       @include mq (pc) {
         padding-top: calc(60 * #{$liquid-pc});
         padding-right: calc(100 * #{$liquid-pc});
         padding-bottom: calc(64 * #{$liquid-pc});
+        padding-left: calc(100 * #{$liquid-pc});
+      }
+    }
+    
+
+    &--single {
+      @extend .p-main__body;
+      padding: 30px 20px 184px;
+      @include mq () {
+        padding: 60px 60px 228px;
+      }
+      @include mq (pc) {
+        padding-top: calc(60 * #{$liquid-pc});
+        padding-right: calc(100 * #{$liquid-pc});
+        padding-bottom: calc(353 * #{$liquid-pc});
         padding-left: calc(100 * #{$liquid-pc});
       }
     }
