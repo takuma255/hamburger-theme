@@ -97,3 +97,33 @@
     margin-top: calc(70 * #{$liquid-pc});
   }
 }
+
+.p-main__body__description + .p-product {
+  margin-top: 60px;
+}
+
+.p-product__headline + .p-product__headline--secondary {
+  margin-top: 60px;
+}
+
+.p-product__headline--secondary + .p-product__headline--tertiary {
+  margin-top: 60px;
+}
+
+.p-product__headline--tertiary + .p-product__headline--quaternary {
+  margin-top: 60px;
+}
+
+.p-product__headline--quaternary + .c-blockquote {
+  margin-top: 60px;
+}
+
+.c-blockquote__description + .c-blockquote__source {
+  margin-top: 30px;
+  @include mq () {
+    margin-top: 60px;
+  }
+  @include mq (pc) {
+    margin-top: calc(60 * #{$liquid-pc});
+  }
+}

@@ -1,0 +1,22 @@
+/* 製品紹介　プロジェクト */
+.p-product {
+  &__headline {
+    font-weight: $font-weight-l;
+    @include fz (24);
+    @include mq () {
+      @include fz (28);
+    }
+    &--secondary {
+      @extend .p-product__headline;
+      @include fz (20);
+    }
+    &--tertiary {
+      @extend .p-product__headline;
+      @include fz (20);
+    }
+    &--quaternary {
+      @extend .p-product__headline;
+      @include fz (20);
+    }
+  } 
+}

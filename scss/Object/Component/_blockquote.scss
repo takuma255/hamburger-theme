@@ -1,0 +1,19 @@
+/* 引用　コンポーネント */
+.c-blockquote {
+  background-color: $background-color-blockquote;
+  @include fz (16);
+  padding: 30px 16px 30px 20px;
+  @include mq () {
+    padding: 50px 56px 60px 50px;
+  }
+  @include mq (pc) {
+    padding-top: calc(50 * #{$liquid-pc});
+    padding-right: calc(60 * #{$liquid-pc});
+    padding-bottom: calc(50 * #{$liquid-pc});
+    padding-left: calc(50 * #{$liquid-pc});
+  }
+  .c-link {
+    color: $font-color-blockquote;
+    text-decoration: underline;
+  }
+}

@@ -656,6 +656,33 @@ li {
   }
 }
 
+/* 引用　コンポーネント */
+.c-blockquote {
+  background-color: #F5F5F5;
+  font-size: 1.6rem;
+  padding: 30px 16px 30px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .c-blockquote {
+    padding: 50px 56px 60px 50px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .c-blockquote {
+    padding-top: calc(50 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-right: calc(60 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-bottom: calc(50 * clamp(375px, 100vw, 1920px) / 1920);
+    padding-left: calc(50 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.c-blockquote .c-link {
+  color: #4A6C9B;
+  text-decoration: underline;
+}
+
 /* ヘッダー プロジェクト */
 .p-header {
   background-color: #FFF7EF;
@@ -1304,6 +1331,30 @@ body.is-open {
   }
 }
 
+/* 製品紹介　プロジェクト */
+.p-product__headline, .p-product__headline--secondary, .p-product__headline--tertiary, .p-product__headline--quaternary {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-product__headline, .p-product__headline--secondary, .p-product__headline--tertiary, .p-product__headline--quaternary {
+    font-size: 2.8rem;
+  }
+}
+
+.p-product__headline--secondary {
+  font-size: 2rem;
+}
+
+.p-product__headline--tertiary {
+  font-size: 2rem;
+}
+
+.p-product__headline--quaternary {
+  font-size: 2rem;
+}
+
 /* サイドバー　プロジェクト */
 .p-sidebar {
   width: 87vw;
@@ -1565,6 +1616,42 @@ body.is-open {
 @media screen and (min-width: 1201px) {
   .p-main__body__description + .p-archive {
     margin-top: calc(70 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.p-main__body__description + .p-product {
+  margin-top: 60px;
+}
+
+.p-product__headline + .p-product__headline--secondary, .p-product__headline--secondary + .p-product__headline--secondary, .p-product__headline--tertiary + .p-product__headline--secondary, .p-product__headline--quaternary + .p-product__headline--secondary {
+  margin-top: 60px;
+}
+
+.p-product__headline--secondary + .p-product__headline--tertiary {
+  margin-top: 60px;
+}
+
+.p-product__headline--tertiary + .p-product__headline--quaternary {
+  margin-top: 60px;
+}
+
+.p-product__headline--quaternary + .c-blockquote {
+  margin-top: 60px;
+}
+
+.c-blockquote__description + .c-blockquote__source {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .c-blockquote__description + .c-blockquote__source {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .c-blockquote__description + .c-blockquote__source {
+    margin-top: calc(60 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
 
