@@ -1393,10 +1393,6 @@ body.is-open {
 }
 
 /* 詳細紹介　プロジェクト */
-.p-detail {
-  font-size: 16px;
-}
-
 /* ギャラリー　プロジェクト */
 .p-gallery {
   display: grid;
@@ -1714,6 +1710,38 @@ body.is-open {
 
 @media screen and (min-width: 1201px) {
   .c-blockquote__description + .c-blockquote__source {
+    margin-top: calc(60 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.c-blockquote + .p-detail {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .c-blockquote + .p-detail {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .c-blockquote + .p-detail {
+    margin-top: calc(60 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.p-product + .p-gallery {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-product + .p-gallery {
+    margin-top: 241px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-product + .p-gallery {
     margin-top: calc(60 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }

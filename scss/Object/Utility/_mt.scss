@@ -127,3 +127,23 @@
     margin-top: calc(60 * #{$liquid-pc});
   }
 }
+
+.c-blockquote + .p-detail {
+  margin-top: 30px;
+  @include mq () {
+    margin-top: 60px;
+  }
+  @include mq (pc) {
+    margin-top: calc(60 * #{$liquid-pc});
+  }
+}
+
+.p-product + .p-gallery {
+  margin-top: 20px;
+  @include mq () {
+    margin-top: 241px;
+  }
+  @include mq (pc) {
+    margin-top: calc(60 * #{$liquid-pc});
+  }
+}
