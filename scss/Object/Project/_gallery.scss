@@ -1,0 +1,14 @@
+/* ギャラリー　プロジェクト */
+.p-gallery {
+  display: grid;
+  row-gap: calc(20 * #{$liquid-sp});
+  @include mq () {
+    grid-template-columns: repeat( 2, 1fr);
+    row-gap: calc(20 * #{$liquid-tab});
+    column-gap: calc(16 * #{$liquid-tab});
+  }
+  @include mq (pc) {
+    grid-template-columns: repeat( 3, 1fr);
+    gap: calc(20 * #{$liquid-pc});
+  }
+}

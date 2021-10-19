@@ -20,6 +20,7 @@
 @import "Layout/footer";
 
 @import "Layout/card";
+@import "Layout/detail";
 
 // ==========================================================================
 // Object
@@ -66,6 +67,8 @@
 @import "Object/Project/card";
 
 @import "Object/Project/product";
+@import "Object/Project/detail";
+@import "Object/Project/gallery";
 
 @import "Object/Project/sidebar";
 @import "Object/Project/gmenu";
