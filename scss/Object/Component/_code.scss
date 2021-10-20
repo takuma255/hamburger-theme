@@ -1,0 +1,7 @@
+/* コードテキスト　コンポーネント */
+.c-code {
+  @include fz (16);
+  background-color: $background-color-blockquote;
+  word-wrap: break-word;
+  padding: 50px;
+}

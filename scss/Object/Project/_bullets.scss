@@ -1,0 +1,17 @@
+/* リスト　プロジェクト */
+.p-bullets {
+  @include fz (16);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @include mq () {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+  }
+
+  &__unit {
+    &--ol {
+      padding-left: 20px;
+    }
+  }
+}

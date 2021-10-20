@@ -347,7 +347,7 @@ a {
   text-decoration: none;
 }
 
-li {
+ul > li {
   list-style: none;
 }
 
@@ -683,6 +683,16 @@ li {
   text-decoration: underline;
 }
 
+/* コードテキスト　コンポーネント */
+.c-code {
+  font-size: 1.6rem;
+  background-color: #F5F5F5;
+  word-wrap: break-word;
+  padding: 50px;
+}
+
+/* テーブル　コンポーネント */
+/* タグ　コンポーネント */
 /* ヘッダー プロジェクト */
 .p-header {
   background-color: #FFF7EF;
@@ -1384,7 +1394,7 @@ body.is-open {
 }
 
 .p-detail__img--bottom {
-  width: 79%;
+  width: 80%;
 }
 
 /* ギャラリー　プロジェクト */
@@ -1406,6 +1416,25 @@ body.is-open {
     grid-template-columns: repeat(3, 1fr);
     gap: calc(20 * clamp(375px, 100vw, 1920px) / 1920);
   }
+}
+
+/* リスト　プロジェクト */
+.p-bullets {
+  font-size: 1.6rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-bullets {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+  }
+}
+
+.p-bullets__unit--ol {
+  padding-left: 20px;
 }
 
 /* サイドバー　プロジェクト */
@@ -1788,6 +1817,18 @@ body.is-open {
   }
 }
 
+.p-bullets__unit--ol + .p-bullets__unit {
+  margin-top: 60px;
+}
+
+.p-bullets__unit--ol + .p-bullets__unit--ol {
+  margin-top: 20px;
+}
+
+.p-bullets__unit + .p-bullets__unit {
+  margin-top: 20px;
+}
+
 /* 隣接セレクタ マージンレフト ユーティリティ */
 .p-footer__menu__list + .c-line, .p-footer__menu__list + .c-line--vertical {
   margin-left: 15px;
@@ -1853,5 +1894,10 @@ body.is-open {
   .p-detail__card__description + .p-detail__card__img {
     margin-left: 40px;
   }
+}
+
+/* 箇条書きマージン　ユーティリティ */
+.u-ml--bullets {
+  margin-left: 18px;
 }
 /*# sourceMappingURL=style.css.map */
