@@ -1,1 +1,26 @@
 /* 詳細紹介　プロジェクト */
+.p-detail {
+  @include fz (16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__img--top {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  &__card {
+    display: flex;
+    align-items: start;
+    &__img {
+      object-fit: contain;
+      width: 43%;
+    }
+    &__description {
+      word-wrap: break-word;
+    } 
+  }
+  &__img--bottom {
+    width: 79%;
+  }
+}

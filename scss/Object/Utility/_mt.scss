@@ -147,3 +147,33 @@
     margin-top: calc(60 * #{$liquid-pc});
   }
 }
+
+.p-detail__img--top + .p-detail__card {
+  margin-top: 30px;
+  @include mq () {
+    margin-top: 60px;
+  }
+  @include mq (pc) {
+    margin-top: calc(60 * #{$liquid-pc});
+  }
+}
+
+.p-detail__card + .p-detail__card {
+  margin-top: 30px;
+  @include mq () {
+    margin-top: 117px;
+  }
+  @include mq (pc) {
+    margin-top: calc(60 * #{$liquid-pc});
+  }
+}
+
+.p-detail__card + .p-detail__img--bottom {
+  margin-top: 30px;
+  @include mq () {
+    margin-top: 61px;
+  }
+  @include mq (pc) {
+    margin-top: calc(60 * #{$liquid-pc});
+  }
+}

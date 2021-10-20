@@ -32,3 +32,23 @@
     margin-left: 20px;
   }
 }
+
+.p-detail__card__img + .p-detail__card__description {
+  margin-left: 10px;
+  @include mq () {
+    margin-left: 21px;
+  }
+  @include mq (pc) {
+    margin-left: 40px;
+  }
+}
+
+.p-detail__card__description + .p-detail__card__img {
+  margin-left: 10px;
+  @include mq () {
+    margin-left: 21px;
+  }
+  @include mq (pc) {
+    margin-left: 40px;
+  }
+}
