@@ -40,6 +40,23 @@
         padding-bottom: calc(353 * #{$liquid-pc});
         padding-left: calc(100 * #{$liquid-pc});
       }
+
+      .c-btn {
+        @include fz (16)
+        width: 335px;
+        border-radius: 20px;
+        padding-top: 28px;
+        padding-bottom: 31px;
+        @include mq () {
+          width: 429px;
+          padding-top: 41px;
+          padding-bottom: 41px;
+        }
+        &:active {
+          color: $color-white;
+          background: $font-color-sub;
+        }
+      }
     }
   }
 }

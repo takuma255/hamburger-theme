@@ -481,13 +481,14 @@ ul > li {
 .c-btn, .c-btn--search, .c-btn--detail {
   display: block;
   font-weight: 700;
+  background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
+  border: 1px solid #707070;
 }
 
 .c-btn--search {
   border-radius: 10px;
-  border: 1px solid #707070;
-  height: 46px;
-  background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .c-btn--detail {
@@ -897,6 +898,27 @@ body.is-open {
     padding-bottom: calc(353 * clamp(375px, 100vw, 1920px) / 1920);
     padding-left: calc(100 * clamp(375px, 100vw, 1920px) / 1920);
   }
+}
+
+.p-main__body--single .c-btn, .p-main__body--single .c-btn--search, .p-main__body--single .c-btn--detail {
+  font-size: 1.6rem;
+  width: 335px;
+  border-radius: 20px;
+  padding-top: 28px;
+  padding-bottom: 31px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-main__body--single .c-btn, .p-main__body--single .c-btn--search, .p-main__body--single .c-btn--detail {
+    width: 429px;
+    padding-top: 41px;
+    padding-bottom: 41px;
+  }
+}
+
+.p-main__body--single .c-btn:active, .p-main__body--single .c-btn--search:active, .p-main__body--single .c-btn--detail:active {
+  color: #fff;
+  background: #707070;
 }
 
 /* ヒーロー　プロジェクト */
@@ -1320,7 +1342,6 @@ body.is-open {
 
 .p-card__btnarea .c-btn--detail {
   color: #707070;
-  border: 1px solid #707070;
   font-size: 1.6rem;
   width: 163.16px;
   padding-top: 10px;

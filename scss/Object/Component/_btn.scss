@@ -2,12 +2,13 @@
 .c-btn {
   display: block;
   font-weight: $font-weight-l;
+  background: $background-color-btn;
+  border: 1px solid $font-color-sub;
   &--search {
     @extend .c-btn;
     border-radius: 10px;
-    border: 1px solid $font-color-sub;
-    height: 46px;
-    background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   &--detail {
     @extend .c-btn;
