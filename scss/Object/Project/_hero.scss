@@ -81,5 +81,8 @@
     @extend .p-hero--single;
     background-image: url(/images/hero--page.jpg);
     padding-left: 45px;
+    @include mq () {
+      padding-left: 86px;
+    }
   }
 }

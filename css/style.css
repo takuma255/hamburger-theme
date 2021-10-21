@@ -889,12 +889,12 @@ body.is-open {
 }
 
 .p-main__body--archive {
-  padding-top: 30px 18px 30px 22px;
+  padding: 30px 18px 30px 22px;
 }
 
 @media screen and (min-width: 768px) {
   .p-main__body--archive {
-    padding-top: 36px 35px 30px 42px;
+    padding: 36px 35px 30px 42px;
   }
 }
 
@@ -1054,6 +1054,12 @@ body.is-open {
 .p-hero--page {
   background-image: url(/images/hero--page.jpg);
   padding-left: 45px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-hero--page {
+    padding-left: 86px;
+  }
 }
 
 /* 提供サービス　プロジェクト */

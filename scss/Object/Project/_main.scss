@@ -15,9 +15,9 @@
     
     &--archive {
       @extend .p-main__body;
-      padding-top: 30px 18px 30px 22px;
+      padding: 30px 18px 30px 22px;
       @include mq () {
-        padding-top: 36px 35px 30px 42px;
+        padding: 36px 35px 30px 42px;
       }
       @include mq (pc) {
         padding-top: calc(60 * #{$liquid-pc});
