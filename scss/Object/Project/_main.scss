@@ -42,7 +42,7 @@
       }
 
       .c-btn {
-        @include fz (16)
+        @include fz (16);
         width: 335px;
         border-radius: 20px;
         padding-top: 28px;
