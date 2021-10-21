@@ -693,7 +693,33 @@ ul > li {
 }
 
 /* テーブル　コンポーネント */
+.c-table {
+  font-size: 1.6rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.c-table__row__data, .c-table__row__data--left, .c-table__row__data--right {
+  border: 1px solid #707070;
+  padding-top: 28px;
+  padding-left: 30px;
+  padding-bottom: 27px;
+}
+
+.c-table__row__data--left {
+  width: 40%;
+}
+
+.c-table__row__data--right {
+  width: 60%;
+}
+
 /* タグ　コンポーネント */
+.c-tag {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
 /* ヘッダー プロジェクト */
 .p-header {
   background-color: #FFF7EF;
@@ -1914,6 +1940,36 @@ body.is-open {
 @media screen and (min-width: 1201px) {
   .p-detail__card__description + .p-detail__card__img {
     margin-left: 40px;
+  }
+}
+
+.c-code + .c-table {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .c-code + .c-table {
+    margin-top: 60px;
+  }
+}
+
+.c-table + .c-btn, .c-table + .c-btn--search, .c-table + .c-btn--detail {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .c-table + .c-btn, .c-table + .c-btn--search, .c-table + .c-btn--detail {
+    margin-top: 60px;
+  }
+}
+
+.c-btn + .c-tag, .c-btn--search + .c-tag, .c-btn--detail + .c-tag {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .c-btn + .c-tag, .c-btn--search + .c-tag, .c-btn--detail + .c-tag {
+    margin-top: 60px;
   }
 }
 

@@ -1,1 +1,5 @@
 /* タグ　コンポーネント */
+.c-tag {
+  @include fz (16);
+  font-weight: $font-weight-l;
+}

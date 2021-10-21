@@ -52,3 +52,24 @@
     margin-left: 40px;
   }
 }
+
+.c-code + .c-table {
+  margin-top: 30px;
+  @include mq () {
+    margin-top: 60px;
+  }
+}
+
+.c-table + .c-btn {
+  margin-top: 30px;
+  @include mq () {
+    margin-top: 60px;
+  }
+}
+
+.c-btn + .c-tag {
+  margin-top: 30px;
+  @include mq () {
+    margin-top: 60px;
+  }
+}

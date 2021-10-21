@@ -1,1 +1,22 @@
 /* テーブル　コンポーネント */
+.c-table {
+  @include fz (16);
+  border-collapse: collapse;
+  width: 100%;
+  &__row {
+    &__data {
+      border: 1px solid $font-color-sub;
+      padding-top: 28px;
+      padding-left: 30px;
+      padding-bottom: 27px;
+      &--left {
+        @extend .c-table__row__data;
+        width: 40%;
+      }
+      &--right {
+        @extend .c-table__row__data;
+        width: 60%;
+      }
+    }
+  }
+}
