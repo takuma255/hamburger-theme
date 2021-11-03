@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="<?php language_attributes(); ?>">
 
 <head>
   <meta charset="UTF-8">
@@ -7,11 +7,12 @@
   <title>
     <?php bloginfo('name'); ?>
   </title>
-  <meta name="description" content="<?php bloginfo( 'description' ); ?>">
+  <meta name=" description" content="<?php bloginfo( 'description' ); ?>">
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
+  <?php wp_head(); ?>
 </head>
 
 <body class="home l-body">
