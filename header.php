@@ -15,7 +15,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body class="home l-body">
+<body <?php body_class(); ?> class="home l-body">
   <header class="l-header p-header">
     <button class="c-headline js-menubtn">Menu</button>
     <div class="c-wrapper">
