@@ -1,5 +1,6 @@
 <?php
- get_header(); ?>
+  get_header(); ?>
+
 <main class="l-main p-main">
   <div class="p-hero--single">
     <h1 class="p-hero__headline">h1 チーズバーガー</h1>
@@ -113,7 +114,7 @@
 <div class="c-overlay js-sidebar"></div>
 
 <?php
- get_sidebar(); ?>
+  get_sidebar(); ?>
 
 <?php
- get_footer(); ?>
+  get_footer(); ?>
