@@ -337,10 +337,25 @@ html {
 }
 
 body {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: minmax(375px, 100vw);
   color: #3C2A10;
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 400;
   overflow-x: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    grid-template-columns: 100vw;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  body {
+    grid-template-columns: 80vw 20vw;
+  }
 }
 
 a {
@@ -349,25 +364,6 @@ a {
 
 ul > li {
   list-style: none;
-}
-
-/* グリッド　レイアウト */
-.l-body {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: minmax(375px, 100vw);
-}
-
-@media screen and (min-width: 768px) {
-  .l-body {
-    grid-template-columns: 100vw;
-  }
-}
-
-@media screen and (min-width: 1201px) {
-  .l-body {
-    grid-template-columns: 80vw 20vw;
-  }
 }
 
 /* ヘッダー　レイアウト */
@@ -1300,7 +1296,6 @@ body.is-open {
   }
 }
 
-/* アーカイブ　プロジェクト */
 /* カード　プロジェクト */
 .p-card {
   background-color: #3C2B1C;
@@ -1983,4 +1978,4 @@ body.is-open {
 .u-ml--bullets {
   margin-left: 18px;
 }
-/*# sourceMappingURL=hamburgershop.css.map */
+/*# sourceMappingURL=style.css.map */
