@@ -4,6 +4,16 @@ html {
 }
 
 body {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: $grid-template-columns-sp;
+  @include mq () {
+    grid-template-columns: $grid-template-columns-tab;
+  }
+  @include mq (pc) {
+    grid-template-columns: $grid-template-columns-pc;
+  }
+  
   color: $font-color-main;
   font-family: $font-family-main;
   font-weight: $font-weight-normal;
