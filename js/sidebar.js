@@ -1,7 +1,7 @@
 /* サイドバーメニュー　jQuery */
-$(function(){
-  $('.js-menubtn').on('click',function(){
-    $('body').toggleClass('is-open')
-    $('.js-sidebar').toggleClass('is-open')
+jQuery(function(){
+  jQuery('.js-menubtn').on('click',function(){
+    jQuery('body').toggleClass('is-open')
+    jQuery('.js-sidebar').toggleClass('is-open')
   });
 }); 
