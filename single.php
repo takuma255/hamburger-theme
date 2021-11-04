@@ -21,9 +21,9 @@
         <p class="c-blockquote__source">出典元： <a class="c-link" href="#">○○○○○○○○○○○○</a></p>
       </blockquote>
       <div class="p-detail">
-        <img src="/images/detail--top.jpg" alt="画像の説明" class="p-detail__img--top">
+        <img src="../images/detail--top.jpg" alt="画像の説明" class="p-detail__img--top">
         <figure class="p-detail__card">
-          <img src="/images/detail.jpg" alt="画像の説明" class="p-detail__card__img">
+          <img src="../images/detail.jpg" alt="画像の説明" class="p-detail__card__img">
           <figcaption class="p-detail__card__description"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
             テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
             テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
@@ -36,21 +36,21 @@
             テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
             テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
             テキストが入ります テキストが入ります</figcaption>
-          <img src="/images/detail.jpg" alt="画像の説明" class="p-detail__card__img">
+          <img src="../images/detail.jpg" alt="画像の説明" class="p-detail__card__img">
         </figure>
-        <img src="/images/detail.jpg" alt="画像の説明" class="p-detail__img--bottom">
+        <img src="../images/detail.jpg" alt="画像の説明" class="p-detail__img--bottom">
       </div><!-- /l-detail p-detail -->
     </section><!-- /p-product -->
     <ul class="p-gallery c-layout--tile">
-      <li class="p-gallery__list"><img src="/images/gallery.jpg" alt="画像の説明" class="c-img"></li>
-      <li class="p-gallery__list"><img src="/images/gallery.jpg" alt="画像の説明" class="c-img"></li>
-      <li class="p-gallery__list"><img src="/images/gallery.jpg" alt="画像の説明" class="c-img"></li>
-      <li class="p-gallery__list"><img src="/images/gallery.jpg" alt="画像の説明" class="c-img"></li>
-      <li class="p-gallery__list"><img src="/images/gallery.jpg" alt="画像の説明" class="c-img"></li>
-      <li class="p-gallery__list"><img src="/images/gallery.jpg" alt="画像の説明" class="c-img"></li>
-      <li class="p-gallery__list"><img src="/images/gallery.jpg" alt="画像の説明" class="c-img"></li>
-      <li class="p-gallery__list"><img src="/images/gallery.jpg" alt="画像の説明" class="c-img"></li>
-      <li class="p-gallery__list"><img src="/images/gallery.jpg" alt="画像の説明" class="c-img"></li>
+      <li class="p-gallery__list"><img src="../images/gallery.jpg" alt="画像の説明" class="c-img"></li>
+      <li class="p-gallery__list"><img src="../images/gallery.jpg" alt="画像の説明" class="c-img"></li>
+      <li class="p-gallery__list"><img src="../images/gallery.jpg" alt="画像の説明" class="c-img"></li>
+      <li class="p-gallery__list"><img src="../images/gallery.jpg" alt="画像の説明" class="c-img"></li>
+      <li class="p-gallery__list"><img src="../images/gallery.jpg" alt="画像の説明" class="c-img"></li>
+      <li class="p-gallery__list"><img src="../images/gallery.jpg" alt="画像の説明" class="c-img"></li>
+      <li class="p-gallery__list"><img src="../images/gallery.jpg" alt="画像の説明" class="c-img"></li>
+      <li class="p-gallery__list"><img src="../images/gallery.jpg" alt="画像の説明" class="c-img"></li>
+      <li class="p-gallery__list"><img src="../images/gallery.jpg" alt="画像の説明" class="c-img"></li>
     </ul><!-- /p-gallery -->
     <div class="p-bullets">
       <ol class="p-bullets__unit--ol">

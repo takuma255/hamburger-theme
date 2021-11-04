@@ -963,7 +963,7 @@ body.is-open {
 }
 
 .p-hero--home {
-  background-image: url(/images/hero--home.jpg);
+  background-image: url(../images/hero--home.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 119px;
@@ -988,7 +988,7 @@ body.is-open {
 }
 
 .p-hero--archive {
-  background-image: url(/images/hero--archive.png);
+  background-image: url(../images/hero--archive.png);
   background-color: #000;
   background-size: cover;
   background-position: 30% 0;
@@ -1027,7 +1027,7 @@ body.is-open {
 }
 
 .p-hero--single, .p-hero--page {
-  background-image: url(/images/hero--single.jpg);
+  background-image: url(../images/hero--single.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 91px;
@@ -1052,7 +1052,7 @@ body.is-open {
 }
 
 .p-hero--page {
-  background-image: url(/images/hero--page.jpg);
+  background-image: url(../images/hero--page.jpg);
   padding-left: 45px;
 }
 
@@ -1120,11 +1120,11 @@ body.is-open {
 }
 
 .p-service__list--left {
-  background-image: url(/images/service__list--left.jpg);
+  background-image: url(../images/service__list--left.jpg);
 }
 
 .p-service__list--right {
-  background-image: url(/images/service__list--right.jpg);
+  background-image: url(../images/service__list--right.jpg);
 }
 
 .p-service__list__innner {
@@ -1585,7 +1585,7 @@ body.is-open {
 
 /* フッター プロジェクト */
 .p-footer {
-  background-image: url(/images/footer.png);
+  background-image: url(../images/footer.png);
   background-size: cover;
   display: flex;
   flex-direction: column;

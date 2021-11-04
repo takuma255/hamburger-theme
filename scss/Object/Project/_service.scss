@@ -40,11 +40,11 @@
     }
     &--left {
       @extend .p-service__list;
-      background-image: url(/images/service__list--left.jpg);
+      background-image: url(../images/service__list--left.jpg);
     }
     &--right {
       @extend .p-service__list;
-      background-image: url(/images/service__list--right.jpg);
+      background-image: url(../images/service__list--right.jpg);
     }
     &__innner {
       position: absolute;

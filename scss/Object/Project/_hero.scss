@@ -10,7 +10,7 @@
   /* ページ毎の設定 */
   &--home {
     @extend .p-hero;
-    background-image: url(/images/hero--home.jpg);
+    background-image: url(../images/hero--home.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 119px;
@@ -29,7 +29,7 @@
   /* ページ毎の設定 */
   &--archive {
     @extend .p-hero;
-    background-image: url(/images/hero--archive.png);
+    background-image: url(../images/hero--archive.png);
     background-color: $color-black;
     background-size: cover;
     background-position: 30% 0 ;
@@ -59,7 +59,7 @@
 
   &--single {
     @extend .p-hero;
-    background-image: url(/images/hero--single.jpg);
+    background-image: url(../images/hero--single.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 91px;
@@ -79,7 +79,7 @@
   
   &--page {
     @extend .p-hero--single;
-    background-image: url(/images/hero--page.jpg);
+    background-image: url(../images/hero--page.jpg);
     padding-left: 45px;
     @include mq () {
       padding-left: 86px;
