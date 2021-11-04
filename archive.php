@@ -14,7 +14,8 @@
     <ul class="p-archive">
       <li class="p-archive__list">
         <figure class="l-card p-card">
-          <img src="../images/card.jpg" alt="チーズバーガー" class="l-card__img c-img">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/card.jpg" alt="チーズバーガー"
+            class="l-card__img c-img">
           <div class="l-card__body p-card__body">
             <h3 class="p-card__body__headline">チーズバーガー</h3>
             <h4 class="p-card__body__subheadline">小見出しが入ります</h4>
@@ -28,7 +29,8 @@
       </li><!-- /p-archive__list -->
       <li class="p-archive__list">
         <figure class="l-card p-card">
-          <img src="../images/card.jpg" alt="ダブルチーズバーガー" class="l-card__img c-img">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/card.jpg" alt="ダブルチーズバーガー"
+            class="l-card__img c-img">
           <div class="l-card__body p-card__body">
             <h3 class="p-card__body__headline">ダブルチーズバーガー</h3>
             <h4 class="p-card__body__subheadline">小見出しが入ります</h4>
@@ -42,7 +44,8 @@
       </li><!-- /p-archive__list -->
       <li class="p-archive__list">
         <figure class="l-card p-card">
-          <img src="../images/card.jpg" alt="スペシャルチーズバーガー" class="l-card__img c-img">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/card.jpg" alt="スペシャルチーズバーガー"
+            class="l-card__img c-img">
           <div class="l-card__body p-card__body">
             <h3 class="p-card__body__headline">スペシャルチーズバーガー</h3>
             <h4 class="p-card__body__subheadline">小見出しが入ります</h4>
