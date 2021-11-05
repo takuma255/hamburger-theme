@@ -10,84 +10,31 @@
     <h2 class="p-main__body__headline">小見出しが入ります</h2>
     <p class="p-main__body__description">
       テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-    </p>
+    </p><?php
+      if( have_posts()): ?>
     <ul class="p-archive">
+      <?php
+        while( have_posts()): the_post(); ?>
       <li class="p-archive__list">
         <figure class="l-card p-card">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/card.jpg" alt="チーズバーガー"
-            class="l-card__img c-img">
+          <?php the_post_thumbnail( 'medium' ) ?>
           <div class="l-card__body p-card__body">
-            <h3 class="p-card__body__headline">チーズバーガー</h3>
+            <h3 class="p-card__body__headline">
+              <?php the_title(); ?>
+            </h3>
             <h4 class="p-card__body__subheadline">小見出しが入ります</h4>
             <figcaption class="p-card__body__description">
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</figcaption>
+              <?php the_excerpt(); ?>
+            </figcaption>
           </div><!-- /l-card__body p-card__body -->
           <div class="l-card__btnarea p-card__btnarea">
-            <button class="c-btn--detail">詳しく見る</button>
+            <a href="<?php the_permalink(); ?>" class="c-btn--detail">詳しく見る</a>
           </div><!-- /l-card__detail p-card__detail -->
         </figure><!-- /l-card p-card -->
       </li><!-- /p-archive__list -->
-      <li class="p-archive__list">
-        <figure class="l-card p-card">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/card.jpg" alt="ダブルチーズバーガー"
-            class="l-card__img c-img">
-          <div class="l-card__body p-card__body">
-            <h3 class="p-card__body__headline">ダブルチーズバーガー</h3>
-            <h4 class="p-card__body__subheadline">小見出しが入ります</h4>
-            <figcaption class="p-card__body__description">
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</figcaption>
-          </div><!-- /l-card__body p-card__body -->
-          <div class="l-card__btnarea p-card__btnarea">
-            <button class="c-btn--detail">詳しく見る</button>
-          </div><!-- /l-card__detail p-card__detail -->
-        </figure><!-- /l-card p-card -->
-      </li><!-- /p-archive__list -->
-      <li class="p-archive__list">
-        <figure class="l-card p-card">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/card.jpg" alt="スペシャルチーズバーガー"
-            class="l-card__img c-img">
-          <div class="l-card__body p-card__body">
-            <h3 class="p-card__body__headline">スペシャルチーズバーガー</h3>
-            <h4 class="p-card__body__subheadline">小見出しが入ります</h4>
-            <figcaption class="p-card__body__description">
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</figcaption>
-          </div><!-- /l-card__body p-card__body -->
-          <div class="l-card__btnarea p-card__btnarea">
-            <button class="c-btn--detail">詳しく見る</button>
-          </div><!-- /l-card__detail p-card__detail -->
-        </figure><!-- /l-card p-card -->
-      </li><!-- /p-archive__list -->
-      <li class="p-archive__list">
-        <figure class="l-card p-card">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/card.jpg" alt="チーズバーガー"
-            class="l-card__img c-img">
-          <div class="l-card__body p-card__body">
-            <h3 class="p-card__body__headline">チーズバーガー</h3>
-            <h4 class="p-card__body__subheadline">小見出しが入ります</h4>
-            <figcaption class="p-card__body__description">
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</figcaption>
-          </div><!-- /l-card__body p-card__body -->
-          <div class="l-card__btnarea p-card__btnarea">
-            <button class="c-btn--detail">詳しく見る</button>
-          </div><!-- /l-card__detail p-card__detail -->
-        </figure><!-- /l-card p-card -->
-      </li><!-- /p-archive__list -->
-      <li class="p-archive__list">
-        <figure class="l-card p-card">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/card.jpg" alt="チーズバーガー"
-            class="l-card__img c-img">
-          <div class="l-card__body p-card__body">
-            <h3 class="p-card__body__headline">チーズバーガー</h3>
-            <h4 class="p-card__body__subheadline">小見出しが入ります</h4>
-            <figcaption class="p-card__body__description">
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</figcaption>
-          </div><!-- /l-card__body p-card__body -->
-          <div class="l-card__btnarea p-card__btnarea">
-            <button class="c-btn--detail">詳しく見る</button>
-          </div><!-- /l-card__detail p-card__detail -->
-        </figure><!-- /l-card p-card -->
-      </li><!-- /p-archive__list -->
+      <?php endwhile; ?>
     </ul><!-- /p-archive -->
+    <?php endif; ?>
     <ul class="c-pagination">
       <li class="c-pagination__current">page 1/10</li>
       <li class="c-pagination__mark--prev"><a href="#" class="c-link">&laquo;</a></li>
