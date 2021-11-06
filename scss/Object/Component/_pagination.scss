@@ -68,3 +68,97 @@
     }
   }
 }
+
+
+
+
+
+
+
+/* ページネーション　コンポーネント */
+.wp-pagenavi {
+  color: $font-color-sub;
+  @include fz (16);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include mq () {
+    justify-content: center;
+  }
+  .pages {
+    display: none;
+    border: none;
+    @include mq () {
+      font-family: $font-family-sub;
+      font-weight: $font-weight-l;
+      display: block;
+    }
+  }
+  .previouspostslink {
+    border: none;
+    color: $font-color-sub;
+    @extend .c-pagination__mark;
+
+    &:hover {
+      color: $font-color-hover;
+    }
+    &::after {
+      content: "前へ";
+      margin-left: 8.2px;
+      @include mq () {
+        display: none;
+      }
+    }
+  }
+  .nextpostslink {
+    border: none;
+    color: $font-color-sub;
+    @extend .c-pagination__mark;
+
+    &:hover {
+      color: $font-color-hover;
+    }
+    &::before {
+      content: "次へ";
+      margin-right: 7.3px;
+      @include mq () {
+        display: none;
+      }
+    }
+  }
+  .page,
+  .current {
+    display: none;
+    @include mq () {
+      color: $font-color-sub;
+      font-weight: $font-weight-l;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      border: 1px solid $font-color-sub;
+      &:hover {
+        color: $color-white;
+        background-color: $background-color-card;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+  &__mark {
+    .c-link {
+      color: $font-color-sub;
+      &:hover {
+        color: $font-color-hover;
+      }
+    }
+  }
+}

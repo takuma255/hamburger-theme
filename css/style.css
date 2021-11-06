@@ -594,11 +594,11 @@ ul > li {
   }
 }
 
-.c-pagination__mark .c-link, .c-pagination__mark--prev .c-link, .c-pagination__mark--next .c-link {
+.c-pagination__mark .c-link, .c-pagination__mark--prev .c-link, .c-pagination__mark--next .c-link, .wp-pagenavi .previouspostslink .c-link, .wp-pagenavi .nextpostslink .c-link {
   color: #707070;
 }
 
-.c-pagination__mark .c-link:hover, .c-pagination__mark--prev .c-link:hover, .c-pagination__mark--next .c-link:hover {
+.c-pagination__mark .c-link:hover, .c-pagination__mark--prev .c-link:hover, .c-pagination__mark--next .c-link:hover, .wp-pagenavi .previouspostslink .c-link:hover, .wp-pagenavi .nextpostslink .c-link:hover {
   color: silver;
 }
 
@@ -651,6 +651,106 @@ ul > li {
     height: 35px;
     border: 1px solid #707070;
   }
+}
+
+/* ページネーション　コンポーネント */
+.wp-pagenavi {
+  color: #707070;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .wp-pagenavi {
+    justify-content: center;
+  }
+}
+
+.wp-pagenavi .pages {
+  display: none;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .wp-pagenavi .pages {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    display: block;
+  }
+}
+
+.wp-pagenavi .previouspostslink {
+  border: none;
+  color: #707070;
+}
+
+.wp-pagenavi .previouspostslink:hover {
+  color: silver;
+}
+
+.wp-pagenavi .previouspostslink::after {
+  content: "前へ";
+  margin-left: 8.2px;
+}
+
+@media screen and (min-width: 768px) {
+  .wp-pagenavi .previouspostslink::after {
+    display: none;
+  }
+}
+
+.wp-pagenavi .nextpostslink {
+  border: none;
+  color: #707070;
+}
+
+.wp-pagenavi .nextpostslink:hover {
+  color: silver;
+}
+
+.wp-pagenavi .nextpostslink::before {
+  content: "次へ";
+  margin-right: 7.3px;
+}
+
+@media screen and (min-width: 768px) {
+  .wp-pagenavi .nextpostslink::before {
+    display: none;
+  }
+}
+
+.wp-pagenavi .page,
+.wp-pagenavi .current {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .wp-pagenavi .page,
+  .wp-pagenavi .current {
+    color: #707070;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #707070;
+  }
+  .wp-pagenavi .page:hover,
+  .wp-pagenavi .current:hover {
+    color: #fff;
+    background-color: #3C2B1C;
+  }
+}
+
+.wp-pagenavi__mark .c-link {
+  color: #707070;
+}
+
+.wp-pagenavi__mark .c-link:hover {
+  color: silver;
 }
 
 /* 引用　コンポーネント */
