@@ -73,13 +73,33 @@
 }
 
 
-.p-archive + .c-pagination {
+.p-archive__list + .c-pagination {
   margin-top: 69.9px;
   @include mq () {
     margin-top: 105.5px;
   }
   @include mq (pc) {
     margin-top: calc(150 * #{$liquid-pc});
+  }
+}
+
+.p-archive__error + .c-pagination {
+  margin-top: 69.9px;
+  @include mq () {
+    margin-top: 105.5px;
+  }
+  @include mq (pc) {
+    margin-top: calc(150 * #{$liquid-pc});
+  }
+}
+
+.p-main__body__description + .p-archive__error {
+  margin-top: 19px;
+  @include mq () {
+    margin-top: 37px;
+  }
+  @include mq (pc) {
+    margin-top: calc(70 * #{$liquid-pc});
   }
 }
 

@@ -1,0 +1,9 @@
+/* アーカイブ　プロジェクト */
+.p-archive {
+  &__error {
+    @include fz (28);
+    @include mq () {
+      @include fz (36);
+    }
+  }
+}

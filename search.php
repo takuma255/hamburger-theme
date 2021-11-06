@@ -32,7 +32,9 @@
           </div><!-- /l-card__detail p-card__detail -->
         </figure><!-- /l-card p-card -->
       </li><!-- /p-archive__list -->
-      <?php endwhile; ?>
+      <?php endwhile;
+      else :
+      ?><p class="p-archive__error">該当商品が見つかりません</p>
     </ul><!-- /p-archive -->
     <?php endif; ?>
     <ul class="c-pagination">

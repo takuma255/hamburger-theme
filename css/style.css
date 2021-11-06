@@ -1296,6 +1296,17 @@ body.is-open {
   }
 }
 
+/* アーカイブ　プロジェクト */
+.p-archive__error {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-archive__error {
+    font-size: 3.6rem;
+  }
+}
+
 /* カード　プロジェクト */
 .p-card {
   background-color: #3C2B1C;
@@ -1373,6 +1384,7 @@ body.is-open {
   width: 163.16px;
   padding-top: 10px;
   padding-bottom: 10.5px;
+  text-align: center;
 }
 
 .p-card__btnarea .c-btn--detail:hover {
@@ -1701,19 +1713,51 @@ body.is-open {
   }
 }
 
-.p-archive + .c-pagination {
+.p-archive__list + .c-pagination {
   margin-top: 69.9px;
 }
 
 @media screen and (min-width: 768px) {
-  .p-archive + .c-pagination {
+  .p-archive__list + .c-pagination {
     margin-top: 105.5px;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  .p-archive + .c-pagination {
+  .p-archive__list + .c-pagination {
     margin-top: calc(150 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.p-archive__error + .c-pagination {
+  margin-top: 69.9px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-archive__error + .c-pagination {
+    margin-top: 105.5px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-archive__error + .c-pagination {
+    margin-top: calc(150 * clamp(375px, 100vw, 1920px) / 1920);
+  }
+}
+
+.p-main__body__description + .p-archive__error {
+  margin-top: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-main__body__description + .p-archive__error {
+    margin-top: 37px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .p-main__body__description + .p-archive__error {
+    margin-top: calc(70 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
 
