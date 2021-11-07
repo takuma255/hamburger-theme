@@ -1672,11 +1672,6 @@ body.is-open {
   }
 }
 
-/* 
-.p-lmenu__list + .p-lmenu__list {
-  margin-top: 23px;
-}
-*/
 .sub-menu > li + li {
   margin-top: 23px;
 }
