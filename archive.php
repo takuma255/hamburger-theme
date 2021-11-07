@@ -4,7 +4,7 @@
 <main class="l-main p-main">
   <div class="p-hero--archive">
     <h1 class="p-hero__headline">Menu:</h1>
-    <p class="p-hero__lead">チーズバーガー</p>
+    <p class="p-hero__lead"><?php single_cat_title(); ?></p>
   </div><!-- /p-hero -->
   <article class="p-main__body--archive">
     <h2 class="p-main__body__headline">小見出しが入ります</h2>
