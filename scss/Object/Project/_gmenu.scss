@@ -1,7 +1,7 @@
 /* グローバルメニュー プロジェクト */
-.p-gmenu {
-  &__list {
-    > .c-link {
+.menu {
+  > .menu-item {
+    > a {
       color: $font-color-sub;
       font-weight: $font-weight-l;
       @include fz (24);
