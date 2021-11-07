@@ -73,7 +73,7 @@
 }
 
 
-.p-archive__list + .c-pagination {
+.p-archive__list + .wp-pagenavi {
   margin-top: 69.9px;
   @include mq () {
     margin-top: 105.5px;
@@ -83,7 +83,7 @@
   }
 }
 
-.p-archive__error + .c-pagination {
+.p-archive__error + .wp-pagenavi {
   margin-top: 69.9px;
   @include mq () {
     margin-top: 105.5px;

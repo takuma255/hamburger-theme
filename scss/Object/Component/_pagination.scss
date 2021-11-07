@@ -1,81 +1,4 @@
 /* ページネーション　コンポーネント */
-.c-pagination {
-  color: $font-color-sub;
-  @include fz (16);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @include mq () {
-    justify-content: center;
-  }
-  &__current {
-    display: none;
-    @include mq () {
-      font-family: $font-family-sub;
-      font-weight: $font-weight-l;
-      display: block;
-    }
-  }
-  &__mark {
-    .c-link {
-      color: $font-color-sub;
-      &:hover {
-        color: $font-color-hover;
-      }
-    }
-    &--prev {
-      @extend .c-pagination__mark;
-      &::after {
-        content: "前へ";
-        margin-left: 8.2px;
-        @include mq () {
-          display: none;
-        }
-      }
-    }
-    &--next {
-      @extend .c-pagination__mark;
-      &::before {
-        content: "次へ";
-        margin-right: 7.3px;
-        @include mq () {
-          display: none;
-        }
-      }
-    }
-  }
-  &__number {
-    display: none;
-    .c-link {
-      color: $font-color-sub;
-      font-family: $font-family-sub;
-      font-weight: $font-weight-l;
-      display: flex;
-      width: 100%;
-      height: 100%;
-      justify-content: center;
-      align-items: center;
-      &:hover {
-        color: $color-white;
-        background-color: $background-color-card;
-      }
-    }
-    @include mq () {
-      display: block;
-      width: 35px;
-      height: 35px;
-      border: 1px solid $font-color-sub;
-    }
-  }
-}
-
-
-
-
-
-
-
-/* ページネーション　コンポーネント */
 .wp-pagenavi {
   color: $font-color-sub;
   @include fz (16);
@@ -85,6 +8,7 @@
   @include mq () {
     justify-content: center;
   }
+
   .pages {
     display: none;
     border: none;
@@ -94,11 +18,10 @@
       display: block;
     }
   }
+
   .previouspostslink {
     border: none;
     color: $font-color-sub;
-    @extend .c-pagination__mark;
-
     &:hover {
       color: $font-color-hover;
     }
@@ -110,11 +33,10 @@
       }
     }
   }
+
   .nextpostslink {
     border: none;
     color: $font-color-sub;
-    @extend .c-pagination__mark;
-
     &:hover {
       color: $font-color-hover;
     }
@@ -126,8 +48,8 @@
       }
     }
   }
-  .page,
-  .current {
+
+  .page {
     display: none;
     @include mq () {
       color: $font-color-sub;
@@ -141,24 +63,23 @@
       &:hover {
         color: $color-white;
         background-color: $background-color-card;
+        border: 1px solid $font-color-sub;
       }
     }
   }
 
-
-
-
-
-
-
-
-
-  &__mark {
-    .c-link {
-      color: $font-color-sub;
-      &:hover {
-        color: $font-color-hover;
-      }
+  span.current {
+    display: none;
+    @include mq () {
+      color: $color-white;
+      background-color: $background-color-card;
+      font-weight: $font-weight-l;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      border: 1px solid $font-color-sub;
     }
   }
 }

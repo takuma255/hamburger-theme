@@ -11,19 +11,35 @@
   margin-left: 12px;
 }
 
-.c-pagination__current + .c-pagination__mark--prev {
-  margin-left: 19.3px;
+.pages + .previouspostslink {
+  @include mq (tab) {
+    margin-left: 19.3px;
+  }
 }
 
-.c-pagination__mark--prev + .c-pagination__number {
+.pages + .current {
+  @include mq (tab) {
+    margin-left: 19.3px;
+  }
+}
+
+.previouspostslink + .page {
   margin-left: 17.2px;
 }
 
-.c-pagination__number + .c-pagination__number {
+.page + .page {
   margin-left: 15px;
 }
 
-.c-pagination__number + .c-pagination__mark--next {
+.page + .current {
+  margin-left: 15px;
+}
+
+.current + .page {
+  margin-left: 15px;
+}
+
+.page + .nextpostslink {
   margin-left: 19.3px;
 }
 

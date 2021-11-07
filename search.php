@@ -37,21 +37,8 @@
       ?><p class="p-archive__error">該当商品が見つかりません</p>
     </ul><!-- /p-archive -->
     <?php endif; ?>
-    <?php if ( function_exists( 'wp_pagenavi' ) ) { wp_pagenavi(); } ?>
-    <ul class="c-pagination">
-      <li class="c-pagination__current">page 1/10</li>
-      <li class="c-pagination__mark--prev"><a href="#" class="c-link">&laquo;</a></li>
-      <li class="c-pagination__number"><a href="#" class="c-link">1</a></li>
-      <li class="c-pagination__number"><a href="#" class="c-link">2</a></li>
-      <li class="c-pagination__number"><a href="#" class="c-link">3</a></li>
-      <li class="c-pagination__number"><a href="#" class="c-link">4</a></li>
-      <li class="c-pagination__number"><a href="#" class="c-link">5</a></li>
-      <li class="c-pagination__number"><a href="#" class="c-link">6</a></li>
-      <li class="c-pagination__number"><a href="#" class="c-link">7</a></li>
-      <li class="c-pagination__number"><a href="#" class="c-link">8</a></li>
-      <li class="c-pagination__number"><a href="#" class="c-link">9</a></li>
-      <li class="c-pagination__mark--next"><a href="#" class="c-link">&raquo;</a></li>
-    </ul><!-- /c-pagination -->
+    <?php
+      if ( function_exists( 'wp_pagenavi' ) ) { wp_pagenavi(); } ?>
   </article><!-- /p-main__body--archive-search -->
 </main>
 <div class="c-overlay js-sidebar"></div>

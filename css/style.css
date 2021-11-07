@@ -568,92 +568,6 @@ ul > li {
 }
 
 /* ページネーション　コンポーネント */
-.c-pagination {
-  color: #707070;
-  font-size: 1.6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .c-pagination {
-    justify-content: center;
-  }
-}
-
-.c-pagination__current {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .c-pagination__current {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    display: block;
-  }
-}
-
-.c-pagination__mark .c-link, .c-pagination__mark--prev .c-link, .c-pagination__mark--next .c-link, .wp-pagenavi .previouspostslink .c-link, .wp-pagenavi .nextpostslink .c-link {
-  color: #707070;
-}
-
-.c-pagination__mark .c-link:hover, .c-pagination__mark--prev .c-link:hover, .c-pagination__mark--next .c-link:hover, .wp-pagenavi .previouspostslink .c-link:hover, .wp-pagenavi .nextpostslink .c-link:hover {
-  color: silver;
-}
-
-.c-pagination__mark--prev::after {
-  content: "前へ";
-  margin-left: 8.2px;
-}
-
-@media screen and (min-width: 768px) {
-  .c-pagination__mark--prev::after {
-    display: none;
-  }
-}
-
-.c-pagination__mark--next::before {
-  content: "次へ";
-  margin-right: 7.3px;
-}
-
-@media screen and (min-width: 768px) {
-  .c-pagination__mark--next::before {
-    display: none;
-  }
-}
-
-.c-pagination__number {
-  display: none;
-}
-
-.c-pagination__number .c-link {
-  color: #707070;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.c-pagination__number .c-link:hover {
-  color: #fff;
-  background-color: #3C2B1C;
-}
-
-@media screen and (min-width: 768px) {
-  .c-pagination__number {
-    display: block;
-    width: 35px;
-    height: 35px;
-    border: 1px solid #707070;
-  }
-}
-
-/* ページネーション　コンポーネント */
 .wp-pagenavi {
   color: #707070;
   font-size: 1.6rem;
@@ -721,14 +635,12 @@ ul > li {
   }
 }
 
-.wp-pagenavi .page,
-.wp-pagenavi .current {
+.wp-pagenavi .page {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .wp-pagenavi .page,
-  .wp-pagenavi .current {
+  .wp-pagenavi .page {
     color: #707070;
     font-weight: 700;
     display: flex;
@@ -738,19 +650,29 @@ ul > li {
     height: 35px;
     border: 1px solid #707070;
   }
-  .wp-pagenavi .page:hover,
-  .wp-pagenavi .current:hover {
+  .wp-pagenavi .page:hover {
     color: #fff;
     background-color: #3C2B1C;
+    border: 1px solid #707070;
   }
 }
 
-.wp-pagenavi__mark .c-link {
-  color: #707070;
+.wp-pagenavi span.current {
+  display: none;
 }
 
-.wp-pagenavi__mark .c-link:hover {
-  color: silver;
+@media screen and (min-width: 768px) {
+  .wp-pagenavi span.current {
+    color: #fff;
+    background-color: #3C2B1C;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #707070;
+  }
 }
 
 /* 引用　コンポーネント */
@@ -1813,34 +1735,34 @@ body.is-open {
   }
 }
 
-.p-archive__list + .c-pagination {
+.p-archive__list + .wp-pagenavi {
   margin-top: 69.9px;
 }
 
 @media screen and (min-width: 768px) {
-  .p-archive__list + .c-pagination {
+  .p-archive__list + .wp-pagenavi {
     margin-top: 105.5px;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  .p-archive__list + .c-pagination {
+  .p-archive__list + .wp-pagenavi {
     margin-top: calc(150 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
 
-.p-archive__error + .c-pagination {
+.p-archive__error + .wp-pagenavi {
   margin-top: 69.9px;
 }
 
 @media screen and (min-width: 768px) {
-  .p-archive__error + .c-pagination {
+  .p-archive__error + .wp-pagenavi {
     margin-top: 105.5px;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  .p-archive__error + .c-pagination {
+  .p-archive__error + .wp-pagenavi {
     margin-top: calc(150 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
@@ -2034,19 +1956,35 @@ body.is-open {
   margin-left: 12px;
 }
 
-.c-pagination__current + .c-pagination__mark--prev {
-  margin-left: 19.3px;
+@media screen and (min-width: 768px) {
+  .pages + .previouspostslink {
+    margin-left: 19.3px;
+  }
 }
 
-.c-pagination__mark--prev + .c-pagination__number {
+@media screen and (min-width: 768px) {
+  .pages + .current {
+    margin-left: 19.3px;
+  }
+}
+
+.previouspostslink + .page {
   margin-left: 17.2px;
 }
 
-.c-pagination__number + .c-pagination__number {
+.page + .page {
   margin-left: 15px;
 }
 
-.c-pagination__number + .c-pagination__mark--next {
+.page + .current {
+  margin-left: 15px;
+}
+
+.current + .page {
+  margin-left: 15px;
+}
+
+.page + .nextpostslink {
   margin-left: 19.3px;
 }
 
