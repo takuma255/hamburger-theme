@@ -16,17 +16,24 @@
       font-family: $font-family-sub;
       font-weight: $font-weight-l;
       display: block;
+      line-height: 35px;
     }
   }
 
   .previouspostslink {
     border: none;
     color: $font-color-sub;
+    line-height: 35px;
+    @include mq () {
+      @include fz (32);
+    }
     &:hover {
       color: $font-color-hover;
     }
     &::after {
       content: "前へ";
+      @include fz (16);
+      line-height: 35px;
       margin-left: 8.2px;
       @include mq () {
         display: none;
@@ -37,11 +44,17 @@
   .nextpostslink {
     border: none;
     color: $font-color-sub;
+    line-height: 35px;
+    @include mq () {
+      @include fz (32);
+    }
     &:hover {
       color: $font-color-hover;
     }
     &::before {
       content: "次へ";
+      @include fz (16);
+      line-height: 35px;
       margin-right: 7.3px;
       @include mq () {
         display: none;
