@@ -1,12 +1,4 @@
 /* 隣接セレクタ マージンレフト ユーティリティ */
-.p-footer__menu__list + .c-line {
-  margin-left: 15px;
-}
-
-.c-line + .p-footer__menu__list {
-  margin-left: 15px;
-}
-
 .c-searchbox + .c-btn--search {
   margin-left: 12px;
 }

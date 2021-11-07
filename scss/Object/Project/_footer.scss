@@ -7,13 +7,26 @@
   align-items: center;
   justify-content: center;
   padding: 40px 0 30px;
-  &__menu {
+  .menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    &__list {
-      .c-link {
+    &-item {
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+        &::after {
+          content: "";
+          display: block;
+          background-color: $line-color;
+          width: $width-c-line--vertical;
+          height: $height-c-line--vertical;
+          margin: 0 15px;
+        }
+      }
+      a {
         color: $color-white;
+        font-weight: normal;
         @include fz (20);
         &:hover {
           color: $font-color-hover;
