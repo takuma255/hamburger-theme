@@ -18,7 +18,7 @@
         while( have_posts()): the_post(); ?>
       <li class="p-archive__list">
         <figure class="l-card p-card">
-          <?php the_post_thumbnail( 'medium' ) ?>
+          <?php the_post_thumbnail(  ) ?>
           <div class="l-card__body p-card__body">
             <h3 class="p-card__body__headline">
               <?php the_title(); ?>
