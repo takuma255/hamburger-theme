@@ -21,19 +21,10 @@
   }
   add_filter( 'excerpt_more','hamburgershop_excerpt_more' );
 
-  /* サイドバーウィジェット */
-  function hamburgershop_widgets_init() {
-    register_sidebar(
-      array (
-        'name' => 'メニュー一覧',
-        'id' => 'hamburgershop_widget',
-        'description' => 'メニュー一覧です',
-        'before_widget' => '',
-        'after_widget'  => '',
-      )
-    );
-  }
-  add_action( 'widgets_init', 'hamburgershop_widgets_init' );
+
+  register_nav_menus(array(
+    'sidebar-menu' => 'サイドバーメニュー'
+  ));
 
   
   
