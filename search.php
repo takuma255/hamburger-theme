@@ -7,9 +7,11 @@
     <p class="p-hero__lead"><?php echo $_GET['s']; ?></p>
   </div><!-- /p-hero -->
   <article class="p-main__body--archive">
-    <h2 class="p-main__body__headline">小見出しが入ります</h2>
+    <h2 class="p-main__body__headline">
+      <?php echo $_GET['s']; ?>
+    </h2>
     <p class="p-main__body__description">
-      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+      <?php echo $_GET['s']; ?>の検索結果です。
     </p>
     <?php
       if( have_posts()): ?>
