@@ -1,7 +1,11 @@
 <footer class="l-footer p-footer">
-  <ul class="p-footer__menu">
-    <?php wp_nav_menu(); ?>
-  </ul>
+  <?php wp_nav_menu( array(
+      'menu_class' => 'p-footer__menu',
+      'container' => '',
+      'container_class' => '',
+      'depth' => 0,
+      'theme_location' => 'footer-menu',
+    ) ); ?>
   <p class="c-copyright">Copyright:RaiseTech</p>
 </footer>
 <?php

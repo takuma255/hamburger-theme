@@ -7,16 +7,16 @@
   align-items: center;
   justify-content: center;
   padding: 40px 0 30px;
-  .menu {
+  &__menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    &-item {
+    .menu-item {
       display: flex;
       align-items: center;
       &:not(:last-child) {
         &::after {
-          content: "";
+         content: "";
           display: block;
           background-color: $line-color;
           width: $width-c-line--vertical;

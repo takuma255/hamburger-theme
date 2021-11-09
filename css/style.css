@@ -1638,18 +1638,18 @@ body.is-open {
   padding: 40px 0 30px;
 }
 
-.p-footer .menu {
+.p-footer__menu {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.p-footer .menu-item {
+.p-footer__menu .menu-item {
   display: flex;
   align-items: center;
 }
 
-.p-footer .menu-item:not(:last-child)::after {
+.p-footer__menu .menu-item:not(:last-child)::after {
   content: "";
   display: block;
   background-color: #fff;
@@ -1658,13 +1658,13 @@ body.is-open {
   margin: 0 15px;
 }
 
-.p-footer .menu-item a {
+.p-footer__menu .menu-item a {
   color: #fff;
   font-weight: normal;
   font-size: 2rem;
 }
 
-.p-footer .menu-item a:hover {
+.p-footer__menu .menu-item a:hover {
   color: silver;
 }
 

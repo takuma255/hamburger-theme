@@ -21,13 +21,12 @@
   }
   add_filter( 'excerpt_more','hamburgershop_excerpt_more' );
 
-
+  /* カスタムメニュー */
   register_nav_menus(array(
-    'sidebar-menu' => 'サイドバーメニュー'
+    'sidebar-menu' => 'サイドバーメニュー',
+    'footer-menu' => 'フッターメニュー',
   ));
 
-  
-  
   /* スタイルシート等の読み込み */
   function readscript() {
     wp_enqueue_style( 'M+PLUS+1p Roboto', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@700&display=swap', array() );
