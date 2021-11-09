@@ -23,8 +23,8 @@
 
   /* カスタムメニュー */
   register_nav_menus(array(
-    'sidebar-menu' => 'サイドバーメニュー',
-    'footer-menu' => 'フッターメニュー',
+    'categorymenu' => 'サイドバーメニュー',
+    'footermenu' => 'フッターメニュー',
   ));
 
   /* スタイルシート等の読み込み */
@@ -35,3 +35,9 @@
     wp_enqueue_script( 'sidebar-slide', get_template_directory_uri().'/js/sidebar.js', array( 'jquery' ), '1.0.0', true);
   }
   add_action( 'wp_enqueue_scripts', 'readscript' );
+
+  /* editor-style　の読み込み */
+  function hamburgershop_theme_add_editor_styles() {
+    add_editor_style( get_template_directory_uri().'/css/editor-style.css' );
+  }
+  add_action( 'admin_init','hamburgershop_theme_add_editor_styles');

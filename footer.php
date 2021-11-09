@@ -4,7 +4,7 @@
       'container' => '',
       'container_class' => '',
       'depth' => 0,
-      'theme_location' => 'footer-menu',
+      'theme_location' => 'footermenu',
     ) ); ?>
   <p class="c-copyright">Copyright:RaiseTech</p>
 </footer>

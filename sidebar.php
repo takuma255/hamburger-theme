@@ -6,6 +6,6 @@
       'container' => 'nav',
       'container_class' => 'p-sidebar__nav',
       'depth' => 0,
-      'theme_location' => 'sidebar-menu',
+      'theme_location' => 'categorymenu',
     ) ) ?>
 </aside><!-- /l-sidebar p-sidebar -->

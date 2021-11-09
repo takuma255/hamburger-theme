@@ -8,7 +8,7 @@
   <article class="p-main__body">
     <ul class="p-service c-layout--2column">
       <li class="p-service__list--left">
-        <a href="<?php echo esc_url( home_url( '/tag/takeout/' ) ); ?>" class="c-link--block"></a>
+        <a href="<?php echo esc_url( home_url( '/category/takeout/' ) ); ?>" class="c-link--block"></a>
         <section class="p-service__list__inner">
           <h2 class="c-headline--underline">Take Out</h2>
           <div class="c-wrapper">
@@ -24,7 +24,7 @@
         </section><!-- /p-service__list__inner -->
       </li><!-- /p-service__list--left -->
       <li class="p-service__list--right">
-        <a href="<?php echo esc_url( home_url( '/tag/eatin/' ) ); ?>" class="c-link--block"></a>
+        <a href="<?php echo esc_url( home_url( '/category/eatin/' ) ); ?>" class="c-link--block"></a>
         <section class="p-service__list__inner">
           <h2 class="c-headline--underline">Eat In</h2>
           <div class="c-wrapper">
