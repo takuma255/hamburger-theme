@@ -3,7 +3,9 @@
 
 <main class="l-main p-main">
   <div class="p-hero--page">
-    <h1 class="p-hero__headline">ショップについて</h1>
+    <h1 class="p-hero__headline">
+      <?php single_post_title() ?>
+    </h1>
   </div><!-- /p-hero -->
   <article class="p-main__body--single">
     <h2 class="p-main__body__headline">見出しh2</h2>
