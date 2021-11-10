@@ -2,7 +2,8 @@
   get_header(); ?>
 
 <main class="l-main p-main">
-  <div class="p-hero--single">
+  <div class="p-hero--single"
+    style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>)">
     <h1 class="p-hero__headline">
       <?php single_post_title() ?>
     </h1>
