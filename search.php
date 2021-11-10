@@ -4,14 +4,14 @@
 <main class="l-main p-main">
   <div class="p-hero--archive">
     <h1 class="p-hero__headline">Search:</h1>
-    <p class="p-hero__lead"><?php echo $_GET['s']; ?></p>
+    <p class="p-hero__lead"><?php echo get_search_query(); ?></p>
   </div><!-- /p-hero -->
   <article class="p-main__body--archive">
     <h2 class="p-main__body__headline">
-      <?php echo $_GET['s']; ?>
+      <?php echo get_search_query(); ?>
     </h2>
     <p class="p-main__body__description">
-      <?php echo $_GET['s']; ?>の検索結果です。
+      <?php echo get_search_query(); ?>の検索結果です。
     </p>
     <?php
       if( have_posts()): ?>
