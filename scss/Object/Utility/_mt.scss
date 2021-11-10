@@ -126,25 +126,23 @@
 }
 
 
-.p-main__body--single {
-  p + h2 {
-    margin-top: 60px;
-  }
-
-  h2 + p {
-    margin-top: 60px;
-  }
-
-  p + h3 {
-    margin-top: 60px;
-  }
-
-  h3 + h4 {
-    margin-top: 60px;
-  }
+.p-main__body__description + .p-product {
+  margin-top: 60px;
 }
 
-h4 + .wp-block-quote {
+.p-product__headline + .p-product__headline--secondary {
+  margin-top: 60px;
+}
+
+.p-product__headline--secondary + .p-product__headline--tertiary {
+  margin-top: 60px;
+}
+
+.p-product__headline--tertiary + .p-product__headline--quaternary {
+  margin-top: 60px;
+}
+
+.p-product__headline--quaternary + .wp-block-quote {
   margin-top: 60px;
 }
 
