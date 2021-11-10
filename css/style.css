@@ -954,6 +954,70 @@ body.is-open {
   }
 }
 
+.p-main__body--single > h2 {
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-main__body--single > h2 {
+    font-size: 3.6rem;
+  }
+}
+
+.p-main__body--single > p {
+  font-size: 1.6rem;
+  margin-bottom: 60px;
+}
+
+.p-main__body--single > h3 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-main__body--single > h3 {
+    font-size: 2.8rem;
+  }
+}
+
+.p-main__body--single > h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-main__body--single > h4 {
+    font-size: 2.8rem;
+  }
+}
+
+.p-main__body--single > h5 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-main__body--single > h5 {
+    font-size: 2.8rem;
+  }
+}
+
+.p-main__body--single > h6 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-main__body--single > h6 {
+    font-size: 2.8rem;
+  }
+}
+
 .p-main__body--single .c-btn, .p-main__body--single .c-btn--search, .p-main__body--single .c-btn--detail {
   font-size: 1.6rem;
   width: 335px;
@@ -1846,23 +1910,23 @@ body.is-open {
   }
 }
 
-.p-main__body--single p + h2 {
+.p-main__body__description + .p-product {
   margin-top: 60px;
 }
 
-.p-main__body--single h2 + p {
+.p-product__headline + .p-product__headline--secondary, .p-product__headline--secondary + .p-product__headline--secondary, .p-product__headline--tertiary + .p-product__headline--secondary, .p-product__headline--quaternary + .p-product__headline--secondary {
   margin-top: 60px;
 }
 
-.p-main__body--single p + h3 {
+.p-product__headline--secondary + .p-product__headline--tertiary {
   margin-top: 60px;
 }
 
-.p-main__body--single h3 + h4 {
+.p-product__headline--tertiary + .p-product__headline--quaternary {
   margin-top: 60px;
 }
 
-h4 + .wp-block-quote {
+.p-product__headline--quaternary + .wp-block-quote {
   margin-top: 60px;
 }
 
