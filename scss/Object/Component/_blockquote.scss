@@ -6,6 +6,7 @@
   @include mq () {
     padding: 50px 56px 60px 50px;
   }
+  
   @include mq (pc) {
     padding-top: calc(50 * #{$liquid-pc});
     padding-right: calc(60 * #{$liquid-pc});
