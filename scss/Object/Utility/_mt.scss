@@ -126,28 +126,30 @@
 }
 
 
-.p-main__body__description + .p-product {
+.p-main__body--single {
+  p + h2 {
+    margin-top: 60px;
+  }
+
+  h2 + p {
+    margin-top: 60px;
+  }
+
+  p + h3 {
+    margin-top: 60px;
+  }
+
+  h3 + h4 {
+    margin-top: 60px;
+  }
+}
+
+h4 + .wp-block-quote {
   margin-top: 60px;
 }
 
-.p-product__headline + .p-product__headline--secondary {
-  margin-top: 60px;
-}
 
-.p-product__headline--secondary + .p-product__headline--tertiary {
-  margin-top: 60px;
-}
-
-.p-product__headline--tertiary + .p-product__headline--quaternary {
-  margin-top: 60px;
-}
-
-.p-product__headline--quaternary + .c-blockquote {
-  margin-top: 60px;
-}
-
-
-.c-blockquote__description + .c-blockquote__source {
+p + cite {
   margin-top: 30px;
   @include mq () {
     margin-top: 60px;
@@ -157,7 +159,7 @@
   }
 }
 
-.c-blockquote + .p-detail {
+.wp-block-quote + .p-detail {
   margin-top: 30px;
   @include mq () {
     margin-top: 60px;

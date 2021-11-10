@@ -685,20 +685,20 @@ ul > li {
 }
 
 /* 引用　コンポーネント */
-.c-blockquote {
+.wp-block-quote {
   background-color: #F5F5F5;
   font-size: 1.6rem;
   padding: 30px 16px 30px 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .c-blockquote {
+  .wp-block-quote {
     padding: 50px 56px 60px 50px;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  .c-blockquote {
+  .wp-block-quote {
     padding-top: calc(50 * clamp(375px, 100vw, 1920px) / 1920);
     padding-right: calc(60 * clamp(375px, 100vw, 1920px) / 1920);
     padding-bottom: calc(50 * clamp(375px, 100vw, 1920px) / 1920);
@@ -706,9 +706,10 @@ ul > li {
   }
 }
 
-.c-blockquote .c-link {
+.wp-block-quote cite {
   color: #4A6C9B;
   text-decoration: underline;
+  display: block;
 }
 
 /* コードテキスト　コンポーネント */
@@ -1845,54 +1846,54 @@ body.is-open {
   }
 }
 
-.p-main__body__description + .p-product {
+.p-main__body--single p + h2 {
   margin-top: 60px;
 }
 
-.p-product__headline + .p-product__headline--secondary, .p-product__headline--secondary + .p-product__headline--secondary, .p-product__headline--tertiary + .p-product__headline--secondary, .p-product__headline--quaternary + .p-product__headline--secondary {
+.p-main__body--single h2 + p {
   margin-top: 60px;
 }
 
-.p-product__headline--secondary + .p-product__headline--tertiary {
+.p-main__body--single p + h3 {
   margin-top: 60px;
 }
 
-.p-product__headline--tertiary + .p-product__headline--quaternary {
+.p-main__body--single h3 + h4 {
   margin-top: 60px;
 }
 
-.p-product__headline--quaternary + .c-blockquote {
+h4 + .wp-block-quote {
   margin-top: 60px;
 }
 
-.c-blockquote__description + .c-blockquote__source {
+p + cite {
   margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .c-blockquote__description + .c-blockquote__source {
+  p + cite {
     margin-top: 60px;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  .c-blockquote__description + .c-blockquote__source {
+  p + cite {
     margin-top: calc(60 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }
 
-.c-blockquote + .p-detail {
+.wp-block-quote + .p-detail {
   margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .c-blockquote + .p-detail {
+  .wp-block-quote + .p-detail {
     margin-top: 60px;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  .c-blockquote + .p-detail {
+  .wp-block-quote + .p-detail {
     margin-top: calc(60 * clamp(375px, 100vw, 1920px) / 1920);
   }
 }

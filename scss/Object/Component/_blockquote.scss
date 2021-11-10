@@ -1,5 +1,5 @@
 /* 引用　コンポーネント */
-.c-blockquote {
+.wp-block-quote {
   background-color: $background-color-blockquote;
   @include fz (16);
   padding: 30px 16px 30px 20px;
@@ -12,8 +12,9 @@
     padding-bottom: calc(50 * #{$liquid-pc});
     padding-left: calc(50 * #{$liquid-pc});
   }
-  .c-link {
+  cite {
     color: $font-color-blockquote;
     text-decoration: underline;
+    display: block;
   }
 }
