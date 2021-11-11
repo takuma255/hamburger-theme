@@ -26,230 +26,230 @@
         padding-left: calc(100 * #{$liquid-pc});
       }
     }
-    
+  }
+}
 
-    &--single {
-      @extend .p-main__body;
-      padding: 30px 20px 184px;
+article.post,
+.p-main__body--single {
+  @extend .p-main__body;
+  padding: 30px 20px 184px;
+  @include mq () {
+    padding: 60px 60px 228px;
+  }
+  @include mq (pc) {
+    padding-top: calc(60 * #{$liquid-pc});
+    padding-right: calc(100 * #{$liquid-pc});
+    padding-bottom: calc(353 * #{$liquid-pc});
+    padding-left: calc(100 * #{$liquid-pc});
+  }
+
+
+
+  > h2 {
+    @include fz (28);
+    @include mq () {
+      @include fz (36);
+    }
+    margin-bottom: 60px;
+  }
+  > p {
+    @include fz (16);
+    margin-bottom: 60px;
+  }
+  > h3 {
+    font-weight: $font-weight-l;
+    @include fz (24);
+    @include mq () {
+      @include fz (28);
+    }
+    margin-bottom: 60px;
+  }
+  > h4 {
+    @include fz (20);
+    font-weight: $font-weight-l;
+    @include mq () {
+      @include fz (28);
+    }
+    margin-bottom: 60px;
+  }
+  > h5 {
+    @include fz (20);
+    font-weight: $font-weight-l;
+    @include mq () {
+      @include fz (28);
+    }
+    margin-bottom: 60px;
+  }
+  > h6 {
+    @include fz (20);
+    font-weight: $font-weight-l;
+    @include mq () {
+      @include fz (28);
+    }
+    margin-bottom: 60px;
+  }
+
+  .wp-block-quote {
+    margin-bottom: 30px;
+    @include mq () {
+      margin-bottom: 60px;
+    }
+    @include mq (pc) {
+      margin-bottom: calc(60 * #{$liquid-pc});
+    }
+  }
+
+  .wp-block-image {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    margin-bottom: 30px;
+    @include mq () {
+      margin-bottom: 60px;
+    }
+    @include mq (pc) {
+      margin-bottom: calc(60 * #{$liquid-pc});
+    }
+  }
+
+  .wp-block-media-text {
+    @include fz (16);
+    margin-bottom: 30px;
+    @include mq () {
+      margin-bottom: 60px;
+    }
+    @include mq (pc) {
+      margin-bottom: calc(60 * #{$liquid-pc});
+    }
+  }
+  
+  .wp-block-gallery {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    @include mq () {
+      margin-bottom: 60px;
+    }
+    @include mq (pc) {
+      margin-bottom: calc(60 * #{$liquid-pc});
+    }
+    .blocks-gallery-grid {
+      display: grid;
+      row-gap: calc(20 * #{$liquid-sp});
       @include mq () {
-        padding: 60px 60px 228px;
+        grid-template-columns: repeat( 2, 1fr);
+        row-gap: calc(20 * #{$liquid-tab});
+        column-gap: calc(16 * #{$liquid-tab});
       }
       @include mq (pc) {
-        padding-top: calc(60 * #{$liquid-pc});
-        padding-right: calc(100 * #{$liquid-pc});
-        padding-bottom: calc(353 * #{$liquid-pc});
-        padding-left: calc(100 * #{$liquid-pc});
+        grid-template-columns: repeat( 3, 1fr);
+        gap: calc(20 * #{$liquid-pc});
       }
-
-
-
-      > h2 {
-        @include fz (28);
-        @include mq () {
-          @include fz (36);
-        }
-        margin-bottom: 60px;
-      }
-      > p {
-        @include fz (16);
-        margin-bottom: 60px;
-      }
-      > h3 {
-        font-weight: $font-weight-l;
-        @include fz (24);
-        @include mq () {
-          @include fz (28);
-        }
-        margin-bottom: 60px;
-      }
-      > h4 {
-        @include fz (20);
-        font-weight: $font-weight-l;
-        @include mq () {
-          @include fz (28);
-        }
-        margin-bottom: 60px;
-      }
-      > h5 {
-        @include fz (20);
-        font-weight: $font-weight-l;
-        @include mq () {
-          @include fz (28);
-        }
-        margin-bottom: 60px;
-      }
-      > h6 {
-        @include fz (20);
-        font-weight: $font-weight-l;
-        @include mq () {
-          @include fz (28);
-        }
-        margin-bottom: 60px;
-      }
-
-      .wp-block-quote {
-        margin-bottom: 30px;
-        @include mq () {
-          margin-bottom: 60px;
-        }
-        @include mq (pc) {
-          margin-bottom: calc(60 * #{$liquid-pc});
-        }
-      }
-
-      .wp-block-image {
-        img {
-          object-fit: cover;
+      .blocks-gallery-item {
+        width: 100%;
+        height: 100%;
+        figure {
           width: 100%;
           height: 100%;
-        }
-        margin-bottom: 30px;
-        @include mq () {
-          margin-bottom: 60px;
-        }
-        @include mq (pc) {
-          margin-bottom: calc(60 * #{$liquid-pc});
-        }
-      }
-
-      .wp-block-media-text {
-        @include fz (16);
-        margin-bottom: 30px;
-        @include mq () {
-          margin-bottom: 60px;
-        }
-        @include mq (pc) {
-          margin-bottom: calc(60 * #{$liquid-pc});
-        }
-      }
-      
-      .wp-block-gallery {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-        @include mq () {
-          margin-bottom: 60px;
-        }
-        @include mq (pc) {
-          margin-bottom: calc(60 * #{$liquid-pc});
-        }
-        .blocks-gallery-grid {
-          display: grid;
-          row-gap: calc(20 * #{$liquid-sp});
-          @include mq () {
-            grid-template-columns: repeat( 2, 1fr);
-            row-gap: calc(20 * #{$liquid-tab});
-            column-gap: calc(16 * #{$liquid-tab});
-          }
-          @include mq (pc) {
-            grid-template-columns: repeat( 3, 1fr);
-            gap: calc(20 * #{$liquid-pc});
-          }
-          .blocks-gallery-item {
+          img {
+            object-fit: cover;
             width: 100%;
             height: 100%;
-            figure {
-              width: 100%;
-              height: 100%;
-              img {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-              }
-            }
           }
         }
       }
-      ul {
-        @include fz (16);
-        padding-top: 30px;
-        padding-bottom: 30px;
-        @include mq () {
-          padding-top: 60px;
-          padding-bottom: 60px;
-        }
-      }
+    }
+  }
+  ul {
+    @include fz (16);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include mq () {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
 
-      ol {
-        @include fz (16);
-        @include fz (16);
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 20px;
-        @include mq () {
-          padding-top: 60px;
-          padding-bottom: 60px;
-        }
-        > li >ol {
-          padding-left: 20px;
-        }
-      }
+  ol {
+    @include fz (16);
+    @include fz (16);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    @include mq () {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    > li >ol {
+      padding-left: 20px;
+    }
+  }
 
-      .wp-block-table {
-        @include fz (16);
-        border-collapse: collapse;
-        width: 100%;
-        margin-bottom: 30px;
-        @include mq () {
-          margin-bottom: 60px;
-        }
-        @include mq (pc) {
-          margin-bottom: calc(60 * #{$liquid-pc});
-        }
-        tr {
-          td {
-            border: 1px solid $font-color-sub;
-            padding-top: 28px;
-            padding-left: 30px;
-            padding-bottom: 27px;
-            &:first-of-type {
-              width: 40%;
-            }
-          }
+  .wp-block-table {
+    @include fz (16);
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+    @include mq () {
+      margin-bottom: 60px;
+    }
+    @include mq (pc) {
+      margin-bottom: calc(60 * #{$liquid-pc});
+    }
+    tr {
+      td {
+        border: 1px solid $font-color-sub;
+        padding-top: 28px;
+        padding-left: 30px;
+        padding-bottom: 27px;
+        &:first-of-type {
+          width: 40%;
         }
       }
+    }
+  }
 
-      .wp-block-code {
-        @include fz (16);
-        background-color: $background-color-blockquote;
-        word-wrap: break-word;
-        padding: 50px;
-        margin-bottom: 30px;
-        @include mq () {
-          margin-bottom: 60px;
-        }
-        @include mq (pc) {
-          margin-bottom: calc(60 * #{$liquid-pc});
-        }
+  .wp-block-code {
+    @include fz (16);
+    background-color: $background-color-blockquote;
+    word-wrap: break-word;
+    padding: 50px;
+    margin-bottom: 30px;
+    @include mq () {
+      margin-bottom: 60px;
+    }
+    @include mq (pc) {
+      margin-bottom: calc(60 * #{$liquid-pc});
+    }
+  }
+  
+  .wp-block-button {
+    margin-bottom: 30px;
+    @include mq () {
+      margin-bottom: 60px;
+    }
+    @include mq (pc) {
+      margin-bottom: calc(60 * #{$liquid-pc});
+    }
+    &__link {
+      @extend .c-btn;
+      color: $font-color-main;
+      @include fz (16);
+      width: 335px;
+      border-radius: 20px;
+      padding-top: 28px;
+      padding-bottom: 31px;
+      @include mq () {
+        width: 429px;
+        padding-top: 41px;
+        padding-bottom: 41px;
       }
-      
-      .wp-block-button {
-        margin-bottom: 30px;
-        @include mq () {
-          margin-bottom: 60px;
-        }
-        @include mq (pc) {
-          margin-bottom: calc(60 * #{$liquid-pc});
-        }
-        &__link {
-          @extend .c-btn;
-          color: $font-color-main;
-          @include fz (16);
-          width: 335px;
-          border-radius: 20px;
-          padding-top: 28px;
-          padding-bottom: 31px;
-          @include mq () {
-            width: 429px;
-            padding-top: 41px;
-            padding-bottom: 41px;
-          }
-          &:active {
-            color: $color-white;
-            background: $font-color-sub;
-          }
-        }
+      &:active {
+        color: $color-white;
+        background: $font-color-sub;
       }
     }
   }

@@ -8,12 +8,13 @@
       <?php single_post_title() ?>
     </h1>
   </div><!-- /p-hero -->
-  <article class="p-main__body--single">
+  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php
       if( have_posts()): ?>
     <?php
         while( have_posts()): the_post(); ?>
     <?php the_content(); ?>
+    <?php wp_link_pages(); ?>
     <?php endwhile;
       else :
       ?><p class="p-single__error">該当商品が見つかりません</p>
